@@ -1,0 +1,32 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LID,Constant value of 'ZS' for all entries,Record ID,String,Identifies the record type; always 'ZS' for Special Line.,id; record; type; identifier
+LORD,Range from 100714 to 174579,Order Number,Integer,Customer order number.,order; number; sales; id
+LLINE,Range from 1 to 26,Line Number,Integer,Line number within the order.,line; number; sequence; detail
+LSDES,"Text data. Lengths: min 50, max 50, avg 50.0. Sample: CHCNGES ON DVA 3562 PORT SYLT                     ",Description,String,Special line description.,description; text; note; detail
+LCHRG,"Some 0's (6.3%), Range from -180467.0 to 259988.12",Charge Amount,Decimal,Charge amount.,charge; amount; financial; value
+LDROP,Constant value of 'Y' for all entries,Drop Ship,Flag,Drop ship indicator.,drop; ship; flag; indicator
+LCOST,"Some 0's (6.3%), Range from -720225.75 to 1024535.18",Cost Amount,Decimal,Cost amount.,cost; amount; financial; value
+LRDTE,Range from 20100115 to 20120626,Request Date,Date,Requested date.,request; date; time; planning
+LSDTE,Range from 20100115 to 20120626,Ship Date,Date,Ship date.,ship; date; time; shipping
+LEDTE,"Some 0's (6.4%), Range from 0 to 20120626",Entry Date,Date,Entry date.,entry; date; creation; time
+LGLCD,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: 01",GL Code,String,General Ledger code.,gl; code; financial; accounting
+LVATCD,"Discrete values:      , V0   , V22  , V23  , V4   , V7   , V8   ",VAT Code,String,VAT code.,vat; tax; code; financial
+LBORD,"Some 0's (6.3%), Range from -720225.75 to 1024535.18",Base Order Amt,Decimal,Base order amount.,base; order; amount; financial
+LPACK,Constant value of 'Y' for all entries,Pack Flag,Flag,Pack flag.,pack; flag; status; indicator
+LPINV,Constant value of 'Y' for all entries,Print Invoice,Flag,Print invoice flag.,print; invoice; flag; status
+LSLOC,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: PS",Ship Location,String,Shipping location.,ship; location; code; shipping
+LSAL,Constant value of '0' for all entries,Sales Amount,Decimal,Sales amount.,sales; amount; value; revenue
+CSSAL,Constant value of '0' for all entries,Calc Sales,Decimal,Calculated sales amount.,calculated; sales; amount; value
+LRLINE,"Discrete values: 0, 1, 2, 3, 4, 5, 6",Rel Line,Integer,Release line number.,release; line; number; detail
+CSBOCL,"Discrete values: 4, 7, 8",Backorder Class,String,Backorder classification.,backorder; class; category; inventory
+CSOCLS,"Discrete values: 8, 204, 207, 304",Order Class,String,Order classification.,order; class; category; type
+CSBTYP,"Discrete values: 1, 7",Bill Type,String,Billing type.,bill; type; category; financial
+CSUTYP,"Discrete values: 1, 7",User Type,String,User type.,user; type; category; system
+CSIRES,"Discrete values:   , 01",Reason Code,String,Reason code.,reason; code; explanation; id
+CSSTS4,"Discrete values: 0, 1",Status 4,String,Status code 4.,status; code; 4; state
+CSSTS5,"Discrete values: 0, 1",Status 5,String,Status code 5.,status; code; 5; state
+CSPRBD,Range from 20100115 to 20120626,Promise Date,Date,Promised date.,promise; date; delivery; time
+CSTAXA,"Some 0's (43.3%), Range from -24652.067 to 12100.0",Tax Amount,Decimal,Tax amount.,tax; amount; financial; value
+CSTODA,Constant value of '0.0' for all entries,Total Day,Decimal,Total per day.,total; day; amount; value
+CSTODO,Constant value of '0.0' for all entries,Total Order,Decimal,Total per order.,total; order; amount; value
+CSTODT,Constant value of '0.0' for all entries,Total Date,Decimal,Total per date.,total; date; amount; value

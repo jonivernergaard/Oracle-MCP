@@ -1,0 +1,12 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+OPID,"Discrete values: OP, ZP",Record ID,String,Identifies the record type; OP or ZP.,id; record; type; identifier
+OPOCLS,Range from 1 to 394,Order Class,Integer,Order class code.,order; class; code; category
+OPEVNT,"Discrete values: 1, 2, 3, 4, 5",Event,Integer,Event number.,event; number; sequence; process
+OPDCID,"Discrete values: BPCS ACK       , BPCS BOL       , BPCS INV ALF   , BPCS INVOICE   , BPCS MANIFEST  , BPCS PACK LIST , BPCS PACK SLIP , BPCS PICK SLIP , BPCS PROFORMA-A, EDIUNILEVER    , I-WMSBPCS      , WZPC           ",Doc ID,String,Document identifier or name.,document; id; name; type
+OPPRTF,"Discrete values: 0, 1",Print Flag,Flag,Print flag.,print; flag; status; indicator
+OPENTM,Range from 1500 to 173257,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+OPENDT,"Discrete values: 19950701, 19960413, 19970818, 19981230, 19990102, 19990104, 19990105, 19990208, 20021219, 20050318, 20050401, 20050418, 20070820, 20110211",Entry Date,Date,Date the record was entered.,entry; date; creation; time
+OPENUS,"Discrete values: B610ADM   , B610ISA   , BPCSSECOFR, E4US      , INFORM01  , KROKMO    , RESERVED  ",Entry User,String,User who entered the record.,entry; user; id; person
+OPMNTM,"Discrete values: 0, 50000, 90401, 114147, 114200, 114238, 131721",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+OPMNDT,"Discrete values: 0, 19960829, 19970818, 20050418, 20110211, 20130704",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+OPMNUS,"Discrete values:           , B610ADM   , E4US      , SSA       ",Maint User,String,User who performed maintenance.,maintenance; user; id; person

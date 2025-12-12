@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+PID,"Discrete values: PO, PZ",Record ID,String,Identifies the record type; PO or PZ.,id; record; type; identifier
+PORD,Range from 100000 to 100233,PO Number,Integer,Purchase Order number.,po; number; purchase; order
+PLINE,Range from 1 to 74,Line Number,Integer,Line number within the PO.,line; number; sequence; detail
+PPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: LISBRF182      ",Product Code,String,Product identifier.,product; code; item; id
+PVEND,Range from 1 to 7777,Vendor Number,Integer,Vendor identifier.,vendor; number; id; supplier
+PQORD,"Some 0's (9.7%), Range from 0.0 to 115020.0",Order Qty,Decimal,Quantity ordered.,order; quantity; amount; volume
+PQREC,"Some 0's (18.4%), Range from 0.0 to 126230.0",Received Qty,Decimal,Quantity received.,received; quantity; amount; volume
+PDDTE,Range from 20091229 to 20200208,Due Date,Date,Due date for delivery.,due; date; delivery; time
+PCLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: IS",Class,String,Item classification code.,class; code; category; type
+PSCST,"Some 0's (6.4%), Range from 0.0 to 147600.0",Std Cost,Decimal,Standard cost.,standard; cost; financial; value
+PECST,"Some 0's (9.5%), Range from 0.0 to 147600.0",Ext Cost,Decimal,Extended cost.,extended; cost; financial; value
+PACST,"Some 0's (25.4%), Range from 0.0 to 669912.0",Act Cost,Decimal,Actual cost.,actual; cost; financial; value
+PSTAT,"Discrete values: 0, 1, 2, 3",Status,Integer,Line item status.,status; code; state; condition
+PUM,"Discrete values: KG, M , SZ, TH",UOM,String,Unit of measure.,uom; unit; measure; quantity
+PLTDT,"Some 0's (16.4%), Range from 0 to 20111221",Last Trans Date,Date,Date of last transaction.,last; transaction; date; time
+PPRT,"Discrete values: 0, 1",Print Flag,Flag,Print flag.,print; flag; status; indicator
+PLDTE,"Some 0's (31.4%), Range from 0 to 99999999",Last Date,Date,Last activity date.,last; date; activity; time
+PCQTY,"Some 0's (25.4%), Range from 0.0 to 126230.0",Cancel Qty,Decimal,Quantity cancelled.,cancel; quantity; amount; volume
+PSHIP,"Discrete values: B3    , CZ    , D2    , MG    , MZ    , S4    , S5    , SE    , SF    ",Ship To,String,Ship-to location code.,ship; to; location; shipping
+PEDTE,Range from 20091217 to 20100117,Entry Date,Date,Date the line was entered.,entry; date; creation; time
+PTMKY,"Discrete values: 1, 2, 3, 5, 6, 7, 8, 12, 13, 16, 20",Terms Key,Integer,Terms key or code.,terms; key; code; financial
+PPCLS,"Some 0's (16.2%), Range from 0 to 20161216",Purch Class,Integer,Purchase classification.,purchase; class; category; type
+PUMCN,Constant value of '1.0' for all entries,UOM Conv,Decimal,UOM conversion factor.,uom; conversion; factor; rate
+PBUYC,"Discrete values: 1, 2, 3, 4, 6, 7, 8",Buyer Code,Integer,Buyer identifier.,buyer; code; employee; purchasing
+PWHSE,"Discrete values: B3, CZ, D2, MG, MZ, S4, S5, SE, SF",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+PCNDT,Constant value of '0' for all entries,Cancel Date,Date,Cancellation date.,cancel; date; status; time
+PCNQY,Constant value of '0.0' for all entries,Cancel Qty 2,Decimal,Secondary cancel quantity.,cancel; quantity; 2; amount
+HQINS,Constant value of '0.0' for all entries,Inspection,Decimal,Inspection quantity or flag.,inspection; quantity; flag; quality
+HVDUE,Range from 20091229 to 20200208,Vendor Due Date,Date,Vendor promised due date.,vendor; due; date; delivery
+HOUTS,Constant value of 'N' for all entries,Outstanding,Flag,Outstanding flag.,outstanding; flag; status; indicator
+HSHOP,Constant value of '0' for all entries,Shop,String,Shop identifier.,shop; id; location; manufacturing
+HOPER,Constant value of '0' for all entries,Operation,Integer,Operation number.,operation; number; manufacturing; step
+POCUR,"Discrete values: EUR, PLN, USD",Currency,String,Currency code.,currency; code; money; iso
+PEXRT,"Discrete values: 1.0, 2.8009, 2.805, 2.8167, 2.8683, 4.0534, 4.0595, 4.0615, 4.0794, 4.0814, 4.095, 4.1084, 4.1109, 4.139",Exch Rate,Decimal,Exchange rate.,exchange; rate; currency; financial
+PIEXRT,Range from 1.0 to 4.139,Inv Exch Rate,Decimal,Invoice exchange rate.,invoice; exchange; rate; financial
+PBSCST,"Some 0's (6.4%), Range from 0.0 to 147600.0",Base Std Cost,Decimal,Base standard cost.,base; standard; cost; financial
+PBECST,"Some 0's (9.4%), Range from 0.0 to 147600.0",Base Ext Cost,Decimal,Base extended cost.,base; extended; cost; financial
+PBACST,"Some 0's (25.4%), Range from 0.0 to 669912.0",Base Act Cost,Decimal,Base actual cost.,base; actual; cost; financial
+PGEXRT,Range from 1.0 to 4.139,GL Exch Rate,Decimal,GL exchange rate.,gl; exchange; rate; financial
+PCUST,Constant value of '0' for all entries,Customer,Integer,Customer identifier.,customer; id; client; reference
+PCORD,Constant value of '0' for all entries,Cust Order,Integer,Customer order number.,customer; order; number; reference
+PCLIN,Constant value of '0' for all entries,Cust Line,Integer,Customer order line.,customer; line; number; reference
+PBPRT,Constant value of '0' for all entries,Batch Print,Flag,Batch print flag.,batch; print; flag; status
+POVTXC,"Discrete values: EXP  , VAT  ",VAT Code,String,VAT tax code.,vat; tax; code; financial
+POITXC,"Discrete values: V22  , V23  ",Item Tax Code,String,Item tax code.,item; tax; code; financial
+POFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code; location; site
+POSHTY,Constant value of '3' for all entries,Ship Type,Integer,Shipment type code.,ship; type; code; shipping
+PONAME,"Discrete values: BÊDZIN SEIFERT                , CZELAD¾ - WYROBY GOTOWE       , GDYNIA                        , MAGAZYN PROOPTIMUM            , Magazyn Papieru               , OPERACJE ZEW                  , SIEMIANOWICE 2 - SUROWCE (FS) , SIEMIANOWICE 5 - CZESCI ZAM.  , ZYRARDÓW                      ",Name,String,Name associated with the line.,name; text; description; entity
+POADR1,"Discrete values:                               , ul. Handlowa 20               , ul.Budowlana 6                , ul.Indyjska 13                , ul.Kontenerowa 69             , ul.Limanowskiego 49A          , ul.Paryska  1                 , ul.Ptasia 3                   ",Address 1,String,Address line 1.,address; 1; location; contact

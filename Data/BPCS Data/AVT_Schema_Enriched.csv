@@ -1,0 +1,18 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+VTMID,"Discrete values (2 unique): VT, VZ",Record ID,String,"Identifies the record type, 'VT' for Vendor Terms.",id; record; type; terms
+VTERM,"22 unique values. Range: 0 to 23. Mean: 10.86, Median: 10.50. Sample values: 0, 4, 6, 7, 13, 14, 15, 16, 22, 23",Terms Code,String,Code representing the payment terms.,terms; code; payment
+VTMDDY,"Discrete values (13 unique): 0.0, 7.0, 14.0, 21.0, 30.0, 40.0, 45.0, 60.0, 75.0, 90.0, 120.0, 180.0, 999.0",Due Days,Integer,Number of days until payment is due.,due; days; payment; terms
+VTMSDY,Constant value of '0.0' for all entries,Discount Days,Integer,Number of days to receive a discount.,discount; days; payment
+VTMDPC,Constant value of '0.0' for all entries,Discount Percent,Decimal,Percentage of discount available.,discount; percent; rate
+VTMDSC,"Text/Mixed data with 22 unique values. Sample values: 75 dni, PrzedpÂªata, 60dnikoniecmies, 7 days of inv., 45 dni, 90 days of inv., 60 dni, 7 dni, 30 dni, 60 days of inv.. Most frequent: PrzedpÂªata (1), GotÃ³wka (1), 7 dni (1), 14 dni (1), 21 dni (1)",Description,String,Description of the payment terms.,description; terms; payment
+VTMODD,Constant value of '0.0' for all entries,Months Delay,Integer,Number of months to delay payment.,months; delay; payment
+VTMODI,Constant value of '0.0' for all entries,Months Delay 2,Integer,Secondary months delay.,months; delay; payment
+VTTAXD,Constant value of 'Y' for all entries,Tax Deductible,Flag,"Indicates if tax is deductible (Y=Yes).",tax; deductible; flag
+VTCHRG,Constant value of '0.0' for all entries,Finance Charge,Decimal,Finance charge rate or amount.,finance; charge; rate
+VTCHGD,Constant value of '0.0' for all entries,Charge Days,Integer,Days before finance charges apply.,charge; days; finance
+VTMETH,Constant value of '0.0' for all entries,Method,String,Payment method code.,method; payment; code
+VTFDY1,"Discrete values (2 unique): 0.0, 30.0",Fixed Day 1,Integer,First fixed payment day of the month.,fixed; day; payment
+VTFDY2,Constant value of '0.0' for all entries,Fixed Day 2,Integer,Second fixed payment day of the month.,fixed; day; payment
+VTFDY3,Constant value of '0.0' for all entries,Fixed Day 3,Integer,Third fixed payment day of the month.,fixed; day; payment
+VTEMDY,Constant value of '0.0' for all entries,EOM Days,Integer,Days after end of month.,eom; days; payment
+VTEMNO,Constant value of '0.0' for all entries,EOM Months,Integer,Months after end of month.,eom; months; payment

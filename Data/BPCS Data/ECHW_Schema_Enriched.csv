@@ -1,0 +1,100 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+HID,Constant value of 'CH' for all entries,Record ID,String,Identifies the record type; always 'CH' for Customer Order Header.,id; record; type; identifier
+HORD,Range from 250669 to 555515,Order Number,Integer,Customer order number.,order; number; sales; id
+HEDTE,Range from 20250821 to 20251204,Entry Date,Date,Date the order was entered.,entry; date; creation; time
+HCUST,Range from 1290 to 999990,Customer Number,Integer,Customer identifier.,customer; number; id; client
+HCTYP,"Discrete values: CDOM, CEXE, CEXN, CICE",Customer Type,String,Customer type code.,customer; type; category; code
+HLINS,"Discrete values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12",Line Count,Integer,Number of lines in the order.,line; count; number; total
+HDTOT,"Some 0's (30.5%), Range from -993.95 to 171033.54",Doc Total,Decimal,Document total amount.,document; total; amount; financial
+HSTAT,"Discrete values: 8, C, E, F, G, V",Status,String,Order status.,status; code; state; condition
+HSAL,"Discrete values: 1, 20, 21, 25, 31, 32, 33, 50, 51, 55, 80",Salesperson,String,Salesperson code.,salesperson; code; employee; sales
+HCPO,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: POBC10511      ",Customer PO,String,Customer purchase order number.,customer; po; purchase; order
+HTERM,"Discrete values: 0, 3, 4, 5, 6, 7, 16, 21, 33, 80",Terms Code,String,Payment terms code.,terms; code; payment; financial
+HTDES,"Discrete values: 120 DNI / DAYS , 14 DNI / DAYS  , 15DNI 4%SK 45D , 21 DNI / DAYS  , 30 DNI / DAYS  , 35 DNI / DAYS  , 45 DNI / DAYS  , 60 DAYS NETTING, 60 DNI / DAYS  , PRZEDP[ATA     ",Terms Desc,String,Description of payment terms.,terms; description; payment; text
+HCOST,"Some 0's (20.7%), Range from -4216.73 to 445230.9",Cost Amount,Decimal,Total cost amount.,cost; amount; financial; value
+HNAME,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: PREMIER RESTAURANTS LATVIA SIA",Customer Name,String,Name of the customer.,customer; name; text; client
+HAD1,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: GREEN PARK                    ",Address 1,String,Address line 1.,address; 1; location; contact
+HAD2,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: DZIRNIEKU STREET 26,MARUPE    ",Address 2,String,Address line 2.,address; 2; location; contact
+HAD3,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: DISTRICT,LATVIA               ",Address 3,String,Address line 3.,address; 3; location; contact
+HPOST,"Text data. Lengths: min 9, max 9, avg 9.0. Sample: 2167     ",Postal Code,String,Postal or zip code.,postal; code; zip; location
+HBACK,"Discrete values: 0, 1",Backorder Flag,Flag,Backorder allowed flag.,backorder; flag; status; indicator
+HDTYP,"Discrete values: 1, 7",Doc Type,String,Document type code.,document; type; code; category
+HPTOT,"Some 0's (23.2%), Range from -0.031 to 20000.0",Payment Total,Decimal,Total payment amount.,payment; total; amount; financial
+HSDTE,"Some 0's (7.3%), Range from 0 to 20260108",Ship Date,Date,Scheduled ship date.,ship; date; schedule; time
+HCRED,"Discrete values: 0, 1, 2",Credit Check,String,Credit check status.,credit; check; status; financial
+HCHG,Constant value of '0.0' for all entries,Charge Amount,Decimal,Additional charge amount.,charge; amount; financial; value
+HWHSE,"Discrete values:   , C4, CZ, D1, GA",Warehouse,String,Warehouse code.,warehouse; code; storage; facility
+HSHIP,"Discrete values: 0, 1",Ship Complete,Flag,Ship complete flag.,ship; complete; flag; status
+HRDTE,Range from 20250128 to 20260108,Request Date,Date,Requested delivery date.,request; date; delivery; time
+HCOMP,Constant value of '1' for all entries,Company Code,String,Company identifier.,company; code; entity; id
+HCOUN,"Text data. Lengths: min 4, max 4, avg 4.0. Sample: LV  ",Country,String,Country code.,country; code; location; place
+HATN,"Discrete values:                               , SZA[SZA                       ",Attention,String,Attention name.,attention; name; contact; person
+HPAYC,"Discrete values: N, P",Payment Code,String,Payment method code.,payment; code; method; financial
+HTAX,"Discrete values: EXP  , VAT  ",Tax Code,String,Tax code.,tax; code; financial; category
+HINVN,"Discrete values: 0, 25000459, 25001649, 25002184, 25002214",Invoice Number,Integer,Invoice number.,invoice; number; bill; id
+HCURR,"Discrete values: EUR, PLN",Currency,String,Currency code.,currency; code; money; iso
+HINUSE,"Discrete values:  , Y",In Use,Flag,Record in use flag.,in; use; flag; status
+HCNVFC,Range from 1.0 to 4.2666,Conv Factor,Decimal,Currency conversion factor.,conversion; factor; currency; rate
+HBTOT,"Some 0's (30.5%), Range from -4216.73 to 525547.67",Base Total,Decimal,Base currency total.,base; total; amount; financial
+HGCNFC,Range from 1.0 to 4.2666,Gen Conv Factor,Decimal,General conversion factor.,general; conversion; factor; rate
+HVSHP,Constant value of '0.0' for all entries,Value Shipped,Decimal,Value of shipped goods.,value; shipped; amount; financial
+HSINS,Constant value of '0.0' for all entries,Insurance,Decimal,Insurance amount.,insurance; amount; financial; value
+HSRDTE,"Lots of 0's (74.4%), Range from 0 to 20251204",Sched Release,Date,Scheduled release date.,scheduled; release; date; planning
+HDTSP,"Discrete values: 0, 20251021, 20251031, 20251107, 20251127",Date Stamp,Date,Date stamp.,date; stamp; time; record
+HOWGH,Constant value of '0.0' for all entries,Order Weight,Decimal,Total order weight.,order; weight; mass; measurement
+HCNDT,Constant value of '0' for all entries,Cancel Date,Date,Cancellation date.,cancel; date; status; time
+HSTORE,Constant value of '0' for all entries,Store,String,Store identifier.,store; id; location; retail
+HSAL2,Constant value of '0' for all entries,Salesperson 2,String,Secondary salesperson.,salesperson; 2; employee; sales
+HOTDS,Constant value of '0.0' for all entries,Order Discount,Decimal,Order discount amount.,order; discount; amount; financial
+HRCDT,Range from 20250821 to 20251204,Rec Date,Date,Received date.,received; date; time; record
+HODBL,Constant value of '0.0' for all entries,Order Balance,Decimal,Order balance.,order; balance; amount; financial
+CHTAXA,"Lots of 0's (63.4%), Range from 0.0 to 31981.88",Tax Amount,Decimal,Tax amount.,tax; amount; financial; value
+CHREAS,"Discrete values: 23   , SP   ",Reason Code,String,Reason code.,reason; code; explanation; id
+CHSAL2,Constant value of '0' for all entries,Salesperson 2,String,Secondary salesperson.,salesperson; 2; employee; sales
+CHTERM,"Discrete values:   , 80",Terms Code 2,String,Secondary terms code.,terms; code; 2; payment
+CHBANK,"Discrete values:    , BEU, BPL",Bank Code,String,Bank code.,bank; code; financial; institution
+CHCURT,Range from 1.0 to 4.2666,Currency Rate,Decimal,Currency exchange rate.,currency; rate; exchange; financial
+HBO,"Discrete values: 0, 4",Backorder,String,Backorder status.,backorder; status; code; inventory
+HUDTE1,Constant value of '0' for all entries,Update Date 1,Date,Update date 1.,update; date; 1; time
+HUDTE2,Constant value of '0' for all entries,Update Date 2,Date,Update date 2.,update; date; 2; time
+HCPRFN,"Discrete values: 0, 459, 1649, 2184, 2214, 528992, 545257, 549394, 553653, 554023",Proforma Inv,Integer,Proforma invoice number.,proforma; invoice; number; id
+HCPTP,"Discrete values:  , 0, 1",Price Type,String,Price type code.,price; type; code; category
+HVOLUM,"Some 0's (26.8%), Range from 0.0 to 2707.752",Volume,Decimal,Total volume.,volume; measurement; size; capacity
+HWEIGT,"Some 0's (24.4%), Range from -0.35 to 34870.519",Weight,Decimal,Total weight.,weight; mass; measurement; physical
+HCONSL,Constant value of '0' for all entries,Consolidated,Flag,Consolidated flag.,consolidated; flag; status; indicator
+HPRCON,Constant value of '0' for all entries,Print Conf,Flag,Print confirmation flag.,print; confirmation; flag; status
+HPALET,"Some 0's (26.8%), Range from 0.0 to 150.444",Pallets,Decimal,Number of pallets.,pallets; count; shipping; logistics
+CHDPFX,"Discrete values:   , EP, EX, SP",Doc Prefix,String,Document prefix.,document; prefix; code; id
+CHDYR,"Discrete values: 0, 25, 2000, 2025",Doc Year,Integer,Document year.,document; year; date; time
+CHDTYP,"Discrete values: 0, 1, 2, 3",Doc Type,String,Document type.,document; type; code; category
+CHPREF,"Discrete values: DF, EP, EX, KE, SK, SP",Prefix,String,Prefix code.,prefix; code; id; identifier
+CHVDAT,Range from 20250821 to 20251204,Value Date,Date,Value date.,value; date; financial; time
+CHPRCC,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: LV",Price Code,String,Price code.,price; code; category; financial
+CHPRNO,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: 40003189347    ",Price Number,String,Price number or reference.,price; number; reference; id
+HRMA,"Discrete values: 0, 250791, 250792",RMA Number,Integer,Return Merchandise Authorization number.,rma; number; return; id
+CHMNTR,"Discrete values:     , 30  ",Monitor,String,Monitor code.,monitor; code; tracking; system
+CHTRMC,"Discrete values:    , DAP, EXW, FCA",Terms Code,String,Terms of delivery code.,terms; code; delivery; shipping
+CHCPHN,"Text data. Lengths: min 25, max 25, avg 25.0. Sample: 00 48 574 383 761        ",Phone,String,Contact phone number.,phone; contact; number; communication
+CHFAX,"Discrete values:                          , 0049 6175-934-53-90      , 34964674113              , 380445022417             , 420 312709028            , 49.244.183.105           , OWCZARCZYK               ",Fax,String,Fax number.,fax; contact; number; communication
+CHPHON,"Text data. Lengths: min 25, max 25, avg 25.0. Sample: 00 48 574 383 761        ",Phone 2,String,Secondary phone number.,phone; 2; contact; number
+CHTRAN,Constant value of '0' for all entries,Transport,String,Transport code.,transport; code; shipping; logistics
+CHCRDH,"Discrete values: 0, 1, 99",Credit Hold,Flag,Credit hold flag.,credit; hold; flag; status
+CHCUSH,"Discrete values: 0, 1, 99",Customer Hold,Flag,Customer hold flag.,customer; hold; flag; status
+CHMRGH,Constant value of '0' for all entries,Margin Hold,Flag,Margin hold flag.,margin; hold; flag; status
+CHUSRH,Constant value of '0' for all entries,User Hold,Flag,User hold flag.,user; hold; flag; status
+CHIRES,"Discrete values:   , 01",Reason Code,String,Reason code.,reason; code; explanation; id
+CHMRPC,Constant value of '0.0' for all entries,Margin Pct,Decimal,Margin percentage.,margin; percentage; financial; ratio
+CHAPPR,"Discrete values: 0, 1",Approved,Flag,Approved flag.,approved; flag; status; indicator
+CHPRBD,Range from 20250128 to 20251210,Promise Date,Date,Promised date.,promise; date; delivery; time
+CHPREG,"Discrete values:       , GDY2  ",Region,String,Region code.,region; code; location; area
+CHPRSC,"Discrete values:   , 00, 04",Process Code,String,Process code.,process; code; status; system
+CHBOCL,"Discrete values: 3, 4, 8",Backorder Class,String,Backorder classification.,backorder; class; category; inventory
+CHOCLS,"Discrete values: 3, 8, 204, 304",Order Class,String,Order classification.,order; class; category; type
+CHUTYP,"Discrete values: 1, 7",User Type,String,User type.,user; type; category; system
+CHSTS1,"Discrete values: 0, 1",Status 1,String,Status code 1.,status; code; 1; state
+CHSTS2,"Discrete values: 0, 1",Status 2,String,Status code 2.,status; code; 2; state
+CHSTS3,Constant value of '0' for all entries,Status 3,String,Status code 3.,status; code; 3; state
+CHSTS4,"Discrete values: 0, 1",Status 4,String,Status code 4.,status; code; 4; state
+CHSTS5,"Discrete values: 0, 1",Status 5,String,Status code 5.,status; code; 5; state
+CHCLOS,"Discrete values:  , 0",Closed,Flag,Closed flag.,closed; flag; status; indicator
+CHTOEA,"Some 0's (34.1%), Range from -76.85 to 139051.66",Total EA,Decimal,Total amount in EA currency.,total; ea; amount; financial

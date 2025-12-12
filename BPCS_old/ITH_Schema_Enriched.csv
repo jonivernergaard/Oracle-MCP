@@ -1,0 +1,53 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+TID,Constant value of 'TH' for all entries,Transaction History ID,String,Record identifier for transaction history records. Constant 'TH' indicates Transaction History.,transaction; history; id; record; identifier
+TPROD,"Text/Mixed data. 530 unique values. Samples: CGRIA3200      , CGRVA4335      , SPR3281        , SPS3405        , SPR4101        ",Product Code,String,Product code involved in the transaction. 530 unique products.,product; item; code; number; identifier
+TSEQ,"Discrete values: 1, 2, 3, 4, 5, 6",Sequence Number,Integer,Transaction sequence number for multiple transactions on same order/item.,sequence; number; order; transaction; line
+TTYPE,"Discrete values: # , B , C , DP, DS, IG, IW, IZ, T+, T-",Transaction Type,String,"Type of transaction code (# for adjustment, B for BOM, C for cycle count, DP/DS for production, IG for goods in, IW for warehouse, IZ for inventory zero, T+/T- for transfers).",type; transaction; code; category; operation
+TTDTE,Constant value of '20210125' for all entries,Transaction Date,Date,Date when transaction occurred. Value 20210125 (January 25 2021).,date; transaction; timestamp; occurrence; when
+TQTY,"Lots of 0's (88.9%), Range from -1292.0 to 998.0, Contains decimal values",Transaction Quantity,Decimal,Quantity of items in the transaction. Mostly zeros with range from -1292 to 998.,quantity; amount; count; volume; transaction
+TWHS,"Discrete values:   , C4, C5, CZ, GA, MB, QC",Warehouse,String,"Warehouse code for the transaction. Warehouses: C4, C5, CZ, GA, MB, QC.",warehouse; location; site; code; facility
+TLOCT,"Discrete values:       , C4    , C5    , CZ    , GA    , QC    ",Location Code,String,Specific location within warehouse for the transaction.,location; bin; code; spot; storage
+TPRIC,"Discrete values: 0.0, 63.71, 85.59219, 117.92197, 251.19152, 254.86949, 399.49078, 406.31, 1039.975, 1150.31, 1521.9, 3515.0, 12296.8",Unit Price,Decimal,Unit price or cost of item at time of transaction. Range from 0 to 12296.8.,price; cost; unit; value; amount
+TREF,"Lots of 0's (92.3%), Range from 0 to 446011",Reference Number,String,"Reference number for the transaction (e.g., Order #, PO #, Invoice #). Mostly zeros.",reference; number; order; link; identifier
+TVAL,"Lots of 0's (95.7%), Range from -23978.12 to 2079.95, Contains decimal values",Transaction Value,Decimal,Total monetary value of the transaction. Mostly zeros with range -23978 to 2079.,value; amount; total; monetary; dollars
+TSDTE,"Discrete values: 0, 20210111, 20210120, 20210121, 20210122, 20210125, 20210126, 20210127, 20210129",Settlement Date,Date,Date of settlement or shipping. Various dates in January 2021.,date; settlement; shipping; delivery; when
+TREFM,"Discrete values: 0, 1340, 1371, 100536, 101788, 800904, 800961, 801088, 801623",Secondary Reference,String,Additional reference number or manufacturing order number.,reference; secondary; order; manufacturing; number
+TCOM,"Text/Mixed data. 16 unique values. Samples: T L F PC ALL 02, P L F PC ALL 02, P L F PC ALL 03, P L F PC ALL 04, P L F PC ALL 02 is used for hundreds of values. ",Comment,String,"Comment or description code for the transaction (e.g., 'P L F PC ALL 02' appears frequently).",comment; description; code; note; text
+TCLAS,"Discrete values: CA, EL, GR, IO, IR, IS, ME, PG, PS, PU, PZ, TF, TR, TS",Transaction Class,String,"Classification code for transaction type (CA, EL, GR, IO, IR, IS, ME, PG, PS, PU, PZ, TF, TR, TS).",class; classification; category; type; code
+TRES,"Discrete values: 1, BA, P1, P8, PD, PL, PO, RA, S1, S2, S3, S4, SR, TC",Reason Code,String,"Reason or source code for the transaction (1, BA, P1, P8, PD, PL, PO, RA, S1-S4, SR, TC).",reason; code; source; justification; cause
+TVEND,"Discrete values: Primarily 0, 1410, 1653",Vendor ID,String,"Vendor or supplier identifier. Mostly 0 with some values 1410, 1653.",vendor; supplier; id; code; partner
+TSTAT,"Discrete values:  Primary blank values, Y",Status,Flag,"Transaction status indicator. Mostly blank with some 'Y' values.",status; flag; indicator; state; condition
+TSCST,"Lots of 0's (88.9%), Range from 0.0 to 1051.81, Contains decimal values",Standard Cost,Decimal,Standard cost of the item. Mostly zeros with range 0 to 1051.81.,cost; standard; price; baseline; reference
+THWS,"Discrete values: I005115A  , I005138B  , I005138C  , I005161B  , I005161C  , I005161D  , I005177A  , I005183A  , I005194A  , I005225A  , ODO       ",Workstation ID,String,Workstation or terminal identifier where transaction was entered.,workstation; terminal; id; device; station
+THUSER,"Discrete values: K2B       , LUPABE    , MAGGDY01  , MAGZAM01  , MOJMA     , OGOLNY01  , OSIKAJU   , WCISLOJO  ",User ID,String,User identifier who performed the transaction.,user; id; operator; person; employee
+THTIME,Range from 75450 to 101825,Transaction Time,Time,Time when transaction occurred (HHMMSS format). Range 075450 to 101825.,time; timestamp; transaction; occurrence; when
+THCURR,"Discrete values:  EUR, PLN, USD, GBP",Currency,String,"Currency code for transaction values (EUR, PLN, USD, GBP).",currency; code; money; denomination; forex
+THTEXR,"Discrete values: 0.0, 1.0, 4.4493, 4.5407",Exchange Rate,Decimal,"Exchange rate used for currency conversion. Values include 1.0, 4.4493, 4.5407.",exchange; rate; currency; conversion; forex
+TOQTY,"Lots of 0's (94.9%), Range from 0.0 to 94.08, Contains decimal values",Order Quantity,Decimal,Original order quantity or reference quantity. Mostly zeros.,quantity; order; original; reference; requested
+THGLRT,"Discrete values: 0.0, 1.0, 4.4493, 4.5407",GL Rate,Decimal,General Ledger rate or accounting factor for financial posting.,rate; gl; general ledger; accounting; financial
+THORD,"Discrete values: 0, 222426, 222495, 222636, 222673, 222734, 225072",Order Number,Integer,Order number associated with the transaction.,order; number; reference; link; transaction
+THOPNO,Constant value of '0' for all entries,Operation Number,Integer,Operation number within the manufacturing order.,operation; number; manufacturing; step; process
+THWRKC,"Lots of 0's (96.9%), Range from 0 to 4708",Work Center,String,Work center code where the operation was performed.,work center; location; manufacturing; station; facility
+THPRSH,Constant value of '0' for all entries,Parent Shortage,Flag,Flag indicating if there is a shortage for the parent item.,shortage; parent; flag; indicator; inventory
+THLIN,"Discrete values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10",Line Number,Integer,Line number of the order or transaction.,line; number; sequence; order; item
+THTUM,"Discrete values:   , BX, KG, SZ, TH, PL, ZG, EA, TN, BX, FT (some form of Unit of Measure Table)",Transaction UOM,String,Unit of measure used for the transaction quantity.,uom; unit; measure; transaction; quantity
+THQUM,"Lots of 0's (94.2%), Range from -1292.0 to 998.0, Contains decimal values",Quantity in UOM,Decimal,Quantity expressed in the transaction unit of measure.,quantity; uom; amount; volume; transaction
+THACST,"Lots of 0's (92.1%), Range from 0.0 to 1039.97938, Contains decimal values",Actual Cost,Decimal,Actual cost of the item for this transaction.,cost; actual; price; value; expense
+THRNO,"Discrete values: 0, 8484",Run Number,Integer,Run number for production or processing.,run; number; production; batch; process
+THRSEQ,"Discrete values: 0, 1, 2, 3, 4",Run Sequence,Integer,Sequence number within the run.,sequence; run; number; order; process
+THNII,Constant value of '0' for all entries,Next Item Index,Integer,Index or pointer to the next item record.,index; next; item; pointer; link
+THCOM,"Discrete values 55 UNIQUE VALUES out of thousands of entries:   BLANK  , 39231090, 39241000, 48045200, 48045990, 48115100, 48119000, 48191000, 48236910, 48236990, 48239085",Comment,String,Additional comments or codes associated with the transaction.,comment; note; text; description; code
+THFAMT,Constant value of '0' for all entries,Foreign Amount,Decimal,Transaction amount in foreign currency.,amount; foreign; currency; value; money
+THRMFL,"Discrete values:  , G",Remarks Flag,Flag,Flag indicating if remarks are present.,flag; remarks; indicator; note; comment
+THSTME,Constant value of '0' for all entries,Start Time,Time,Start time of the transaction or operation.,time; start; timestamp; begin; operation
+THCBY,"Values such as: WCISLOJO, DBAK, BIJALDMA, WALCZYWI, SZLAPAAG, CHWASTEL",Created By,String,User ID of the person who created the record.,created by; user; id; author; origin
+THCDT,"Discrete values: 0, 20210125",Creation Date,Date,Date when the record was created.,date; creation; timestamp; origin; when
+THCTM,"Discrete values: 0, 101621",Creation Time,Time,Time when the record was created.,time; creation; timestamp; origin; when
+THLDT,Constant value of '0' for all entries,Last Date,Date,Date of the last update to the record.,date; last; update; modification; timestamp
+THLTM,Constant value of '0' for all entries,Last Time,Time,Time of the last update to the record.,time; last; update; modification; timestamp
+THUPI,Constant value of '0' for all entries,Unit Price Indicator,Integer,Indicator for how unit price is applied.,price; unit; indicator; flag; cost
+THCSGN,Constant value of '0' for all entries,Consignment Flag,Flag,Flag indicating if the item is consignment inventory.,consignment; flag; inventory; indicator; type
+THERT2,"Discrete values: 0, 1",Exchange Rate Type 2,String,Secondary exchange rate type.,exchange; rate; type; currency; forex
+THGRT2,Constant value of '1' for all entries,GL Rate Type 2,String,Secondary General Ledger rate type.,gl; rate; type; accounting; financial
+THCMTB,"Discrete values:  , 7, 8",Comment Type B,String,Type code for the second comment field.,comment; type; code; category; note
+THCMTG,"Discrete values: 7, 8",Comment Type G,String,Type code for the third comment field.,comment; type; code; category; note

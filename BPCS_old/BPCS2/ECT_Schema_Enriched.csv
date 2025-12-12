@@ -1,0 +1,42 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+CTID,Constant value of 'CT' for all entries,Record ID,String,Identifies the record type; always 'CT' for Order Tax.,id; record; type; identifier
+CTCOMP,Constant value of '1' for all entries,Company Code,String,Company identifier.,company; code; entity; id
+CTCUST,Range from 7 to 103159,Customer Number,Integer,Customer identifier.,customer; number; id; client
+CTDOCN,"Discrete values: 0, 10000122, 10000180, 10000182, 10000184, 10000230, 10000234, 10000325, 10000405, 10000701, 10000935, 10000947",Document Number,Integer,Document number.,document; number; id; reference
+CTDPFX,"Discrete values:   , EX, KS, SP",Doc Prefix,String,Document prefix.,document; prefix; code; id
+CTDTYP,"Discrete values: 0, 1",Doc Type,String,Document type.,document; type; code; category
+CTDYR,"Discrete values: 0, 10",Doc Year,Integer,Document year.,document; year; date; time
+CTLINE,Range from 1 to 100,Line Number,Integer,Line number.,line; number; sequence; detail
+CTORDR,Range from 100019 to 233007,Order Number,Integer,Order number.,order; number; sales; id
+CTTA01,"Some 0's (39.4%), Range from -1041.1632 to 5488.56",Tax Amount 1,Decimal,Tax amount 1.,tax; amount; 1; financial
+CTTA02,Constant value of '0.0' for all entries,Tax Amount 2,Decimal,Tax amount 2.,tax; amount; 2; financial
+CTTA03,Constant value of '0.0' for all entries,Tax Amount 3,Decimal,Tax amount 3.,tax; amount; 3; financial
+CTTA04,Constant value of '0.0' for all entries,Tax Amount 4,Decimal,Tax amount 4.,tax; amount; 4; financial
+CTTA05,Constant value of '0.0' for all entries,Tax Amount 5,Decimal,Tax amount 5.,tax; amount; 5; financial
+CTTA06,Constant value of '0.0' for all entries,Tax Amount 6,Decimal,Tax amount 6.,tax; amount; 6; financial
+CTTA07,Constant value of '0.0' for all entries,Tax Amount 7,Decimal,Tax amount 7.,tax; amount; 7; financial
+CTTA08,Constant value of '0.0' for all entries,Tax Amount 8,Decimal,Tax amount 8.,tax; amount; 8; financial
+CTTA09,Constant value of '0.0' for all entries,Tax Amount 9,Decimal,Tax amount 9.,tax; amount; 9; financial
+CTTA10,Constant value of '0.0' for all entries,Tax Amount 10,Decimal,Tax amount 10.,tax; amount; 10; financial
+CTTB01,"Some 0's (31.3%), Range from -6048.0 to 24948.0",Tax Base 1,Decimal,Tax base amount 1.,tax; base; 1; financial
+CTTB02,Constant value of '0.0' for all entries,Tax Base 2,Decimal,Tax base amount 2.,tax; base; 2; financial
+CTTB03,Constant value of '0.0' for all entries,Tax Base 3,Decimal,Tax base amount 3.,tax; base; 3; financial
+CTTB04,Constant value of '0.0' for all entries,Tax Base 4,Decimal,Tax base amount 4.,tax; base; 4; financial
+CTTB05,Constant value of '0.0' for all entries,Tax Base 5,Decimal,Tax base amount 5.,tax; base; 5; financial
+CTTB06,Constant value of '0.0' for all entries,Tax Base 6,Decimal,Tax base amount 6.,tax; base; 6; financial
+CTTB07,Constant value of '0.0' for all entries,Tax Base 7,Decimal,Tax base amount 7.,tax; base; 7; financial
+CTTB08,Constant value of '0.0' for all entries,Tax Base 8,Decimal,Tax base amount 8.,tax; base; 8; financial
+CTTB09,Constant value of '0.0' for all entries,Tax Base 9,Decimal,Tax base amount 9.,tax; base; 9; financial
+CTTB10,Constant value of '0.0' for all entries,Tax Base 10,Decimal,Tax base amount 10.,tax; base; 10; financial
+CTTFLG,"Discrete values: 0, 2",Tax Flag,String,Tax flag.,tax; flag; status; indicator
+CTTR01,"Discrete values: V0   , V22  , V23  ",Tax Rate Code 1,String,Tax rate code 1.,tax; rate; code; 1
+CTTX01,"Discrete values: 0.0, 22.0, 23.0",Tax Rate 1,Decimal,Tax rate percentage 1.,tax; rate; percentage; 1
+CTTX02,Constant value of '0.0' for all entries,Tax Rate 2,Decimal,Tax rate percentage 2.,tax; rate; percentage; 2
+CTTX03,Constant value of '0.0' for all entries,Tax Rate 3,Decimal,Tax rate percentage 3.,tax; rate; percentage; 3
+CTTX04,Constant value of '0.0' for all entries,Tax Rate 4,Decimal,Tax rate percentage 4.,tax; rate; percentage; 4
+CTTX05,Constant value of '0.0' for all entries,Tax Rate 5,Decimal,Tax rate percentage 5.,tax; rate; percentage; 5
+CTTX06,Constant value of '0.0' for all entries,Tax Rate 6,Decimal,Tax rate percentage 6.,tax; rate; percentage; 6
+CTTX07,Constant value of '0.0' for all entries,Tax Rate 7,Decimal,Tax rate percentage 7.,tax; rate; percentage; 7
+CTTX08,Constant value of '0.0' for all entries,Tax Rate 8,Decimal,Tax rate percentage 8.,tax; rate; percentage; 8
+CTTX09,Constant value of '0.0' for all entries,Tax Rate 9,Decimal,Tax rate percentage 9.,tax; rate; percentage; 9
+CTTX10,Constant value of '0.0' for all entries,Tax Rate 10,Decimal,Tax rate percentage 10.,tax; rate; percentage; 10

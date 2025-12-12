@@ -1,0 +1,43 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+IXID,"Discrete values: IX, IZ",Record ID,String,Identifies the record type; IX or IZ.,id; record; type; identifier
+IXITEM,"Text data. Lengths: min 35, max 35, avg 35.0. Sample: 449631                             ",Item Number,String,Item number.,item; number; id; product
+IXCUST,Range from 6 to 102415,Customer Number,Integer,Customer identifier.,customer; number; id; client
+IXSHIP,Constant value of '0' for all entries,Ship To,Integer,Ship-to address identifier.,ship; to; address; id
+IXPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: PTRLA0968P     ",Product Code,String,Product identifier.,product; code; item; id
+IXDESC,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: TAL PAPIER BIALY 23 CM 50 SZT ",Description,String,Item description.,description; name; text; item
+IXDES2,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: 5901460001154                 ",Description 2,String,Secondary item description.,description; 2; text; item
+IXCVFL,Constant value of '0' for all entries,Conv Flag,Flag,Conversion flag.,conversion; flag; status; indicator
+IXPACK,"Discrete values: 0, 1, 2",Pack Code,String,Packaging code.,pack; code; packaging; shipping
+IXPPCK,"Discrete values: 0, 1, 2",Partial Pack,String,Partial pack code.,partial; pack; code; shipping
+IXPSHP,"Discrete values: 0, 1, 2",Partial Ship,String,Partial shipment code.,partial; ship; code; shipping
+IXPINV,"Discrete values: 0, 1, 2",Partial Inv,String,Partial invoice code.,partial; invoice; code; financial
+IXPEDI,"Discrete values: 0, 2",EDI Code,String,EDI transaction code.,edi; code; transaction; system
+IXPRT1,Constant value of '0' for all entries,Print 1,Flag,Print flag 1.,print; flag; 1; status
+IXPRT2,Constant value of '0' for all entries,Print 2,Flag,Print flag 2.,print; flag; 2; status
+IXPRT3,Constant value of '0' for all entries,Print 3,Flag,Print flag 3.,print; flag; 3; status
+IXONHD,Constant value of '0.0' for all entries,On Hand,Decimal,Quantity on hand.,on; hand; quantity; inventory
+IXMNOH,Constant value of '0.0' for all entries,Min On Hand,Decimal,Minimum quantity on hand.,min; on; hand; inventory
+IXMXOH,Constant value of '0.0' for all entries,Max On Hand,Decimal,Maximum quantity on hand.,max; on; hand; inventory
+IXORDQ,Constant value of '0.0' for all entries,Order Qty,Decimal,Standard order quantity.,order; quantity; standard; amount
+IXIOQ,Constant value of '0.0' for all entries,IOQ,Decimal,Incremental order quantity.,ioq; quantity; incremental; amount
+IXTRIG,Constant value of '0.0' for all entries,Trigger Qty,Decimal,Trigger quantity for reorder.,trigger; quantity; reorder; inventory
+IXPPO,Constant value of '0' for all entries,Primary PO,String,Primary purchase order.,primary; po; purchase; order
+IXSFWH,"Discrete values:   , CZ, MB, MC",Ship From Whs,String,Ship-from warehouse.,ship; from; warehouse; location
+IXEXCL,Constant value of '0' for all entries,Exclude,Flag,Exclude flag.,exclude; flag; status; indicator
+IXENDT,Range from 19981125 to 20100317,Entry Date,Date,Date the record was entered.,entry; date; creation; time
+IXENTM,Range from 73636 to 224628,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+IXENUS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: BPCSSECOFR",Entry User,String,User who entered the record.,entry; user; id; person
+IXMNDT,"Some 0's (11.7%), Range from 0 to 20250210",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+IXMNTM,"Some 0's (11.7%), Range from 0 to 213259",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+IXMNUS,"Discrete values:           , BROMANIU  , GODULABA  , GUCADA    , KLUZAMA   , LUPABE    , OGOLNY01  , SMIGIEAN  , TABORBA   , TATERAAN  , ZAWALAG   , ZBRONSAG  ",Maint User,String,User who performed maintenance.,maintenance; user; id; person
+IXDOCK,"Text data. Lengths: min 35, max 35, avg 35.0. Sample: 5901460001154                      ",Dock Code,String,Dock code or location.,dock; code; location; shipping
+IXTYPE,Constant value of '0' for all entries,Type,String,Record type code.,type; code; category; classification
+IXCPLY,Constant value of '0' for all entries,Copy Line,Flag,Copy line flag.,copy; line; flag; status
+IXCPPL,Constant value of '0' for all entries,Copy Price,Flag,Copy price flag.,copy; price; flag; status
+IXPLCL,Constant value of '0' for all entries,Price List,String,Price list code.,price; list; code; financial
+IXCLCL,Constant value of '0' for all entries,Cost List,String,Cost list code.,cost; list; code; financial
+IXLVLL,Constant value of '0' for all entries,Level,Integer,Level code.,level; code; hierarchy; depth
+IXPQTY,Constant value of '0.0' for all entries,Pack Qty,Decimal,Pack quantity.,pack; quantity; amount; volume
+IXMINO,Constant value of '0.0' for all entries,Min Order,Decimal,Minimum order quantity.,min; order; quantity; limit
+IXOQEF,Constant value of '0' for all entries,Order Qty Eff,Flag,Order quantity effective flag.,order; quantity; effective; flag
+IXSLUM,"Discrete values:   , KG, TH",Sales UOM,String,Sales unit of measure.,sales; uom; unit; measure

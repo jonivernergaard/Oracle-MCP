@@ -1,0 +1,4 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+X2USER,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: BIJALDMA  ",User ID,String,User identifier.,user; id; person; login
+X2PROD,"Text data. Lengths: min 3, max 3, avg 3.0. Sample: ACP",Product,String,Product or module code.,product; module; code; system
+X2AUTH,"Discrete values: 0, 1",Authority,Flag,Authority flag.,authority; flag; permission; security

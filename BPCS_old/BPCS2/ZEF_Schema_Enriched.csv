@@ -1,0 +1,11 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+EFID,Constant value of 'EW' for all entries,Record ID,String,Identifies the record type; always 'EW' for External Work/EDI.,id; record; type; identifier
+EFKEY1,Constant value of '0' for all entries,Key 1,Integer,Key field 1.,key; 1; reference; id
+EFKEY3,Range from 100064 to 103365,Key 3,Integer,Key field 3.,key; 3; reference; id
+EFKEY4,Range from 1 to 47,Key 4,Integer,Key field 4.,key; 4; reference; id
+EFKEY5,Constant value of '0' for all entries,Key 5,Integer,Key field 5.,key; 5; reference; id
+EFKEY6,Constant value of '0' for all entries,Key 6,Integer,Key field 6.,key; 6; reference; id
+EFMSID,"Discrete values: UME4530, UME6055, UMR0047",Message ID,String,Message identifier.,message; id; edi; integration
+EFDATA,Range from 1 to 47,Data,Integer,Data value.,data; value; content; info
+EFFLD,"Discrete values: 0, 1, 10, 53, 63",Field,Integer,Field identifier.,field; id; reference; mapping
+EFLINF,Constant value of '0' for all entries,Line Flag,Flag,Line flag.,line; flag; status; indicator

@@ -1,0 +1,104 @@
+﻿FBDI Column,FBDI Column Name,Tech Comments,Field Description,Mandatory,Data Type,Max Length,Default,Comments,Legacy Table Name,Legacy Column Name,Legacy Field Description ,Legacy Data Type, Mapping Logic
+E,Item Number,Sample: test_item_01,Unique number associated with the item.,Y,VARCHAR2,300,,,B610F/IIM,IPROD,Item number,CHAR,RTRIM to remove blank characters
+G,Organization Code,Sample: INV_ORG_1,Code that identifies the organization. Review and update the value for this attribute using the Manage Inventory Organizations task in the Setup and Maintenance work area.,Y,VARCHAR2,18,,,B610F/IIM,IMTCCD,Parent,,
+H,Description,,"Description of the part, item, product, or service.",Y,VARCHAR2,240,,,B610F/IIM,IDESC,Description,,
+I,Template Name,Sample: Finished Good,"Name of the template to apply to the item. Review and update the value for this attribute using the Setup and Maintenance work area, and the Manage Item Classes task. The default template is set at the item class.",,VARCHAR2,960,,,,,,,
+J,Source System Code,Sample: ALFBPCS,Defines the Source System Code. Review the value for this attribute using the Manage Source System task in the Setup and Maintenance work area. Identifies whether the batch is PIM or Non PIM batch.,,VARCHAR2,30,,,N/A,N/A,Constant Value: PLCZE,,
+K,Source System Reference,Sample: LegacyItem001,Defines the Source System Item Reference. This indicates the unique identifier of the item in the external source system.,,VARCHAR2,255,,,,,,,
+L,Source System Reference Description,,Defines the Source System Item Description. This indicates the desription of the item in the external source system.,,VARCHAR2,240,,,,,,,
+M,Item Class Name,Sample: Root Item Class,Value that uniquely identifies the item class. Review and update the value for this attribute using the Manage Item Classes task in the Setup and Maintenance work area.,Y,VARCHAR2,820,,,B610F/IIM,ICLAS,,,
+N,Primary Unit of Measure,Sample: Each,Primary unit of measure of the item. Review and update the value for this attribute using the Manage Units of Measures task in the Setup and Maintenance work area.,Y,VARCHAR2,25,,,B610F/IIM,IUMR,,,
+O,Lifecycle Phase,Sample: Production,"Name of lifecycle phase of the item. Review and update the value for this attribute using the Setup and Maintenance work area, and the Manage Lifecycle Phases task.",Y,VARCHAR2,120,,,,N/A,,,Constant: Production
+P,Item Status,Sample: Active,Status of the transaction activity for the item.,Y,VARCHAR2,10,,,B610F/IIM,IID,,,
+AJ,Automatically Expire ASN,Sample: 1,"Contains one of the following values: 1 or 2.  If 1, then automatically expire the advance shipment notice. If 2, then don't automatically expire the advance shipment notice.",,NUMBER,,,,B610F/IIM,,,,
+AL,Consigned,Sample: 1,"Contains one of the following values: 1 or 2.  If 1, then the item resides at your location but the supplier owns it. If 2, then the item resides at your location and you own it.",,NUMBER,,,,B610F/IIM,,,,
+AM,Fixed Days Supply,Sample: 23,Number of days to modify the size and timing of each planned order quantity.,,NUMBER,,,,,,,,
+AU,Minimum Min-Max Quantity,Sample: 10,Minimum quantity for minimum-maximum planning.,,NUMBER,,,,,,,,
+AV,Maximum Min-Max Quantity,Sample: 100,Maximum quantity for minimum-maximum planning.,,NUMBER,,,,,,,,
+AY,Planner,Sample: S,"Value indicates the material planner for the item. Review and update the value for this attribute using the Setup and Maintenance work area, and the Manage Material Planners task.",,VARCHAR2,10,,,,,,,
+BI,Subinventory Restrictions,Sample: 2,"Contains one of the following values:1 or 2.  If 1, then restrict the transactions of the item from the subinventory.  If 2, then don't restrict the transactions of the item from the subinventory. The default value is true.",,NUMBER,,,,B610F/IIM,,,,
+BJ,Restrict Locators,Sample: 2,"Contains one of the following values: 1 or 2.  If 1, then restrict the transactions of the item from the locator. If 2, then don't restrict the transactions of the item from the locator.",,NUMBER,,,,B610F/IIM,,,,
+BK,Child Lot Enabled,Sample: N,"Contains one of the following values: Y or N. If Y, then if parent lot is specified, use lot control on the item during the transaction. If N, then don't use lot control on the item during the transaction.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+BN,Child Lot Format Validation,Sample: N,"Contains one of the following values: Y or N. If Y, then make sure the child lot numbers conform to the child lot parameters.  If N, then don't make sure the child lot numbers conform to the child lot parameters.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+BO,Copy Lot Attributes,Sample: N,"Contains one of the following values: Y or N. If Y, then the child lot inherits the parent lot attributes. If N, then the child lot doesn't inherit the parent lot attributes.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+BS,Starting Lot Number,Sample: 000003000,Starting number associated with the lot numbers when they are automatically created for an item.,,VARCHAR2,80,,,,,,,
+BT,Lot Expiration Control,Sample: 1,Value that indicates how long items in a given lot remain available. A list of accepted values is defined in the lookup type EGP_SHELF_LIFE_CODE_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,NUMBER,,,"1 - No Control
+2 - Shelf life days
+4 - User-defined",B610F/IIM,,Not stored in BPCS,,
+BV,Serial Number Control,Sample: 1,Value that indicates the number assigned to each unit of an item and is used to track the item. A list of accepted values is defined in the lookup type EGP_SERIAL_NUMBER_CONTROL_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,NUMBER,,,"1 - No serial number control
+2 - Predefined serial number
+5 - Dynamic entry at inventory receipt
+6 - Entry at sales order, transfer order or work order issue
+7 - Entry at inventory pick",B610F/IIM,,Not stored in BPCS,,
+BW,Serial Status Enabled,Sample: N,"Contains one of the following values: Y or N. If Y, then transactions on the item is restricted to the subinventory. If N, then transactions on the item isn't restricted to the subinventory.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+BX,Revision Control,Sample: 2,"Contains one of the following values: 1 or 2.  If 2, then the item is under revision control and it includes inventory attributes. If 1, then the item isn't under revision control and it includes inventory attributes.",,NUMBER,,,,B610F/IIM,,Not stored in BPCS,,
+BZ,Starting Lot Prefix,Sample: PR0,Prefix associated when lot numbers are automatically created for an item.,,VARCHAR2,80,,,,,,,
+CB,Bulk Picked,Sample: N,"Contains one of the following values: Y or N. If Y, then pick items in bulk. If N, then don't pick items in bulk.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+CF,Grade Controlled,Sample: N,"Contains one of the following values: Y or N. If Y, then the item is grade controlled in addition to lot controlled. If N, then the item isn't grade controlled.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+CH,Lot Divisible,Sample: Y,"Contains one of the following values: Y or N. If Y, then allow the application to allocate, reserve, or move partial lot quantities. If N, then don't allow the application to allocate, reserve, or move partial lot quantities.",,VARCHAR2,1,,,,,,,
+CL,Lot Split Enabled,Sample: Y,"Contains one of the following values: Y or N. If Y, then the lot-controlled item can be split into many lots. If N, then the lot-controlled item can't be split into many lots.",,VARCHAR2,1,,,,,,,
+CM,Lot Merge Enabled,Sample: Y,"Contains one of the following values: Y or N. If Y, then allow the application to merge multiple lots into one lot for an item that lots control. If N, then don't allow this merge.",,VARCHAR2,1,,,,,,,
+CO,Stock Locator Control,Sample: 1,"Value that indicates the physical area within a subinventory where you store material, such as a row, aisle, bin, or shelf. A list of accepted values is defined in the lookup type EGP_LOCATOR_CONTROL_CODE_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area",,NUMBER,,,"1 - No Control
+2 - Previously Specified
+3 - Dynamic Entry",B610F/IIM,,Not stored in BPCS,,
+CP,Lot Control,Sample: 2,Value that indicates the ability to use lot numbers during material transactions for tracking of batches of Item. A list of accepted values is defined in the lookup type EGP_LOT_CONTROL_CODE_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,NUMBER,,,"1 - No Control
+2 - Full Control",B610F/IIM,,Not stored in BPCS,,
+CQ,Lot Status Enabled,Sample: N,"Contains one of the following values: Y or N. If Y, then item lot is status controlled at the lot level. If N, then item lot isn't status controlled.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS,,
+CS,Lot Translate Enabled,Sample: N,"Contains one of the following values: Y or N. If Y, then Item lots can be translated. If N, then Item Lots can't be translated.",,VARCHAR2,1,,,,,,,
+DU,Processing Days,Sample: 25,Number of days required to procure or manufacture the item.,,NUMBER,,,,,,,,
+DW,Postprocessing Days,Sample: 7,Number of days required to receive a purchased item into inventory from the supplier receipt.,,NUMBER,,,,,,,,
+FD,User Item Type,Sample: PH,Type of the item. A list of accepted values is defined in the lookup type EGP_ITEM_TYPE. Review and update the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,VARCHAR2,30,,,B610F/IIM,IITYP,,,
+FE,Long Description,,Text description of the item.,,VARCHAR2,4000,,,B610F/IIM,IDESC,,,
+FG,Pricing Unit of Measure,Sample: P,Value that indicates the unit of measure that is used to determine pricing for an item. A list of accepted values is defined in the lookup type EGP_ITEM_PRICING. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,VARCHAR2,30,,"P - Primary
+S - Secondary",B610F/IIM,IUMR,,,
+FJ,Tracking Unit of Measure,Sample: BOX,Unit of measure of the item. Review and update the value for this attribute using the Manage Units of Measures task in the Setup and Maintenance work area.,,VARCHAR2,30,,,,,,,
+GC,Internal Ordered,Sample: N,"Contains one of the following values:Y or N. If Y, then the item can be ordered by internal customers.  If N, then the item can't be ordered by internal customers.",,VARCHAR2,1,,,,,Not stored in BPCS. ,,
+GF,RMA Inspection Required,Sample: 2,"Contains one of the following values:1 or 2.  If 1, then inspection is needed for items returned by customers. The item then must be transferred to inventory separately. If 2, then Inspection isn't needed for items returned by customers.",,NUMBER,,,,B610F/IIM,,Not stored in BPCS. ,,
+GL,Customer Ordered,Sample: N,"Value that indicates whether to allow an item to be ordered by external customers. Contains one of the following values: Y or N. If Y, then Item can be ordered by external customers. If N, then Item can't be ordered by external customers.",,VARCHAR2,1,,,B610F/IIM,,Not stored in BPCS. ,,
+GM,Unit Weight,Sample: 1.23,Weight of one item.,,NUMBER,,,,B610F/IIM,IMNNWU,,,
+GN,Weight Unit of Measure,Sample: Kilogram,"Unit of measure to use for the item weight. Review and update the value for this attribute using the Setup and Maintenance work area, and the Manage Units of Measures task.",,VARCHAR2,25,,,B610F/IIM,IUMR,,,
+GQ,Dimension Unit of Measure,Sample: Meter,"Unit of measure to use for item dimensions. Review and update the value for this attribute using the Setup and Maintenance work area, and the Units of Measures task.",,VARCHAR2,25,,,B610F/IIM,IUMR,,,
+GR,Length,Sample: 1.02,Length of the item.,,NUMBER,,,,,,,,
+GS,Width,Sample: 2.03,Width of the item.,,NUMBER,,,,,,,,
+GT,Height,Sample: 3.04,Height of the item.,,NUMBER,,,,,,,,
+GV,Container,Sample: Y,Value that indicates the type of container used for shipping of the item. A list of accepted values is defined in the lookup type EGP_CONTAINER_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,VARCHAR2,1,,,,,,,
+GW,Container Type,Sample: BOX,Value that indicates the type of container used for shipping the item.  A list of accepted values is defined in the lookup type EGP_CONTAINER_TYPE. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.,,VARCHAR2,30,,,,,,,
+GX,Warehouse Equipment,Sample: 1,"Contains one of the following values: 1 or 2.  If 1, then the item is equipment. If 2, then the item isn't equipment.",,NUMBER,,,,,,Not stored in BPCS. ,,
+HG,Process Execution Enabled,Sample: N,"Contains one of the following values: Y or N. If Y, then item is used as an ingredient, product, or by-product in a production batch. If N, then don't use the item as ingredient, product, or by-product in a production batch.",,VARCHAR2,1,,,,,Not stored in BPCS. ,,
+HY,Use Approved Supplier,Sample: N,"Possible values are Y and N. If Y, then requires an approved supplier. If N,then doesn't require an approved supplier.",,VARCHAR2,1,,,,,Not stored in BPCS. ,,
+IB,List Price,Sample: 34.5,List price of the item.,,NUMBER,,,,CMF ,,,,
+IK,Allow Purchasing Document Description Update,Sample: N,"Contains one of the following values: Y or N. If Y, then allow the application to update the purchasing document description. If N, then don't allow this update.",,VARCHAR2,1,,,,,Not stored in BPCS. ,,
+JS,Orderable on the Web,Sample: N,"Contains one of the following values: Y or N. If Y, then allow the customer to order the item from the web. If N, then don't allow the customer to order the item from the web.",,VARCHAR2,1,,,,,Not stored in BPCS. ,,
+JX,Contract Manufacturing,Sample: N,"Contains one of the following values: Y or N. If Y, then use the item in contract manufacturing. If N, then don't use the item in contract manufacturing.",,VARCHAR2,1,,,,,,,
+E,Item Relationship Type,Sample: GTIN_XREF,"Indicates the item relationship type. Possible values are: 
+CUSTOMER_ITEM_XREF
+COMPETITOR_ITEM_XREF
+SUPPLIER_ITEM_XREF
+ITEM_XREF
+RELATED_ITEM
+MFG_PART_NUM
+GTIN_XREF
+SYS_ITEM_XREF",Y,VARCHAR2,120,,,,,,,
+F,Item Number,Sample: test_item_01,Unique number associated with the item.,Y,VARCHAR2,820,,,,,,,
+G,Organization Code,Sample: INV_ORG_01,Code that identifies the organization. Review and update the value for this attribute using the Manage Inventory Organizations task in the Setup and Maintenance work area.,Y,VARCHAR2,18,,,,,,,
+H,Master Organization Code,Sample: INV_ORG_02,Code that identifies the master organization. Review and update the value for this attribute using the Manage Inventory Organizations task in the Setup and Maintenance work area.,Y,VARCHAR2,18,,,,,,,
+I,Source System Code,Sample: ALFBPCS,Defines the Source System Code. Review the value for this attribute using the Manage Source System task in the Setup and Maintenance work area.,,VARCHAR2,30,,,,,,,
+L,Trading Partner Item Number,Sample: item_005,Unique number associated with the trading partner item.,"Y if CUSTOMER_ITEM_XREF, SUPPLIER_ITEM_XREF, MFG_PART_NUM, COMPETITOR_ITEM_XREF",VARCHAR2,150,,,,,,,
+N,Related Item Number,Sample: item_006,Unique number associated with the item.,Y if RELATED_ITEM,VARCHAR2,820,,,,,,,
+Q,Sub Type,Sample: Old Item Number Alf,"Indicates the relationship subtype. Review the value for this attribute using the Manage Standard Lookups task in the Setup and Maintenance work area.
+For RELATED_ITEM, a list of accepted values is defined in the EGP_RELATIONSHIP_TYPES lookup type.
+For GTIN_XREF, a list of accepted values is defined in the EGP_GTIN_PARTY_TYPES lookup type.
+For ITEM_XREF, a list of accepted values is defined in the EGP_ITEM_XREF_TYPES lookup type. 
+For COMPETITOR_ITEM_XREF, a list of accepted values is defined in the EGP_COMPETITOR_ITEM_XREF lookup type.","Y if COMPETITOR_ITEM_XREF, ITEM_XREF, RELATED_ITEM, GTIN_XREF
+",VARCHAR2,100,,,,,,,
+R,Cross Reference,Sample: Old reference 101,Indicates the GTIN number. Its applicable for GTIN_XREF.,Y if GTIN_XREF,VARCHAR2,1020,,,,,,,
+S,Org Independent Flag,Sample: Y,"Indicates whether the relationship is applicable to all orgs. Applicable values are Y, N.",Y if ITEM_XREF,VARCHAR2,4,,,,,,,
+T,EPC GTIN Serial,Sample: 00001230456,Indicates the EPC GTIN Serial Number. Applicable for GTIN_XREF.,,NUMBER,18,,,,,,,
+U,Start Date Active,2025/01/01,Start date of the related item relationship.,Y,DATE,,,,,,,,
+AA,Trading Partner Number,Sample: 34560,"Indicates the trading partner number associated with the relationship. For GTIN_XREF, it can be Customer Number, Manufacturer Number or Supplier Number. For MFG_PART_NUM, this indicates the MPN Number. For COMPETITOR_ITEM_XREF, this indicates the Competitor Item Number. For CUSTOMER_ITEM_XREF, this indicates the Customer Item Number.","Y if CUSTOMER_ITEM_XREF, SUPPLIER_ITEM_XREF, MFG_PART_NUM, COMPETITOR_ITEM_XREF, GTIN_XREF",VARCHAR2,30,,,,,,,
+AB,Unit of Measure,Sample: BOX,Indicates the GTIN Unit of Measure. Applicable for GTIN_XREF.,Y if GTIN_XREF,VARCHAR2,25,,,,,,,
+E,Item Number,Sample: test_item_01,Unique number associated with the item.,Y,VARCHAR2,300,,,,,,,
+F,Organization Code,Sample: INV_ORG_01,Code that identifies the organization. Review and update the value for this attribute using the Manage Inventory Organizations task in the Setup and Maintenance work area.,Y,VARCHAR2,18,,,,,,,
+G,Catalog,Sample: SOP Catalog,Value that identifies the name of the catalog. Review and update the value for this attribute using the Manage Catalog task in the Setup and Maintenance work area.,Y,VARCHAR2,30,,,,,,,
+H,Category Name,Sample: Beverages,Value that identifies the name of the category. Review and update the value for this attribute using the Manage Catalog task in the Setup and Maintenance work area.,Y,VARCHAR2,250,,,IIM  ,"IITYP, ICLAS",,,
+L,Source System Code,Sample: ALFBPCS,Defines the Source System Code. Review the value for this attribute using the Manage Source System task in the Setup and Maintenance work area.,,VARCHAR2,30,,,,,,,

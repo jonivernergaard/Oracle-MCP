@@ -1,0 +1,42 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+APOID,Constant value of 'PO' for all entries,Record ID,String,"Identifies the record type, always 'PO' for Purchase Order Costing.",id; record; type; purchase order
+APOCMP,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+APOVND,"140 unique values. Range: 1.0 to 10000.0. Mean: 2522.18, Median: 2378.00. Sample values: 122.0, 153.0, 532.0, 593.0, 593.0, 2378.0, 2378.0, 2460.0, 5074.0, 5265.0",Vendor Number,String,Unique identifier for the vendor.,vendor; supplier; id; number
+APOREF,"Text/Mixed data with 3200 unique values. Sample values: 71000176, 2010057055, 71000466, 1598/04/10, 113/2010, 552710, 265516, 71000763, 19/10/VATP, 556666. Most frequent: 198/ZBY/KA (74), 04074/ZBY (74), 0000193/10 (42), 2846/10 (39), 000290/10 (34)",Reference,String,Reference number or text.,reference; number; text
+APILIN,Constant value of '1.0' for all entries,Line Number,Integer,Line number.,line; number; sequence
+APOORD,"1974 unique values. Range: 100006.0 to 102595.0. Mean: 101084.14, Median: 101047.00. Sample values: 100110.0, 100573.0, 100591.0, 100766.0, 100874.0, 101044.0, 101049.0, 101779.0, 102024.0, 102100.0",Order Number,String,Purchase order number.,order; number; po
+APOLIN,"122 unique values. Range: 1.0 to 131.0. Mean: 7.83, Median: 3.00. Sample values: 2.0, 3.0, 3.0, 4.0, 5.0, 7.0, 8.0, 8.0, 12.0, 72.0",Order Line,Integer,Purchase order line number.,order; line; sequence
+APOPRD,"Text/Mixed data with 1597 unique values. Sample values: AELPC6, CISVA2231A, CISBA2223G, GPEPEPALETAE, GCA52/SP6, RPRD85-1426, NGPK705375, GBA700/1320C31, RPU230/696A. Most frequent: GPEPEPALETAE (1186), CIWBA2562 (58), RST585A (58), PGSL1123A (57), LISBRF182 (56)",Product Code,String,Product code.,product; code; item
+APODAT,"242 unique values. Range: 20100104.0 to 20101029.0. Mean: 20100537.05, Median: 20100524.00. Sample values: 20100209.0, 20100308.0, 20100410.0, 20100414.0, 20100617.0, 20100617.0, 20100628.0, 20100630.0, 20100713.0, 20100804.0",Order Date,Date,Date of the order.,order; date; transaction
+APOWHS,"Discrete values (16 unique): B3, C3, C4, C5, C6, CZ, D2, MG, ML, MZ, S3, S4, S5, SA, SE, SF",Warehouse,String,Warehouse code.,warehouse; code; location
+APOLOC,"Discrete values (8 unique): B3, C6, CA, CZ, LS5, MZ, PS, SA",Location,String,Location code.,location; code; bin
+APOQTY,"2274 unique values. Range: -28580.0 to 124500.0. Mean: 1967.90, Median: 64.00. Contains decimal values. Sample values: 0.002, 1.024, 47.6, 57.6, 98.0, 147.0, 194.4, 259.38, 1170.0, 16800.0",Quantity,Decimal,Quantity ordered.,quantity; amount; count
+APOEXT,"6299 unique values. Range: -31552.32 to 246451.02. Mean: 4945.95, Median: 1952.67. Contains decimal values. Sample values: 80.0, 320.0, 715.28, 982.8, 1257.76, 1771.2, 2216.0, 2938.8, 3608.7, 4184.93",Extended Cost,Decimal,Extended cost (Quantity * Unit Cost).,extended; cost; amount; total
+APOUMP,"Discrete values (4 unique): KG, M, SZ, TH",UOM,String,Unit of measure.,uom; unit; measure
+APCURR,"Discrete values (3 unique): EUR, PLN, USD",Currency,String,Currency code.,currency; code; money
+APCNFC,"206 unique values. Range: 1.0 to 4.177. Mean: 1.81, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.9998, 4.0215, 4.1145",Exchange Rate,Decimal,Currency exchange rate.,exchange; rate; currency
+APVTAX,"Discrete values (2 unique): EXP, VAT",Tax Type,String,Tax type.,tax; type
+APITAX,Constant value of 'V22' for all entries,Item Tax,String,Item tax code.,item; tax; code
+PODCYR,Constant value of '10.0' for all entries,Doc Year,Integer,Document year.,document; year
+PODCPX,"Discrete values (11 unique): II, M2, MA, MI, MK, MZ, T2, TI, TK, TR, UK",Doc Prefix,String,Document prefix.,document; prefix
+PODCSQ,"1323 unique values. Range: 10000000.0 to 10001861.0. Mean: 10000503.02, Median: 10000444.00. Sample values: 10000029.0, 10000045.0, 10000047.0, 10000082.0, 10000169.0, 10000196.0, 10000660.0, 10000768.0, 10001138.0, 10001292.0",Doc Sequence,Integer,Document sequence number.,document; sequence
+POCNF2,Constant value of '1.0' for all entries,Conf 2,String,Confirmation 2?,confirmation
+POCMTH,"Discrete values (2 unique): 7, 8",Commit Month,Integer,Commitment month.,commit; month
+APXQTY,Constant value of '0.0' for all entries,Extra Qty,Decimal,Extra quantity.,extra; quantity
+APXREJ,Constant value of '0.0' for all entries,Rejected Qty,Decimal,Rejected quantity.,rejected; quantity
+APQORD,Constant value of '0.0' for all entries,Ordered Qty,Decimal,Ordered quantity.,ordered; quantity
+APSCST,Constant value of '0.0' for all entries,Standard Cost,Decimal,Standard cost.,standard; cost
+APOLOT,Empty column,Lot Number,String,Lot number.,lot; number
+APNIIT,Empty column,Non-Inv Item,String,Non-inventory item.,non-inventory; item
+APDSHP,Constant value of '0.0' for all entries,Drop Ship,Flag,Drop ship flag.,drop; ship
+APOTAX,Constant value of '0.0' for all entries,Order Tax,Decimal,Order tax amount.,order; tax; amount
+APODSC,Constant value of '0.0' for all entries,Order Discount,Decimal,Order discount amount.,order; discount; amount
+POPCUR,"Discrete values (4 unique): DEM, EUR, PLN, USD",PO Currency,String,Purchase order currency.,po; currency
+POPCNF,"122 unique values. Range: 1.0 to 4.177. Mean: 1.81, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.9933, 3.9993, 4.0921",PO Exch Rate,Decimal,Purchase order exchange rate.,po; exchange; rate
+POPCN2,Constant value of '1.0' for all entries,PO Conf 2,String,Purchase order confirmation 2?,po; confirmation
+POPMTH,"Discrete values (2 unique): 7, 8",PO Month,Integer,Purchase order month.,po; month
+POPCAM,"6302 unique values. Range: -31552.32 to 246451.02. Mean: 4951.53, Median: 1952.67. Contains decimal values. Sample values: 14.8, 330.0, 985.82, 1002.0, 1730.32, 3105.38, 4958.76, 9042.0, 12148.08, 32586.37",PO Cost Amount,Decimal,Purchase order cost amount.,po; cost; amount
+POPTAX,"5952 unique values. Range: -6941.51 to 54219.22. Mean: 1041.74, Median: 389.16. Contains decimal values. Sample values: 0.0, 4.83, 295.04, 374.0, 420.53, 1002.22, 1027.64, 1436.36, 2847.4, 3301.71",PO Tax Amount,Decimal,Purchase order tax amount.,po; tax; amount
+POPTCN,"Discrete values (4 unique): 0.2504195, 0.2523341, 1.0, 1.95583",PO Tax Conv,Decimal,Purchase order tax conversion factor.,po; tax; conversion
+POPTC2,Constant value of '1.0' for all entries,PO Tax Conf 2,String,Purchase order tax confirmation 2?,po; tax; confirmation
+POPTMT,"Discrete values (2 unique): 7.0, 8.0",PO Tax Month,Integer,Purchase order tax month.,po; tax; month

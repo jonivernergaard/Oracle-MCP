@@ -1,0 +1,192 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+IID,IM or IZ,Item Status Active or Inactive,String,"Identifies the transaction status of an item, typically 'IM' or 'IZ'. | [BPCS Docs]: 'IM' – active item, 'IZ' – inactive",Active; status; type; record; identifier
+IPROD,"AELB15, NIRL1129       ",Item Number,String,The primary product code or item number identifying the item.,product; code; item; number; identifier
+IDESC,"BEZPIECZNIK TYR25A SIBA5012406, POJEMNIK SALATKOWY MCD 775ML  ",Item Description,String,"Descriptive text for the item, providing details about the product. | [BPCS Docs]: item description",description; name; text; details; product
+IADJ,"Value  coded as 0 for all entries, Flag field perhaps",Adjustment Flag,Flag,Flag indicating if adjustments are allowed or relevant. Currently coded as 0 for all entries.,adjustment; flag; indicator; status; zero
+IRCT,"Lots of 0's, Value ranges from -49 to positive 22000, primarily values between 100 and 10000",Receipts Quantity,Decimal,"Quantity of items received. Values range from negative to positive, primarily between 100 and 10000.",receipts; quantity; inbound; received; count
+IISS,"Lots of 0s, Distribution from negative -690 to positive 250 000",Issues Quantity,Decimal,Quantity of items issued. Distribution ranges from negative to positive values.,issues; quantity; outbound; issued; count
+IOPB,"Lots of 0's, Distribution from negative -1550 to positive 89999",Opening Balance,Decimal,Opening inventory balance. Distribution ranges from negative to positive values.,opening; balance; inventory; stock; start
+IYISS,"Lots of 0's, Distribution from negative -550 to positive 300 000, lots of small deciamal values near the 0, 0.0, 0.2 etc.",YTD Issues,Decimal,Year-to-Date issues quantity. Includes small decimal values.,ytd; issues; quantity; year-to-date; outbound
+IYTDU,"Lots of 0's, Distribution from negative -4800 to positive 2800 000, lots of small deciamal values near the 0, 0.0, 0.2 etc.",YTD Usage,Decimal,Year-to-Date usage quantity. Includes small decimal values.,ytd; usage; quantity; year-to-date; consumption
+IYSLS,"Lots of 0's, Distribution from negative -15000 to positive 18000000,",YTD Sales,Decimal,Year-to-Date sales quantity or value. Distribution ranges from negative to large positive values.,ytd; sales; revenue; year-to-date; quantity
+IMSLS,"Lots of 0's, Distribution from negative -3200 to positive 18000000, ",MTD Sales,Decimal,Month-to-Date sales quantity or value. Distribution ranges from negative to large positive values.,mtd; sales; revenue; month-to-date; quantity
+ICLAS,"Classification Schema: CA, EL, FC, FF, MT, OT, PL, PR, RA, RL, SC, SU, TR, WA, WR, etc",Item Class,String,"Classification schema for the item, not template, used for accounting (e.g., CA, EL, FC). | [BPCS Docs]: item class – USED FOR ACCOUNTING!!!",class; item; accounting; category; classification; type; group
+IUMS,"EA: Each
+
+FT: Foot / Feet
+
+KG: Kilogram
+
+L: Liter
+
+M: Meter
+
+TH: Thousand",Stocking UOM,String,"Unit of measure used for stocking the item (e.g., EA, KG, M).",uom; stocking; unit; measure; inventory
+IUMP,"EA: Each
+
+FT: Foot / Feet
+
+KG: Kilogram
+
+L: Liter
+
+M: Meter
+
+TH: Thousand",Purchasing UOM,String,"Unit of measure used for purchasing the item (e.g., EA, KG, M).",uom; purchasing; unit; measure; procurement
+IUMCN,"1's the default for all items, flag value",UOM Conversion Flag,Flag,Flag or factor for UOM conversion. Default is 1 for all items.,uom; conversion; flag; factor; default
+IITYP,"0, 6, A, F, G, I, P, R, S, T, (Blanks)",User Item Type Code,String,"Code indicating the type of item (e.g., 0, 6, A, F). | [BPCS Docs]: item type",type; code; category; item; classification
+ILEAD,"12, 14, 15, 21, 28, 30, 32, 35, 40, 42, 45, 49, 50, and then sharply increasing until 380, values between 0 and 50 are very much repeated.",Lead Time,Integer,Lead time for the item. Values between 0 and 50 are common.,lead time; days; duration; planning; time
+IVEND,Rich populated with values  from 0 to 30000 in the ,Primary Vendor,Integer,Identifier for the primary vendor. Values range from 0 to 30000.,vendor; supplier; primary; id; source
+IVEN2,"Populated with values from 0 to 30000, a lot of 0's",Secondary Vendor,Integer,Identifier for the secondary vendor. Values range from 0 to 30000.,vendor; supplier; secondary; id; source
+ICUSA,"Some lower negative values, lots of 0's pos values are up till 40 000, mostly staying below 10000",Customer Account,Integer,Customer account number associated with the item. Mostly below 10000.,customer; account; id; client; sales
+IPRDA,"Lots of 0's, no negative values, scaling slowly to 80 000, lots of decimals values",Production Area / Daily Avg,Decimal,"Production related value, possibly daily average. Scales to 80,000 with decimals.",production; average; daily; quantity; rate
+IMIN,"Values from 0 up until 50, then incrementing by tens, then hundreds and a few in the thousands.",Minimum Inventory,Integer,Minimum inventory level. Values increment by tens and hundreds.,minimum; inventory; stock; level; limit
+ILDTE,"20181116, 20160613, 2023115 - same format, generated for each item.",Last Transaction Date,Date,Date of the last transaction. Format YYYYMMDD.,date; last; transaction; activity; timestamp
+ILIST,Flag Value of 0 for all items,List Price Flag,Flag,Flag related to list price. Value is 0 for all items.,list; price; flag; zero; unused
+ISCST,Flag Value of 0 for all items,Standard Cost Flag,Flag,Flag related to standard cost. Value is 0 for all items.,standard; cost; flag; zero; unused
+IACST,"Lots of small decimal values around 0, e.g. 0.04, incrasing in small increments to the thousands. Also lots of 0's for a lot of items. ",Average Cost,Decimal,Average cost of the item. Small decimal values increasing to thousands.,average; cost; price; value; valuation
+IFCST,Flag Value of 0 for all items,Forecast Flag,Flag,Flag related to forecasting. Value is 0 for all items.,forecast; flag; zero; unused; planning
+ILEVL,"Lots of 0's for most entries, distrubtion of values from 1 - 7 , then from 89 to 99. ",Item Level,Integer,Level of the item in the hierarchy or BOM. Values 1-7 and 89-99.,level; hierarchy; bom; depth; structure
+IONOD,"Fields has some large negative values -350 000 till positive in the 600 000's, mostly 0's for entrys, and most positive values below 10000",On Order Quantity,Decimal,Quantity currently on order. Ranges from negative to positive values.,on order; quantity; inbound; supply; pending
+INSEQ,Flag Value of 0 for all items,Sequence Flag,Flag,Flag related to sequence. Value is 0 for all items.,sequence; flag; zero; unused; order
+ITSEQ,"Contains values from 0 to 8000, and every number inbetween",Transaction Sequence,Integer,Transaction sequence number. Values from 0 to 8000.,transaction; sequence; id; order; number
+ICYC,"3 alternative, 0, 4 and 6",Cycle Count Code,Integer,"Code for cycle counting. Values are 0, 4, and 6.",cycle; count; code; inventory; frequency
+IDRAW,"Numericals with asterix: *A, *A *D, *B, *E, *F, *G, lots of blank fields as well",Drawing Number,String,Engineering drawing number or reference. Contains asterisks and letters.,drawing; number; engineering; reference; spec
+IMTDU,"Lots of 0's (98.4%), Range from -220.0 to 250880.0, Contains decimal values",MTD Usage,Decimal,Month-to-Date usage quantity. Ranges from negative to positive values.,mtd; usage; quantity; month-to-date; consumption
+IMRP,M or N value for all entries,MRP Controller,String,MRP controller code. Values are M or N.,mrp; controller; planning; code; type
+IACT,Y for all entries,Fla Y Value,Flag,Value is Y for all entries.,status; flag; enabled; current
+IORDP,"Alphabetical values: A, G, I, J",Order Policy,String,"Policy code for ordering. Values are A, G, I, J.",order; policy; planning; code; rule
+IYRCT,"lots of 0's, small decimal values scaling to higher values in the thousands",YTD Receipts,Decimal,Year-to-Date receipts quantity. Small decimal values scaling to thousands.,ytd; receipts; quantity; year-to-date; inbound
+ILOTS,"lots of 1's (perhaps some standard value),   in addition to small decimal values scaling to higher values in the thousands",Lot Size,Decimal,Standard lot size. Lots of 1s and small decimal values.,lot; size; quantity; batch; standard
+IYADJ,"Lots of 0's, overweight of negative values, positive values are primarily small (below 100)",YTD Adjustments,Decimal,Year-to-Date adjustments. Overweight of negative values.,ytd; adjustments; quantity; year-to-date; correction
+IMCOS,"lots of 0's, positive values range from 1 to several millions",MTD Cost of Sales,Decimal,Month-to-Date cost of sales. Positive values range to millions.,mtd; cost; sales; month-to-date; financial
+IYCOS,"lots of 0's, positive values range from 1 to several millions",YTD Cost of Sales,Decimal,Year-to-Date cost of sales. Positive values range to millions.,ytd; cost; sales; year-to-date; financial
+IMUST,"Constant flag value of ""N"" for all entries",Master Schedule Flag,Flag,Flag for master scheduling. Constant value 'N'.,master; schedule; flag; planning; no
+IORDC,"Constant flag value of ""0"" for all entries",Order Cost Flag,Flag,Flag related to order cost. Constant value '0'.,order; cost; flag; zero; unused
+IAVEU,"Lots of 0's (53.7%), Range from -272.813 to 309712.61, Contains decimal values",Average Usage,Decimal,Average usage quantity. Ranges from negative to positive values.,average; usage; quantity; consumption; rate
+IDSCE,"XPS, Hinged Lid Containers, PS Containers, SIBA 50 124 06.25 51MM, RS 773-3552 (001863) PMC 1003, BMF 307K-R-AS-L-3-03 126531   ",Extended Description,String,Extended description of the item.,description; extended; details; text; info
+IWGHT,"Lots of 0's (60.0%), Range from 0.0 to 9770.0, Contains decimal values",Item Weight,Decimal,Weight of the item. Ranges from 0.0 to 9770.0.,weight; mass; physical; heavy; measure
+IABBT,"Discrete values:  either blank   or DPE45, primarily blank",ABC Class: Item (Bottom),String,ABC classification code. Not ROganization. Either blank or DPE45.,abc; class; classification; category; bottom
+IABC,"Discrete values:  , A, B, C",ABC Class to determine item value and priority,String,"ABC classification code. Values are A, B, C.",abc; class; classification; category; rank
+IPFDV,Constant value of '    ' for all entries,Preferred Vendor (Blank),String,Preferred vendor code. Constant value '    ' (blank).,vendor; preferred; blank; unused; source
+IPACK,"Discrete values: 0, 150, 250, 300, 500",Pack Quantity,Integer,"Quantity per pack. Values: 0, 150, 250, 300, 500.",pack; quantity; packaging; unit; count
+ILABL,Constant value of '0' for all entries,Label Code,Flag,Code for label format. Constant value '0'.,label; code; format; zero; unused
+IDRF,Constant value of '    ' for all entries,Drawing Revision (Blank),String,Drawing revision level. Constant value '    ' (blank).,drawing; revision; blank; unused; version
+ICLNG,"Discrete values: 0, 1, 20000",Case Length,Integer,"Length of the case. Values: 0, 1, 20000.",case; length; dimension; size; measure
+ICWID,Constant value of '0' for all entries,Case Width,Flag,Width of the case. Constant value '0'.,case; width; dimension; zero; unused
+IBUYC,Constant value of ' ' for all entries,Buyer Code (Blank),String,Buyer code. Constant value ' ' (blank).,buyer; code; blank; unused; purchasing
+IFENO,"Text/Mixed data. 187 unique values. Samples:           ,           ,           ,           ,           ",Feature Number,String,Feature number or code. Mixed text data.,feature; number; code; text; variant
+IUMR,"EA: Each
+FT: Foot / Feet
+KG: Kilogram
+L: Liter
+M: Meter
+TH: Thousand",Primary UOM,String,"Primary Unit of measure for reporting (e.g., EA, FT, KG). | [BPCS Docs]: unit of measure",uom; reporting; unit; measure; report
+IUMRC,Flag Value of 1,Report UOM Conv Flag,Flag,Flag for report UOM conversion. Constant value 1.,uom; conversion; flag; report; default
+IFII,"Discrete values:  blanks ,  Y , 2,5, N  , Y  ",Family Item Indicator,String,"Indicator for item family. Values: Y, N, 2.5. | [BPCS Docs]: quantity in bag",family; item; indicator; group; type
+TAXC1,"Discrete values: V0   , V23  , V5   , V8   ",Tax Code 1,String,"Tax classification code. Values: V0, V23, V5, V8.",tax; code; classification; financial; rate
+SAFLG,Constant value of '1' for all entries,Sales Analysis Flag,Flag,Flag for sales analysis. Constant value '1'.,sales; analysis; flag; enabled; reporting
+IIOQ,"Lots of 0's (99.6%), Range from 0.0 to 360.0, Contains decimal values",Economic Order Qty,Decimal,Economic Order Quantity. Ranges from 0.0 to 360.0.,eoq; order; quantity; economic; batch
+IBTCH,Constant value of '1' for all entries,Batch Managed Flag,Flag,Flag indicating batch management. Constant value '1'.,batch; managed; flag; enabled; lot
+IYUSE,"Lots of 0's (96.0%), Range from -36134.0 to 16781641.44, Contains decimal values",Yearly Usage Estimate,Decimal,Estimated yearly usage. Ranges from negative to large positive values.,yearly; usage; estimate; forecast; quantity
+ICYCF,"Discrete values:  , Y",Cycle Count Flag,String,"Flag for cycle counting. Values: blank, Y.",cycle; count; flag; inventory; indicator
+IPERS,Constant value of '0' for all entries,Personnel Code,Flag,Code for personnel. Constant value '0'.,personnel; code; zero; unused; user
+ISTYL,Constant value of '0' for all entries,Style Code,Flag,Style code. Constant value '0'.,style; code; zero; unused; variant
+IPODY,"Discrete values: 0, 7",Potency,Integer,"Potency value. Values: 0, 7.",potency; value; strength; quality; measure
+ITFDY,Constant value of '0' for all entries,Transfer Days,Flag,Days for transfer. Constant value '0'.,transfer; days; zero; unused; time
+IFRFG,Constant value of ' ' for all entries,Freight Class (Blank),String,Freight classification. Constant value ' ' (blank).,freight; class; blank; unused; shipping
+ISACT,Constant value of ' ' for all entries,Sub-Account (Blank),String,Sub-account code. Constant value ' ' (blank).,sub-account; code; blank; unused; financial
+IUMAT,Constant value of '1' for all entries,Material UOM Flag,Flag,Flag for material UOM. Constant value '1'.,material; uom; flag; default; unit
+IVULI,"Lots of 0's (60.9%), Range from 0.0 to 10000.0, Contains decimal values",Volume per Unit,Decimal,Volume per single unit. Ranges from 0.0 to 10000.0.,volume; unit; size; dimension; measure
+IVULP,"Lots of 0's (51.1%), Range from 0.0 to 80000.0, Contains decimal values",Volume per Pallet,Decimal,Volume per pallet. Ranges from 0.0 to 80000.0. | [BPCS Docs]: quantity per pallet,volume; pallet; size; dimension; measure
+INCCFG,"Discrete values:  , P",Non-Conform Config,String,"Configuration for non-conformance. Values: blank, P.",config; non-conform; quality; code; type
+IWHS,"Text/Mixed data. 15 unique values. Samples: B3, C5, C6, CZ,   , CZ, C4",Default Warehouse,String,"Default warehouse code. Samples: B3, C5, C6, CZ.",warehouse; default; location; storage; site
+ISOFL,Constant value of ' ' for all entries,Source Flag (Blank),String,Source flag. Constant value ' ' (blank).,source; flag; blank; unused; origin
+IJIT,Constant value of 'N' for all entries,JIT Flag,String,Just-In-Time flag. Constant value 'N'.,jit; flag; no; planning; replenishment
+IUNCN,"Discrete values: 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 30",UN Code,Integer,"UN code for hazardous materials. Values: 0-10, 30.",un; code; hazardous; safety; material
+IMAXR,Constant value of '0' for all entries,Max Reorder Qty,Flag,Maximum reorder quantity. Constant value '0'.,max; reorder; quantity; zero; unused
+IMINR,Constant value of '0' for all entries,Min Reorder Qty,Flag,Minimum reorder quantity. Constant value '0'.,min; reorder; quantity; zero; unused
+IPCTK,Constant value of '0' for all entries,Percent Check,Flag,Percentage check value. Constant value '0'.,percent; check; zero; unused; quality
+IGTEC,"419 unique values. Samples:  BEACH ORANGECE M.,  NEST.LEMON PL2009 , 73 ED TT Zolta",GTIN/EAN Description,String,Description or code related to GTIN/EAN. Contains text samples.,gtin; ean; description; text; barcode
+IMAXP,Constant value of '0' for all entries,Max Price,Flag,Maximum price. Constant value '0'.,max; price; zero; unused; limit
+IMTDP,"Lots of 0's (98.8%), Range from 0.0 to 101029.0, Contains decimal values",MTD Production,Decimal,Month-to-Date production quantity. Ranges from 0.0 to 101029.0.,mtd; production; quantity; month-to-date; output
+IYTDP,"Lots of 0's (95.2%), Range from 0.0 to 747508.0, Contains decimal values",YTD Production,Decimal,Year-to-Date production quantity. Ranges from 0.0 to 747508.0.,ytd; production; quantity; year-to-date; output
+ITGQY,"Lots of 0's (61.6%), Range from 0.0 to 22000.0, Contains decimal values",Target Quantity,Decimal,Target inventory quantity. Ranges from 0.0 to 22000.0.,target; quantity; inventory; goal; level
+IARRT,Constant value of '0' for all entries,Arrival Time,Flag,Arrival time. Constant value '0'.,arrival; time; zero; unused; schedule
+IMXIN,"Lots of 0's (61.6%), Range from 0 to 10000",Max Inventory,Integer,Maximum inventory level. Ranges from 0 to 10000.,max; inventory; limit; stock; level
+IDMTF,Constant value of '0' for all entries,Demand Time Fence,Flag,Demand time fence days. Constant value '0'.,demand; time; fence; zero; unused
+IDMC1,Constant value of ' ' for all entries,Dimension 1 (Blank),String,Dimension 1. Constant value ' ' (blank).,dimension; blank; unused; measure; size
+IDMC2,Constant value of ' ' for all entries,Dimension 2 (Blank),String,Dimension 2. Constant value ' ' (blank).,dimension; blank; unused; measure; size
+IMBHD,Constant value of '0' for all entries,Batch Hold Days,Flag,Days to hold batch. Constant value '0'.,batch; hold; days; zero; unused
+IMBDY,Constant value of '0' for all entries,Batch Days,Flag,Batch duration days. Constant value '0'.,batch; days; duration; zero; unused
+IDLTR,Constant value of '0' for all entries,Days Late Allowed,Flag,Days late allowed. Constant value '0'.,late; allowed; days; zero; unused
+IMQDY,Constant value of '0' for all entries,Min Quality Days,Flag,Minimum quality days. Constant value '0'.,quality; days; min; zero; unused
+IMBWT,Constant value of '0' for all entries,Batch Weight,Flag,Batch weight. Constant value '0'.,batch; weight; zero; unused; measure
+IMPOT,Constant value of '0' for all entries,Potency Factor,Flag,Potency factor. Constant value '0'.,potency; factor; zero; unused; quality
+IPURC,"Discrete values:  , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9",Purchase Class,Integer,Purchase classification. Values: 0-9.,purchase; class; category; code; procurement
+IMSUM,Constant value of 'P' for all entries,Summary Code,String,Summary code. Constant value 'P'.,summary; code; type; report; classification
+IBUSY,"Discrete values:  , Y",Busy Flag,String,"Busy status flag. Values: blank, Y.",busy; flag; status; active; indicator
+ILOC,"Text/Mixed data. 16 unique values. Samples:       , C5    , C4    ,       ,       ",Default Location,String,"Default location code. Samples: C5, C4.",location; default; warehouse; storage; site
+IMCOM,Constant value of '  ' for all entries,Commodity Code (Blank),String,Commodity code. Constant value '  ' (blank).,commodity; code; blank; unused; classification
+IGLNO,"Text/Mixed data. 73 unique values. Samples: SZ                      , 17.22.13.0              ,                         ,                         , 17.22.13.0              ",GL Account Number,String,General Ledger account number. Samples: 17.22.13.0.,gl; account; number; financial; ledger
+ICOND,Constant value of '0' for all entries,Condition Code,Flag,Condition code. Constant value '0'.,condition; code; zero; unused; status
+IREF01,"Discrete values:      , A    , B    , C    , E    , G    , L    , N    , O    , P    , R    , S    , T    , W    ",Reference 1,String,"Reference field 1. Values: A, B, C, etc. | [BPCS Docs]: five reference fields (second screen inv100)",reference; code; user-defined; field; data
+IREF02,"Text/Mixed data. 184 unique values. Samples: PAPBO, SP4G , PSCUT, PAPBO, SP12, EPHLC",Reference 2,String,Reference field 2. Mixed text values. | [BPCS Docs]: five reference fields (second screen inv100),reference; text; user-defined; field; data
+IREF03,"Discrete values:      , CHT  , F    , F06  , F21  , F81  , G    , I    , R    , S    , T    ",Reference 3,String,"Reference field 3. Values: CHT, F, F06, etc. | [BPCS Docs]: five reference fields (second screen inv100)",reference; code; user-defined; field; data
+IREF04,"Discrete values:      , DS   , F    , M    , O    , P    , R    , S    ",Reference 4,String,"Reference field 4. Values: DS, F, M, etc. | [BPCS Docs]: five reference fields (second screen inv100)",reference; code; user-defined; field; data
+IREF05,"Discrete values: AL   , FS   , PAP  , PLA  ",Reference 5,String,"Reference field 5. Values: AL, FS, PAP, PLA. | [BPCS Docs]: five reference fields (second screen inv100)",reference; code; user-defined; field; data
+IORIGN,"53 unique values. Samples: PL  , PL  , PDA , PL  , PL , DE (Item Origin maybe)",Country of Origin,String,"Country of origin code. Samples: PL, DE.",origin; country; code; source; manufacturing
+IMCOMC,"Text/Mixed data. 58 unique values, mostly blanks. Samples:                , 48115100, 48045990, 39232990, 48115100",Commodity Class / HS Code,String,"Commodity class or HS code. Samples: 48115100, 48045990.",commodity; class; hs code; tariff; classification
+IMFRMC,"Discrete values:    ,  C , 6, B  , C  , P  , SOR",Formula Code,String,"Formula code. Values: C, 6, B, P, SOR.",formula; code; production; recipe; type
+IMCCTL,Constant value of '0' for all entries,Cost Control,Flag,Cost control code. Constant value '0'.,cost; control; zero; unused; financial
+IMMNDT,Range from 20040428 to 20251127,Maintenance Date,Date,Date of last maintenance. Range: 2004-2025.,maintenance; date; last; update; timestamp
+IMMNTM,Range from 4035 to 233453,Maintenance Time,Time,Time of last maintenance. Range: 4035-233453.,maintenance; time; last; update; timestamp
+IMMNUS," 41 unique values. Samples: OGOLNY01  , OGOLNY01  , OGOLNY01  , OGOLNY01  , OGOLNY01 , MOJMA - every entry is mapped",Maintenance User,String,"User who performed maintenance. Samples: OGOLNY01, MOJMA.",maintenance; user; id; update; system
+IMBWIP,Constant value of '0' for all entries,WIP Balance,Flag,Work in Progress balance. Constant value '0'.,wip; balance; zero; unused; production
+IMQLED,Constant value of '0' for all entries,Quality Lead Time,Flag,Quality lead time. Constant value '0'.,quality; lead time; zero; unused; planning
+IMALOT,Constant value of '0' for all entries,Allocated Quantity,Flag,Allocated quantity. Constant value '0'.,allocated; quantity; zero; unused; inventory
+IMVFRY,"Discrete values:  , N",Verify Flag,String,"Verify flag. Values: blank, N.",verify; flag; no; check; status
+IMQLE2,Constant value of '0' for all entries,Quality Lead Time 2,Flag,Secondary quality lead time. Constant value '0'.,quality; lead time; zero; unused; planning
+IMCNTR,Constant value of '0' for all entries,Container Type,Flag,Container type. Constant value '0'.,container; type; zero; unused; packaging
+IMQCTL,Constant value of 'N' for all entries,Quality Control Flag,String,Quality control flag. Constant value 'N'.,quality; control; flag; no; check
+IMCQTY,"Lots of 0's (58.7%), Range from 0.0 to 10000.0, Contains decimal values",Container Quantity,Decimal,Quantity per carton. Ranges from 0.0 to 10000.0. | [BPCS Docs]: quantity per carton,carton; quantity; capacity; unit; measure
+IDSALW,"Discrete values: 0, 1",Discount Allowed,Integer,"Discount allowed flag. Values: 0, 1.",discount; allowed; flag; sales; price
+IMRELP,Constant value of '0' for all entries,Release Period,Flag,Release period. Constant value '0'.,release; period; zero; unused; planning
+IMTCCD,"DP22, DP16T",Parent for Item,String,"Parent Item ID. Values: DP22, DP16T. | [BPCS Docs]: parent for item",parent; item; id; entity; unit; id
+IMCNTT,"Text/Mixed data. 74 unique values. Samples: C17       ,           ,           , CONT      , C14       ",Packing Arrangement on Pallet (text on pallet),String,"Packing arrangement on pallet description. Samples: C17, CONT, C14. | [BPCS Docs]: packing (arrangement) on pallet",packing; arrangement; text; description; packaging
+IMPTYP,"Discrete values:           , P1        , P17       , P3        ",Pallet Type,String,"Pallet type code. Samples: P1, P17, P3.",pallet; type; code; packaging; logistics
+IMENDT,"Everyfield is mapped: 19981107, 20251127 - some serial number generated",Entry Date,Date,Date of entry. Every field mapped.,entry; date; creation; timestamp; system
+IMENTM,"Everyfield is mapped: from 415 to high 235 400 value, some identifier",Entry Time,Integer,Time of entry. Every field mapped.,entry; time; creation; timestamp; system
+IMENUS,"Text/Mixed data. 19 unique values. Samples: BPPCSSECOFR, MOJMA, OGOLNY01, OGOLNY01, ROZWORTO, OGOLNY01, ",Entry User,String,"User who entered the record. Samples: BPPCSSECOFR, MOJMA.",entry; user; id; creation; system
+IMWTUM,"Discrete values:   , GR, KG, M3, SZ",Weight UOM,String,"Unit of measure for weight. Values: GR, KG, M3, SZ.",weight; uom; unit; measure; mass
+IMFPRC,Constant value of '0' for all entries,Fixed Price,Flag,Fixed price. Constant value '0'.,fixed; price; zero; unused; cost
+IMNNWU,"0.56, 0-67, 1.51 etc.",Unit Net Weight,Decimal,"Net weight per item. Samples: 0.56, 1.51.",net; weight; mass; measure; physical
+IMLONG,"Lots of 0's (77.5%), Range from 0.0 to 212.453, Contains decimal values",Length,Decimal,Length dimension. Ranges from 0.0 to 212.453.,length; dimension; size; measure; physical
+IMLUOM,"Discrete values:   , GR, M3, SZ",Length UOM,String,"Unit of measure for length. Values: GR, M3, SZ.",length; uom; unit; measure; dimension
+IMWIDE,"Lots of 0's (65.5%), Range from 0.0 to 1156.0, Contains decimal values",Width,Decimal,Width dimension. Ranges from 0.0 to 1156.0.,width; dimension; size; measure; physical
+IMWDUM,"Discrete values:   , M3, MM, SZ",Width UOM,String,"Unit of measure for width. Values: M3, MM, SZ.",width; uom; unit; measure; dimension
+IMHIGH,"Discrete values: 0.0, 0.18",Height,Decimal,"Height dimension. Values: 0.0, 0.18.",height; dimension; size; measure; physical
+IMHUOM,"Discrete values:   , M3",Height UOM,String,Unit of measure for height. Values: M3.,height; uom; unit; measure; dimension
+IMFLPC,"Lots of 0's (75.1%), Range from 0.0 to 2.8, Contains decimal values",Floor Percentage,Decimal,Floor percentage. Ranges from 0.0 to 2.8.,floor; percentage; measure; space; ratio
+IMFLPF,"Lots of 0's (60.9%), Range from 0.0 to 315.0, Contains decimal values",Floor Factor,Decimal,Floor factor. Ranges from 0.0 to 315.0.,floor; factor; measure; space; ratio
+IMRFPK,"Discrete values: 0, 1, 2, 4, 5",Ref Pack,Integer,"Reference pack. Values: 0, 1, 2, 4, 5.",ref; pack; reference; packaging; code
+IMLTTM,Constant value of '0' for all entries,Lot Time,Flag,Lot time. Constant value '0'.,lot; time; zero; unused; production
+IMCCTM,Constant value of '0' for all entries,Cost Change Time,Flag,Cost change time. Constant value '0'.,cost; change; time; zero; unused
+IMLPGM,Discrete values:  either MRP140D2  or blank,Last Program,String,"Last program used. Values: MRP140D2, blank.",program; last; system; update; source
+IMECST,Constant value of '0' for all entries,Estimated Cost,Flag,Estimated cost. Constant value '0'.,estimated; cost; zero; unused; financial
+IMABRV,"Text/Mixed data. 30 unique values. Samples: PRPAP2         , PRALL          , PRPAP2         , PRALL          , SALFS          ",Abbreviation,String,"Abbreviation code used for accounting. Samples: PRPAP2, PRALL, SALFS. | [BPCS Docs]: CMS abbreviation – USED FOR ACCOUNTING!!!",abbreviation; code; short; text; name
+IMMFMD,Constant value of '1' for all entries,Mfg Mode,Flag,Manufacturing mode. Constant value '1'.,mfg; mode; manufacturing; flag; type
+IMGSOR,Constant value of '0' for all entries,Gross Source,Flag,Gross source. Constant value '0'.,gross; source; zero; unused; planning
+IMALRQ,"Discrete values: 0, 1",Allocated Req,Integer,"Allocated requirement. Values: 0, 1.",allocated; req; requirement; planning; flag
+IMBRGC,"Discrete values:   , BK, CI, MC, MW, SB, SE, TC, YU",Bridge Code,String,"Bridge code. Values: BK, CI, MC, MW, etc.",bridge; code; type; classification; system
+IMLDTE,Constant value of '0' for all entries,Lot Date,Flag,Lot date. Constant value '0'.,lot; date; zero; unused; production
+IMLTME,Constant value of '0' for all entries,Lot Time,Flag,Lot time. Constant value '0'.,lot; time; zero; unused; production
+IMATPA,"Discrete values: 0, 1",ATP Allowed,Integer,"ATP allowed flag. Values: 0, 1.",atp; allowed; flag; planning; promise
+IMCIOQ,Constant value of '0' for all entries,Cumulative IOQ,Flag,Cumulative IOQ. Constant value '0'.,cumulative; ioq; zero; unused; quantity
+IMCMOQ,Constant value of '0' for all entries,Cumulative MOQ,Flag,Cumulative MOQ. Constant value '0'.,cumulative; moq; zero; unused; quantity
+IMCSOQ,Constant value of '0' for all entries,Cumulative SOQ,Flag,Cumulative SOQ. Constant value '0'.,cumulative; soq; zero; unused; quantity
+IMUMPC,Constant value of '1' for all entries,UOM Pack Code,Flag,UOM pack code. Constant value '1'.,uom; pack; code; flag; unit
+IMUMPR,"Discrete values: EA, FT, HD, KG, KP, L , M , SZ, TH",UOM Price,String,"Unit of measure for pricing. Values: EA, FT, KG, etc.",uom; price; unit; measure; cost
+IMEXBS,"Discrete values:  , 1",Expense Base,Integer,"Expense base. Values: blank, 1.",expense; base; financial; code; type
+IMSLHR,Constant value of '0' for all entries,Shelf Life Hours,Flag,Shelf life in hours. Constant value '0'.,shelf; life; hours; zero; unused
+IMRTHR,Constant value of '0' for all entries,Retention Hours,Flag,Retention hours. Constant value '0'.,retention; hours; zero; unused; storage

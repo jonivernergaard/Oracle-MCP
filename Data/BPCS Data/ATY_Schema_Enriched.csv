@@ -1,0 +1,16 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+TYID,Constant value of 'TY' for all entries,Record ID,String,Identifies the record type; always 'TY' for Account Type.,id; record; type; identifier
+VTCMPY,Constant value of '1' for all entries,Company Code,String,Company identifier.,company; code; entity; id
+VTYPE,"Discrete values: SAD , SDIN, SDTR, SI/C, SIIN, SITR",Vendor Type,String,Type of vendor or supplier classification.,vendor; type; classification; category
+VTDESC,"Discrete values: INTER COMPANY, KRAJOWY HANDLOWY...",Description,String,Description of the vendor type.,description; name; text; vendor
+VTBANK,"Discrete values: BPL, CDM, CEU, CPL, CUS, IGB",Bank Code,String,Bank code associated with the vendor type.,bank; code; financial; institution
+VTCURR,"Text data. Lengths: min 3, max 3, avg 3.0. Sample: PLN",Currency,String,Currency code (e.g., PLN).,currency; code; money; iso
+CPD1,Constant value of 'N' for all entries,Flag 1,Flag,General purpose flag 1.,flag; status; indicator; 1
+CPD2,Constant value of 'N' for all entries,Flag 2,Flag,General purpose flag 2.,flag; status; indicator; 2
+CPD3,Constant value of 'N' for all entries,Flag 3,Flag,General purpose flag 3.,flag; status; indicator; 3
+CPD4,Constant value of 'N' for all entries,Flag 4,Flag,General purpose flag 4.,flag; status; indicator; 4
+TYFCMP,Constant value of '0' for all entries,Company Filter,Integer,Company filter or related ID.,company; filter; id; integer
+TYDS1,Constant value of '0' for all entries,Data Stat 1,Decimal,Statistical data field 1.,data; stat; 1; decimal
+TYDS2,Constant value of '0' for all entries,Data Stat 2,Decimal,Statistical data field 2.,data; stat; 2; decimal
+TYDS3,Constant value of '0' for all entries,Data Stat 3,Decimal,Statistical data field 3.,data; stat; 3; decimal
+TYDS4,Constant value of '0' for all entries,Data Stat 4,Decimal,Statistical data field 4.,data; stat; 4; decimal

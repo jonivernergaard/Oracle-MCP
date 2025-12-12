@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+PHID,"Discrete values: PH, PZ",Record ID,String,Identifies the record type; PH or PZ.,id; record; type; identifier
+PHBUSY,"Discrete values:  , 0, 1",Busy Flag,String,Record busy flag.,busy; flag; status; lock
+PHORD,Range from 100000 to 100999,PO Number,Integer,Purchase Order number.,po; number; purchase; order
+PHSTAT,"Discrete values: 0, 1, 2, 3",Status,Integer,PO status code.,status; code; state; condition
+PHRVDT,Constant value of '0' for all entries,Revision Date,Date,Revision date.,revision; date; update; time
+PHCOMP,"Discrete values: 0, 1",Company,Integer,Company code.,company; code; entity; id
+PHFAC,"Discrete values:   , PC",Facility,String,Facility code.,facility; code; location; site
+PHWHSE,"Discrete values:   , B3, CZ, D2, MC, MG, ML, MZ, S3, S4, S5, SE, SF",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+PHVEND,Range from 1 to 30038,Vendor Number,Integer,Vendor identifier.,vendor; number; id; supplier
+PHBVND,Constant value of '0' for all entries,Bill Vendor,Integer,Billing vendor identifier.,bill; vendor; id; supplier
+PHSHTP,"Discrete values:  , 0, 3",Ship Type,Integer,Shipment type code.,ship; type; code; shipping
+PHSHIP,"Text data. Lengths: min 6, max 6, avg 6.0. Sample: B3    ",Ship To,String,Ship-to location code.,ship; to; location; shipping
+PHNAME,"Discrete values:                               , BÊDZIN SEIFERT                , CZELAD¾ - WYROBY GOTOWE       , GDYNIA                        , MAGAZYN CHORZÓW               , MAGAZYN PROOPTIMUM            , MAGAZYNY DYSTYBUTORÓW         , Magazyn Papieru               , OPERACJE ZEW                  , SIEMIANOWICE 2 - SUROWCE (FS) , SIEMIANOWICE 3 - SILOS        , SIEMIANOWICE 5 - CZESCI ZAM.  , ZYRARDÓW                      ",Name,String,Name associated with the PO.,name; text; description; entity
+PHATTN,"Discrete values:                               , MIKLA                         ",Attention,String,Attention name.,attention; name; contact; person
+PHADR1,"Discrete values:                               , ul. Handlowa 20               , ul. Krakowska 19              , ul.Budowlana 6                , ul.Indyjska 13                , ul.Kontenerowa 69             , ul.Limanowskiego 49A          , ul.Paryska  1                 , ul.Ptasia 3                   ",Address 1,String,Address line 1.,address; 1; location; contact
+PHADR2,"Discrete values:                               , Bêdzin                        , Chorzów                       , Czelad¼                       , Gdynia                        , Siemianowice ¡l.              , Sosnowiec                     , Zyrardów                      ",Address 2,String,Address line 2.,address; 2; location; contact
+PHSTE,"Discrete values:    , PL ",State,String,State or province code.,state; province; location; area
+PHZIP,"Discrete values:          , 41-100   , 41-200   , 41-253   , 41-503   , 42-500   , 96-300   ",Zip Code,String,Postal or zip code.,zip; code; postal; location
+PHCOUN,"Discrete values:     , PL  ",Country,String,Country code.,country; code; location; place
+PHENDT,Range from 20091217 to 20100415,Entry Date,Date,Date the PO was entered.,entry; date; creation; time
+PHCHDT,"Some 0's (2.5%), Range from 0 to 20171120",Change Date,Date,Date of last change.,change; date; update; time
+PHCLDT,"Some 0's (21.5%), Range from 0 to 20161216",Close Date,Date,Date the PO was closed.,close; date; status; time
+PHAQDT,Constant value of '0' for all entries,Acquired Date,Date,Date acquired.,acquired; date; time; status
+PHACDT,Constant value of '0' for all entries,Acct Date,Date,Accounting date.,accounting; date; financial; time
+PHPRDT,"Some 0's (5.5%), Range from 0 to 20190919",Print Date,Date,Date the PO was printed.,print; date; status; time
+PHPRT,"Discrete values: 0, 1",Print Flag,Flag,Print flag.,print; flag; status; indicator
+PHTERM,"Discrete values:   , 01, 02, 03, 05, 06, 07, 08, 12, 13, 16, 20",Terms Code,String,Payment terms code.,terms; code; payment; financial
+PHBUYC,"Discrete values:  , 1, 2, 4, 6, 7, 8, 9",Buyer Code,String,Buyer identifier.,buyer; code; employee; purchasing
+PHCUR,"Discrete values:    , EUR, PLN, USD",Currency,String,Currency code.,currency; code; money; iso
+PHRCRT,"Some 0's (0.2%), Range from 0.0 to 4.139",Rec Rate,Decimal,Receipt exchange rate.,receipt; rate; exchange; financial
+PHINRT,"Some 0's (0.2%), Range from 0.0 to 4.139",Inv Rate,Decimal,Invoice exchange rate.,invoice; rate; exchange; financial
+PHLINS,"Some 0's (0.5%), Range from 0 to 132",Line Count,Integer,Number of lines in the PO.,line; count; number; total
+PHEXRT,"Some 0's (0.2%), Range from 0.0 to 4.139",Exch Rate,Decimal,Exchange rate.,exchange; rate; currency; financial
+PHRQID,"Discrete values: DOMINEPI  , GRUSZKA   , GRZESZRA  , JCZUDAJ   , LUPABE    , MOJMA     , OSIKAJU   , PIETRAAD  ",Requestor ID,String,Requestor identifier.,requestor; id; employee; purchasing
+PHLAID,"Discrete values:           , DOMINEPI  , GRUSZKA   , GRZESZRA  , JCZUDAJ   , LUPABE    , MOJMA     , OSIKAJU   , PIETRAAD  ",Last Approver,String,Last approver identifier.,last; approver; id; employee
+PHAPDT,"Some 0's (0.2%), Range from 0 to 20171120",Approval Date,Date,Date of approval.,approval; date; status; time
+PHBPRT,Constant value of '0' for all entries,Batch Print,Flag,Batch print flag.,batch; print; flag; status
+PHVTXC,"Discrete values:      , EXP  , VAT  ",VAT Code,String,VAT tax code.,vat; tax; code; financial
+PHBAMT,Constant value of '0.0' for all entries,Base Amount,Decimal,Base currency amount.,base; amount; financial; value
+PHEXTC,Constant value of '0' for all entries,Extra Cost,Decimal,Extra cost amount.,extra; cost; amount; financial
+PHCRCC,"Discrete values:   , PL",Country Code,String,Country code.,country; code; location; place
+PHCRNO,"Discrete values:                , 5490022619     ",Tax ID,String,Tax identification number.,tax; id; number; financial
+PHSRCC,"Discrete values:   , DE, ES, FI, FR, GB, HU, IT, SE",Source Country,String,Source country code.,source; country; code; location
+PHSRNO,"Discrete values:                , 00513220012    , 10390508       , 10945782       , 12003031       , 128784539      , 138 552 598    , 556035843301   , 61627120116    , 813354501      , 897381562      , B12020806      ",Source Number,String,Source reference number.,source; number; reference; id
+PHMNTR,"Discrete values:     , 30  ",Monitor,String,Monitor code.,monitor; code; tracking; system
+PHRVTM,Constant value of '0' for all entries,Revision Time,Time,Time of revision.,revision; time; update; system
+PHENTM,Constant value of '0' for all entries,Entry Time,Time,Time of entry.,entry; time; creation; system
+PHCHTM,Constant value of '0' for all entries,Change Time,Time,Time of change.,change; time; update; system
+PHCLTM,Constant value of '0' for all entries,Close Time,Time,Time of closing.,close; time; status; system

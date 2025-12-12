@@ -1,0 +1,4 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LSID,Constant value of 'LS' for all entries,Record ID,String,"Identifies the record type, 'LS' for Location Status.",id; record; type; location; status
+LSLCDE,"Discrete values (8 unique): B, E, F, G, I, O, T, X",Status Code,String,Location status code.,status; code; location
+LSDES,"Discrete values (8 unique): Cały                          , NieDoUż.                      , Okres.nie do użycia           , Opróżniany                    , Puste                         , Towary do przyj.              , Towary do wysyłki             , Uzupełniany                   ",Description,String,Description of the location status.,description; status; location

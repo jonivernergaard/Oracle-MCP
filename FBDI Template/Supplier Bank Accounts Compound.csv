@@ -1,0 +1,30 @@
+﻿Oracle DB Table,Oracle DB Column,FBDI Column,FBDI Column Name,Tech Comments,Field Description,Mandatory,Data Type,Max Length,Default,Comments,Legacy Table Name,Legacy Column Name,Legacy Field Description ,Legacy Data Type, Mapping Logic
+,TEMP_EXT_PAYEE_ID,B,*Payee Identifier,,Primary identifier. Populated by Oracle.,Yes,NUMBER,18,,,,,,,
+,BUSINESS_UNIT,C,Business Unit Name,,Indicates the business unit of the Payee,Yes,VARCHAR2,240,,,,,,,
+,VENDOR_NUM,D,*Supplier Number,,Unique number that identifies a supplier. ,Yes,VARCHAR2,30,,,,,,,
+,EXCLUSIVE_PAYMENT_FLAG,F,*Pay Each Document Alone,,"Indicates whether similar documents payable are prevented from being grouped for payment. Valid values: Y, N.",Yes,VARCHAR2,1,,"Y, N, Null",,,,,
+,DEFAULT_PAYMENT_METHOD_CODE,G,Payment Method Code,,"Default payment method. Use the Management Payment Methods task, Payment Method Codes option, to identify valid values.",Yes,VARCHAR2,30,,"LOV:
+CHECK
+CASH
+EFT",,,,,
+,TEMP_EXT_PAYEE_ID,B,*Payee Identifier,,"Unique number by which a payee is identified for an import batch. This number, along with an import batch identifier, is used to identify the supplier payee's information in the IBY_TEMP_EXT_BANK_ACCTS table.",Yes,NUMBER,18,,,,,,,
+,TEMP_EXT_BANK_ACCT_ID,C,*Payee Bank Account Identifier,,"Unique number by which a payee bank account is identified for an import batch. This number, along with an import batch identifier and payee identifier, is used to identify the supplier payee's bank account information in the IBY_TEMP_EXT_BANK_ACCTS table.",Yes,NUMBER,18,,,,,,,
+,BANK_NAME,D,**Bank Name,,Name of the bank.,Yes,VARCHAR2,80,,,,,,,
+,BRANCH_NAME,E,**Branch Name,,Name of the bank branch.,Yes,VARCHAR2,80,,,,,,,
+,COUNTRY_CODE,F,*Account Country Code,,Country code of the supplier bank account. The country code is the two-letter International Standards Organization (ISO) 3166 code associated with a country.,Yes,VARCHAR2,2,,,,,,,
+,BANK_ACCOUNT_NAME,G,Account Name,,Name of the supplier's bank account.,Yes,VARCHAR2,80,,,,,,,
+,BANK_ACCOUNT_NUM,H,*Account Number,,Bank account number of the supplier.,Yes,VARCHAR2,100,,,,,,,
+,CURRENCY_CODE,I,Account Currency Code,,Currency code of the bank account. The account currency code is the three-letter International Standards Organization (ISO) 4217 code associated with a currency. ,Yes,VARCHAR2,150,,,,,,,
+,FOREIGN_PAYMENT_USE_FLAG,J,Allow International Payments,,"Indicates whether international payments are allowed from this bank account. A payment is considered an international payment when the payer 's bank account country is different than the payee's bank account country.
+
+If the payee's bank account can be used for international payments, then the value for this column should be Y; otherwise N. Null is treated as N.",Yes,VARCHAR2,1,,"Y, N, Null",,,,,
+,START_DATE,K,Account Start Date,,Date when the bank account becomes active. ,Yes,DATE,YYYY/MM/DD,,,,,,,
+,IBAN,M,IBAN,,An alphanumeric sequence that conforms to the ISO standard for uniquely identifying an international bank account number. The IBAN contains all the necessary routing information to transfer a payment from one bank to another.,Yes,VARCHAR2,50,,,,,,,
+,DESCRIPTION,R,Account Description,,Internal description of supplier's bank account.,Yes,VARCHAR2,240,,,,,,,
+,EXCHANGE_RATE_AGREEMENT_TYPE,U,Exchange Rate Agreement Type,,Type of agreement that specifies the exchange rate.,Yes,VARCHAR2,80,,,,,,,
+,TEMP_EXT_PAYEE_ID,B,*Payee Identifier,,"Unique number by which a payee is identified for an import batch. This number, along with an import batch identifier, is used to identify the supplier payee's information in the IBY_TEMP_PMT_INSTR_USES table.",Yes,NUMBER,18,,,,,,,
+,TEMP_EXT_BANK_ACCT_ID,C,*Payee Bank Account Identifier,,"Unique number by which a payee bank account is identified for an import batch. This number, along with an import batch identifier and supplier payee identifier, is used to identify the supplier payee's bank account information in the IBY_TEMP_PMT_INSTR_USES table.",Yes,NUMBER,18,,,,,,,
+,TEMP_PMT_INSTR_USE_ID,D,*Payee Bank Account Assignment Identifier,,"Unique number for a payee's bank account assignment for an import batch. This number, along with an import batch identifier, is used to identify the supplier payee's bank account assignment information in the IBY_TEMP_PMT_INSTR_USES table.",Yes,NUMBER,18,,,,,,,
+,PRIMARY_FLAG,E,*Primary Flag,,"Indicates whether the bank account is the payee’s primary bank account. The payee’s primary bank account is used as the default payee's bank account on invoices. 
+
+In the Primary Flag column, enter Y if the bank account is primary, otherwise N.",Yes,VARCHAR2,1,,"Y, N",,,,,

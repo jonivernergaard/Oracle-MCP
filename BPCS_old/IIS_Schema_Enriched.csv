@@ -1,0 +1,7 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+ISID,Constant value of 'IS' for all entries,Record ID,String,"Identifies the record type, 'IS' for Inventory Status.",id; record; type; inventory; status
+ISUNK1,Constant value of '1' for all entries,Unknown 1,Integer,Unknown field.,unknown
+ISSTAT,"Discrete values (11 unique): 1, 2, 3, 4, 5, 6, 7, 8, 9, X, Y",Status Code,String,Inventory status code.,status; code; inventory
+ISDESC,"Discrete values (11 unique): Autoryz.wyrzucenie            , DostÅ»pne                      , Kontrola                      , Kwarantan.                    , Odpad                         , Odrzuc.                       , Pobierane                     , Przenies.wewn.                , Przenies.zewn.                , Rozszerz.kwarant.             , zatrzym.                      ",Description,String,Description of the inventory status.,description; status; inventory
+ISFLG1,"Discrete values (2 unique): 0, 1",Flag 1,Integer,Status flag 1.,flag; status
+ISFLG2,"Discrete values (2 unique): 0, 1",Flag 2,Integer,Status flag 2.,flag; status

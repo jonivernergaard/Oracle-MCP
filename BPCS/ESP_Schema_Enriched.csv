@@ -1,0 +1,34 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+SPID,Constant value of 'SP' for all entries,Record ID,String,Identifies the record type; always 'SP' for Special Pricing.,id; record; type; identifier
+PMETH,"Discrete values: 0, 1, A",Price Method,String,Pricing method code.,price; method; code; financial
+PRKEY,"Text data. Lengths: min 21, max 21, avg 21.0. Sample: HANDLING COST        ",Price Key,String,Key for pricing lookup.,price; key; lookup; reference
+PQTY1,"Discrete values: 0.0, 0.001, 1.0",Qty Break 1,Decimal,Quantity break 1.,quantity; break; 1; pricing
+PQTY2,Constant value of '0.0' for all entries,Qty Break 2,Decimal,Quantity break 2.,quantity; break; 2; pricing
+PQTY3,Constant value of '0.0' for all entries,Qty Break 3,Decimal,Quantity break 3.,quantity; break; 3; pricing
+PQTY4,Constant value of '0.0' for all entries,Qty Break 4,Decimal,Quantity break 4.,quantity; break; 4; pricing
+PQTY5,Constant value of '0.0' for all entries,Qty Break 5,Decimal,Quantity break 5.,quantity; break; 5; pricing
+PQTY6,Constant value of '0.0' for all entries,Qty Break 6,Decimal,Quantity break 6.,quantity; break; 6; pricing
+PQTY7,Constant value of '0.0' for all entries,Qty Break 7,Decimal,Quantity break 7.,quantity; break; 7; pricing
+PQTY8,Constant value of '0.0' for all entries,Qty Break 8,Decimal,Quantity break 8.,quantity; break; 8; pricing
+PQTY9,Constant value of '0.0' for all entries,Qty Break 9,Decimal,Quantity break 9.,quantity; break; 9; pricing
+PFCT1,"Some 0's (0.3%), Range from 0.0 to 332700.0",Factor 1,Decimal,Pricing factor 1.,factor; 1; pricing; value
+PFCT2,Constant value of '0.0' for all entries,Factor 2,Decimal,Pricing factor 2.,factor; 2; pricing; value
+PFCT3,Constant value of '0.0' for all entries,Factor 3,Decimal,Pricing factor 3.,factor; 3; pricing; value
+PFCT4,Constant value of '0.0' for all entries,Factor 4,Decimal,Pricing factor 4.,factor; 4; pricing; value
+PFCT5,Constant value of '0.0' for all entries,Factor 5,Decimal,Pricing factor 5.,factor; 5; pricing; value
+PFCT6,Constant value of '0.0' for all entries,Factor 6,Decimal,Pricing factor 6.,factor; 6; pricing; value
+PFCT7,Constant value of '0.0' for all entries,Factor 7,Decimal,Pricing factor 7.,factor; 7; pricing; value
+PFCT8,Constant value of '0.0' for all entries,Factor 8,Decimal,Pricing factor 8.,factor; 8; pricing; value
+PFCT9,Constant value of '0.0' for all entries,Factor 9,Decimal,Pricing factor 9.,factor; 9; pricing; value
+PSDTE,Range from 19990101 to 20100301,Start Date,Date,Effective start date.,start; date; effective; time
+PSEDT,Range from 19990124 to 20101231,End Date,Date,Effective end date.,end; date; effective; time
+PCONT,Constant value of '0' for all entries,Contract,String,Contract number.,contract; number; agreement; id
+PTYPE,"Discrete values:  , 1, 2",Price Type,String,Price type code.,price; type; code; category
+PCURR,"Discrete values: DEM, EUR, PLN",Currency,String,Currency code.,currency; code; money; iso
+PCOMP,"Discrete values: 0, 1",Company,Integer,Company code.,company; code; entity; id
+SPENDT,"Some 0's (0.3%), Range from 0 to 20100312",Entry Date,Date,Date the record was entered.,entry; date; creation; time
+SPENTM,"Some 0's (0.3%), Range from 0 to 190452",Entry Time,Time,Time the record was entered.,entry; time; creation; system
+SPENUS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: ORD04     ",Entry User,String,User who entered the record.,entry; user; id; person
+SPMNDT,"Some 0's (0.3%), Range from 0 to 20100312",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+SPMNTM,"Some 0's (0.3%), Range from 0 to 175846",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+SPMNUS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: SEMPERAN  ",Maint User,String,User who performed maintenance.,maintenance; user; id; person

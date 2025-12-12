@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+SIID,Constant value of 'IH' for all entries,Record ID,String,"Identifies the record type, 'IH' for Invoice History.",id; record; type; invoice; history
+SIINVN,"662 unique values. Range: 10000000.0 to 10000662.0. Mean: 10000213.82, Median: 10000158.00. Sample values: 10000049.0, 10000122.0, 10000164.0, 10000217.0, 10000275.0, 10000357.0, 10000474.0, 10000508.0, 10000515.0, 10000563.0",Invoice Number,Integer,Unique identifier for the invoice.,invoice; number; id
+SICUST,"324 unique values. Range: 12.0 to 800831.0. Mean: 233961.32, Median: 101718.50. Sample values: 949.0, 100054.0, 100207.0, 100271.0, 101778.0, 101926.0, 800014.0, 800519.0, 800752.0, 800827.0",Customer Number,Integer,Customer number associated with the invoice.,customer; number; id
+SICHG,Constant value of '0.0' for all entries,Charge,Decimal,Charge amount.,charge; amount
+SICOMP,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+SICTYP,"Discrete values (4 unique): CDOM, CEXE, CEXN, CICE",Customer Type,String,Classification of the customer.,customer; type; class
+SIDISC,Empty column,Discount,Decimal,Discount amount.,discount; amount
+SIINVD,"36 unique values. Range: 20100104.0 to 20100218.0. Mean: 20100146.36, Median: 20100126.00. Sample values: 20100106.0, 20100111.0, 20100112.0, 20100118.0, 20100201.0, 20100209.0, 20100210.0, 20100211.0, 20100215.0, 20100215.0",Invoice Date,Date,Date of the invoice.,invoice; date
+SICST,"1537 unique values. Range: -90534.75 to 356226.15. Mean: 9823.18, Median: 2846.60. Contains decimal values. Sample values: -38148.0, 5.3, 65.52, 199.51, 865.49, 8078.07, 9417.28, 13663.54, 37769.25, 52356.92",Cost,Decimal,Cost associated with the invoice.,cost; amount
+SIORD,"1554 unique values. Range: 100002.0 to 102272.0. Mean: 100924.62, Median: 100909.00. Sample values: 100119.0, 100341.0, 100392.0, 100543.0, 100809.0, 100896.0, 101288.0, 101453.0, 101722.0, 102125.0",Order Number,Integer,Order number associated with the invoice.,order; number; id
+SIPRF,Empty column,Prefix,String,Prefix code.,prefix; code
+SISAL,"Discrete values (13 unique): 1.0, 20.0, 21.0, 23.0, 24.0, 25.0, 26.0, 30.0, 31.0, 60.0, 80.0, 81.0, 700000.0",Salesperson,String,Salesperson code.,salesperson; code; sales
+SISPC,"Discrete values (15 unique): 0.0, 17.91, 70.0, 124.91, 138.8, 150.0, 250.0, 291.08, 296.93, 500.0, 900.0, 997.2, 1200.0, 1600.0, 7737.49",Special Charge,Decimal,Special charge amount.,special; charge; amount
+SITAX,"1150 unique values. Some 0's (23.7%). Range: -16846.58 to 96719.7. Mean: 1640.39, Median: 116.16. Contains decimal values. Sample values: 0.0, 0.0, 12.06, 73.77, 264.47, 1140.48, 1687.32, 3196.29, 3957.8, 7939.5",Tax Amount,Decimal,Tax amount.,tax; amount
+SITERM,"Discrete values (17 unique): 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 22, 23, 24, 25, 29, 99",Terms Code,String,Payment terms code.,terms; code; payment
+SITOT,"1488 unique values. Range: -93421.95 to 536354.73. Mean: 10017.84, Median: 2374.97. Contains decimal values. Sample values: 12.81, 169.09, 392.95, 646.17, 1122.08, 1524.77, 2049.6, 6897.64, 14302.96, 29099.06",Total Amount,Decimal,Total invoice amount.,total; amount; invoice
+SITYPE,"Discrete values (2 unique): 1, 7",Invoice Type,Integer,Type of invoice.,invoice; type
+SISTN,"Discrete values (2 unique): 0.0, 1.0",Status,Integer,Status code.,status; code
+SICURR,"Discrete values (2 unique): EUR, PLN",Currency,String,Currency code.,currency; code; money
+SICNFC,"28 unique values. Range: 1.0 to 4.139. Mean: 1.73, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 4.0534, 4.0534, 4.0615",Exch Rate 1,Decimal,Exchange rate 1.,exchange; rate
+SIGCNV,"28 unique values. Range: 1.0 to 4.139. Mean: 1.73, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.969, 4.0609, 4.0916, 4.0921",Exch Rate 2,Decimal,Exchange rate 2.,exchange; rate
+SILINS,"60 unique values. Range: 1.0 to 94.0. Mean: 7.24, Median: 4.00. Sample values: 1.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 6.0, 7.0, 11.0",Line Items,Integer,Number of line items.,line; items; count
+SISAL2,"Discrete values (2 unique): 0.0, 700000.0",Salesperson 2,String,Second salesperson code.,salesperson; code; sales
+SICPO,"Text/Mixed data with 1142 unique values. Sample values: T-281519, 700000/10000482, 28/01/2010, 700000/10000081, WASILKÃW, 700000/10000148, 700000/10000318, 4510504398, 13/01/2010, T-277820. Most frequent: * (324), *** (260), PALETA (105), PALLETS (69), 12300008-28 (42)",Customer PO,String,Customer purchase order number.,customer; po; number
+SITDES,"Discrete values (16 unique): 14 DNI, 21 DNI, 30 DAYS OF INV, 30 DNI, 40 DNI, 45 DNI, 50 DNI, 55 DNI, 60 DAYS OF INV, 60 DNI, 7 DNI, 75 DNI, 90 DAYS OF INV, 90 DNI, GOTÃWKA, KOMPENSATA",Terms Desc,String,Description of payment terms.,terms; description; payment
+SIVIA,Empty column,Ship Via,String,Ship via code.,ship; via; code
+SIATN,"Text/Mixed data with 42 unique values. 78.4% missing values. Sample values: UsÂªugowa ""Green Pack""Tadeusz, KOEWEISTRAAT 10, Rowner Road Holbrook Gosport, Gabriela KoÂ«mider, Zweigniederlassung der Huhtama, Sakowski, Anna Andruszkiewicz Sp.jawna, Herkko Hansson. Most frequent: Zweigniederlassung der Huhtama (428), Herkko Hansson (89), Gabriela KoÂ«mider (74), sp.jawna Marcin Malewski, (69), UlexSpÃ³Âªka  Jawna (52)",Attention,String,Attention or contact name.,attention; contact; name
+SIAD1,"Text/Mixed data with 361 unique values. 0.5% missing values. Sample values: ul. Budowlana 6, MARZENA RYPI]SKA  MAREK ADAÂ¡, ul.Narcyzy Â©michowskiej 20/24, ul. Mickiewicza 26, Oy, KRZYSZTOF SZCZOTKA, ul. Traktorowa 139, ul.Sulechowska 37, ul. Bukowska 7. Most frequent: ul. Budowlana 6 (530), ki Deutschland GmbH & Co.KG (428), Fehervari UT 130 (152), Lotangsgatan  14-16 (110), Oy (89)",Address 1,String,First line of address.,address; line1; location
+SIAD2,"Text/Mixed data with 315 unique values. 0.3% missing values. Sample values: Tomasz   ul.T.T.JeÂ¥a  15, Warszawa, Siemianowice Â¡l., UL.PACA 37, Zakrzew, 81-614, 84-240    Reda, Science Park Eindhoven 5051. Most frequent: Siemianowice Â¡l. (537), Bad Bertricher Strabe 6-9 (428), Budapest Hungary (152), Warszawa (118), Gavle  , Sweden (110)",Address 2,String,Second line of address.,address; line2; location
+SIAD3,"Text/Mixed data with 110 unique values. 65.2% missing values. Sample values: 80-462 GDA]SK, d-56859 Alf/Germany, 80-227 GDA]SK-WRZESZCZ, CZÃSTOCHOWA, Jarocin. Most frequent: d-56859 Alf/Germany (428), GDA]SK (116), 00021  LASKUTUS FINLAND (89), Bielsko-BiaÂªa (52), 80-298 GDA]SK (46)",Address 3,String,Third line of address.,address; line3; location
+SICOUN,"Text/Mixed data with 22 unique values. Sample values: PDA, PSK, PL. Most frequent: PL (3811), PDA (507), PHB (152), PSK (119), PFH (89)",Country,String,Country code.,country; code; location
+SIZIP,"Text/Mixed data with 222 unique values. 5.1% missing values. Sample values: 81-388, 84-230, NO-3514, 41-100, NL-9206, 708 00, 62-031, 41-500, 48-304. Most frequent: PL (843), 41-100 (554), D-56859 (457), H-1116 (152), SE-803 01 (110)",Zip Code,String,Postal or zip code.,zip; code; postal; address
+SIBACK,"Discrete values (12 unique): 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 13.0",Backorder,Integer,Backorder count or flag.,backorder; count; flag
+SIQTY,"1167 unique values. Range: -26180.974 to 82571.918. Mean: 480.91, Median: 45.90. Contains decimal values. Sample values: 0.2, 1.2, 2.26, 5.19, 25.0, 117.035, 136.139, 157.85, 1242.023, 15328.0",Quantity,Decimal,Quantity of items.,quantity; amount; count
+SISDTE,"56 unique values. Range: 20091219.0 to 20101005.0. Mean: 20100103.22, Median: 20100122.00. Sample values: 20100106.0, 20100106.0, 20100109.0, 20100111.0, 20100113.0, 20100114.0, 20100115.0, 20100204.0, 20100205.0, 20100208.0",Ship Date,Date,Date of shipment.,ship; date
+SIWHSE,"Discrete values (10 unique): B3, D2, MG, ML, MZ, PS, S4, SA, SE, SF",Warehouse,String,Warehouse code.,warehouse; code; location
+SIRDTE,"56 unique values. Range: 20091219.0 to 20101005.0. Mean: 20100124.72, Median: 20100122.00. Sample values: 20100107.0, 20100107.0, 20100112.0, 20100122.0, 20100129.0, 20100202.0, 20100204.0, 20100208.0, 20100215.0, 20100218.0",Request Date,Date,Requested delivery date.,request; date; delivery
+SIREG,Constant value of 'PALETY' for all entries,Region,String,Region code.,region; code; location
+SIPAY,"Discrete values (3 unique): G, K, P",Payment Code,String,Payment code.,payment; code
+SIUSEC,Empty column,User Code,String,User code.,user; code
+SIDISD,Constant value of '0.0' for all entries,Discount Date,Date,Discount date.,discount; date
+SISTE,Empty column,State,String,State or province code.,state; province; location
+SIVATC,"Discrete values (3 unique): DETAL, EXP, VAT",VAT Code,String,VAT tax code.,vat; tax; code
+SIVATA,"1150 unique values. Some 0's (23.7%). Range: -16846.58 to 96719.7. Mean: 1640.39, Median: 116.16. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 1.63, 5.58, 11.37, 56.06, 358.22, 643.5, 3314.13",VAT Amount,Decimal,VAT tax amount.,vat; tax; amount
+SIBTOT,"1537 unique values. Range: -93421.95 to 536354.73. Mean: 12448.52, Median: 3568.50. Contains decimal values. Sample values: -105.7, 113.58, 153.48, 457.5, 1309.77, 2395.14, 6745.38, 9164.1, 11116.91, 19102.64",Base Total,Decimal,Base total amount before tax.,base; total; amount
+SIOWGH,Constant value of '0.0' for all entries,Weight,Decimal,Weight of the shipment.,weight; amount
+SIOWUM,Empty column,Weight UOM,String,Unit of measure for weight.,weight; uom; unit
+SIDISA,Constant value of '0.0' for all entries,Discount Amt,Decimal,Discount amount.,discount; amount
+SIDTSP,"40 unique values. Some 0's (39.9%). Range: 0.0 to 20100218.0. Mean: 12072146.86, Median: 20100111.00. Sample values: 0.0, 0.0, 0.0, 0.0, 20100105.0, 20100111.0, 20100129.0, 20100129.0, 20100203.0, 20100205.0",Date Shipped,Date,Date the order was shipped.,date; shipped

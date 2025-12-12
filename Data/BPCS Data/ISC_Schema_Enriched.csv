@@ -1,0 +1,4 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+ISID,Constant value of 'SC' for all entries,Record ID,String,Identifies the record type; always 'SC' for Status Code.,id; record; type; identifier
+ISSTSC,"Discrete values: 1, 2, 3",Status Code,Integer,Item status code.,status; code; state; condition
+ISSTSD,"Discrete values: Automat.zamiana-bez wzglêdu na stan zapasów       , Automat.zamiana-je¥eli nie ma zapasów poz.gªówn.  , Automat.zamiana-je¥eli sµ zapasy zamiennika       ",Description,String,Description of the status code.,description; name; text; status

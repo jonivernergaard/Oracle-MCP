@@ -1,0 +1,100 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+HID,"Discrete values (2 unique): CH, CZ",Record ID,String,"Identifies the record type, 'CH' for Customer Header.",id; record; type; header
+HORD,"9999 unique values. Range: 100002.0 to 110806.0. Mean: 105473.78, Median: 105517.00. Sample values: 100019.0, 100677.0, 102105.0, 102230.0, 104358.0, 104824.0, 105576.0, 107932.0, 108938.0, 109850.0",Order Number,Integer,Unique identifier for the customer order.,order; number; id
+HEDTE,"126 unique values. Range: 20091219.0 to 20100610.0. Mean: 20100230.34, Median: 20100412.00. Sample values: 20100210.0, 20100211.0, 20100223.0, 20100301.0, 20100316.0, 20100318.0, 20100423.0, 20100428.0, 20100526.0, 20100607.0",Entered Date,Date,Date the order was entered.,entered; date; order
+HCUST,"681 unique values. Range: 6.0 to 800864.0. Mean: 139890.42, Median: 1156.00. Sample values: 53.0, 340.0, 706.0, 1180.0, 101926.0, 102432.0, 102432.0, 700000.0, 700000.0, 800674.0",Customer Number,String,Identifier for the customer.,customer; number; id
+HCTYP,"Discrete values (4 unique): CDOM, CEXE, CEXN, CICE",Customer Type,String,Classification of the customer.,customer; type; class
+HLINS,"80 unique values. Range: 1.0 to 120.0. Mean: 7.90, Median: 5.00. Sample values: 1.0, 2.0, 4.0, 8.0, 11.0, 11.0, 13.0, 14.0, 17.0, 29.0",Number of Lines,Integer,Number of lines in the order.,lines; count; order
+HDTOT,"710 unique values. Lots of 0's (91.6%). Range: -25498.0 to 721221.21. Mean: 551.89, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Discount Total,Decimal,Total discount amount.,discount; total; amount
+HSTAT,"Discrete values (7 unique): 6, 7, 8, C, E, F, G",Order Status,String,Status of the order.,status; order; state
+HSAL,"Discrete values (14 unique): 1.0, 20.0, 21.0, 23.0, 24.0, 25.0, 26.0, 30.0, 31.0, 40.0, 60.0, 80.0, 81.0, 700000.0",Salesperson,String,Salesperson code.,salesperson; code; sales
+HCPO,"Text/Mixed data with 7265 unique values. Sample values: 700000/10001627, 99077955, 700000/10000599, PALLETS, 4/10, ***, *, BUFOR, 10-ZMW/0145, 700000/10001691. Most frequent: * (426), *** (279), PALETA (115), 884949011 (55), 886101011 (52)",Customer PO,String,Customer purchase order number.,customer; po; number
+HTERM,"Discrete values (19 unique): 1, 2, 3, 4, 5, 6, 7, 8, 12, 13, 14, 22, 23, 24, 25, 29, 30, 31, 99",Terms Code,String,Payment terms code.,terms; code; payment
+HTDES,"Discrete values (18 unique): 14 DNI, 21 DNI, 30 DAYS OF INV, 30 DNI, 40 DNI, 45 DNI, 50 DNI, 55 DNI, 60 DAYS OF INV, 60 DNI, 7 DNI, 75 DNI, 80 DNI, 85 DNI, 90 DAYS OF INV, 90 DNI, GOTÃWKA, KOMPENSATA",Terms Description,String,Description of payment terms.,terms; description; payment
+HVIA,Empty column,Ship Via,String,Shipping method.,ship; via; method
+HCOST,"740 unique values. Lots of 0's (91.4%). Range: -409600.49 to 450213.25. Mean: 881.11, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost,Decimal,Cost amount.,cost; amount
+HNAME,"Text/Mixed data with 720 unique values. 0.0% missing values. Sample values: Huhtamaki Logistikzentrum, Hipermarket KrakÃ³w Pawia, HURTOWNIA TÃGOBORZE DELIKATES, OPIEKA NAD MA[YM DZIECKIEM, Z.P.H.""Ula""Przybylscy sp.jawna, Hipermarket Starogard GdaÂºski, Huhtamaki Alf, Carrefour Kalisz, PIEKARNIA-CUKIERNIA""PELLOWSKI"", Makro 19 GdaÂºsk. Most frequent: Huhtamaki POLSKA SP.z o.o. (428), Huhtamaki Logistikzentrum (329), Huhtamaki Alf (203), DETAL GDYNIA (163), Huhtamaki Hungary Ltd. (149)",Customer Name,String,Name of the customer.,customer; name; company
+HAD1,"Text/Mixed data with 808 unique values. 0.4% missing values. Sample values: ul. Kujawska 123, IVANTEEVKA, MOSCOW, ul.Lubelska 26, ICA SVERIGE AB -DE VASTERAS, ul.Daniszewska 25, ul.Rudzka 40, ul. Jana PawÂªa 11, UL.SOBIESICKA 151, Tine Meieriet Sor Voll, ul. ZabrzaÂºska 24. Most frequent: ul. Budowlana 6 (590), GEWERBEGEBIET: ZUM KEHR 2 (338), spÃ³Âªka komandytowa (239), ki Deutschland GmbH & Co.KG (203), Fehervari UT 130 (149)",Address 1,String,First line of address.,address; line1; location
+HAD2,"Text/Mixed data with 679 unique values. 0.7% missing values. Sample values: Bydgoszcz, HALA NR 1, 80-819, Katowice LOGALI: 106, LUTZERATH, 84-200    WEJHEROWO, KrakÃ³w, Warszawa, UL.KAMIENNA 2 -4, Zielona GÃ³ra LOGALI: 117. Most frequent: Siemianowice Â¡l. (617), LUTZERATH (338), Warszawa (223), Bad Bertricher Strabe 6-9 (203), KrakÃ³w (185)",Address 2,String,Second line of address.,address; line2; location
+HAD3,"Text/Mixed data with 351 unique values. 51.8% missing values. Sample values: 5900000900438, 81-591 GDYNIA, 5900000900179, 5900012299186, SWEDEN, KOLECZKOWO, 5900000900391, 5900000931739, GDA]SK, 82-200 MALBORK. Most frequent: d-56859 Alf/Germany (203), GDA]SK (118), Bielsko-BiaÂªa (77), 5900000931913 (63), 5905784310213 (61)",Address 3,String,Third line of address.,address; line3; location
+HPOST,"Text/Mixed data with 460 unique values. 3.9% missing values. Sample values: PL, 58-319, 26-617, 31-154, 00-175, 35-100, 04-275, 97-200, 91-211, D-56826. Most frequent: PL (992), 41-100 (631), D-56826 (339), D-56859 (220), 43-300 (198)",Postal Code,String,Postal or zip code.,postal; zip; code; address
+HBACK,"Discrete values (14 unique): 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0, 11.0, 16.0, 26.0",Backorder,Integer,Backorder status or count.,backorder; status; count
+HDTYP,"28 unique values. Range: -2.03 to 1825.102. Mean: 3.69, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 7.0, 7.0, 7.0",Document Type,String,Type of document.,document; type; code
+HPTOT,"3375 unique values. Some 0's (45.9%). Range: -6583.5 to 20100611.0. Mean: 78546.77, Median: 0.00. Contains decimal values. Sample values: -0.031, -0.031, -0.001, 0.0, 0.0, 0.0, 0.0, 3.426, 20.584, 70.002",Product Total,Decimal,Total value of products.,product; total; amount
+HSDTE,"212 unique values. Range: 0.0 to 20101222.0. Mean: 20021980.04, Median: 20100415.00. Sample values: 20100211.0, 20100316.0, 20100421.0, 20100426.0, 20100426.0, 20100427.0, 20100504.0, 20100511.0, 20100515.0, 20100609.0",Ship Date,Date,Date of shipment.,ship; date; shipping
+HCRED,"Discrete values (4 unique): 0.0, 1.0, 2.0, 3.0",Credit Status,String,Credit status code.,credit; status; code
+HCHG,"Discrete values (3 unique): 0.000000000000000000, B3, PS",Charge Code,String,Charge code.,charge; code
+HWHSE,"Discrete values (12 unique): 0.000000000000000000, B3, CZ, D2, MG, ML, MZ, PS, S4, SA, SE, SF",Warehouse,String,Warehouse code.,warehouse; code; location
+HSHIP,"Discrete values (18 unique): 0.0, 1.0, 20100326.0, 20100415.0, 20100419.0, 20100422.0, 20100423.0, 20100429.0, 20100504.0, 20100505.0, 20100512.0, 20100513.0, 20100517.0, 20100519.0, 20100525.0, 20100601.0, 20100609.0, 20100611.0",Ship Code,String,Shipping code or date.,ship; code; date
+HRDTE,"211 unique values. Range: 1.0 to 20101222.0. Mean: 20021981.28, Median: 20100415.00. Sample values: 20100111.0, 20100215.0, 20100222.0, 20100317.0, 20100319.0, 20100407.0, 20100420.0, 20100507.0, 20100520.0, 20100525.0",Requested Date,Date,Requested delivery date.,requested; date; delivery
+HCOMP,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+HPRF,Empty column,Prefix,String,Order prefix.,prefix; order
+HREG,"Discrete values (2 unique): PALETY, PL",Region,String,Region code.,region; code; location
+HCOUN,"Text/Mixed data with 28 unique values. 0.4% missing values. Sample values: PL, PNM. Most frequent: PL (8533), PDA (585), PHB (149), CZ (138), PSK (106)",Country,String,Country code.,country; code; location
+HATN,"Text/Mixed data with 80 unique values. 87.5% missing values. Sample values: Gabriela KoÂ«mider, Sakowski, hala nr.22, CENTRUM LOGISTYCZNE - MAGAZYN, W.E.T.FilipÃ³w ,J.D.JaskuÂªa, Sp. Jawna Piskorz, Liszewski, Teresa Seniutiene. Most frequent: Zweigniederlassung der Huhtama (203), Gabriela KoÂ«mider (95), sp.jawna Marcin Malewski, (92), UlexSpÃ³Âªka  Jawna (77), W.E.T.FilipÃ³w ,J.D.JaskuÂªa (76)",Attention,String,Attention name.,attention; name; contact
+HPAYC,"Discrete values (3 unique): G, K, P",Payment Code,String,Payment code.,payment; code
+HUSEC,Constant value of 'VAT' for all entries,User Code,String,User defined code.,user; code
+HTAX,"Text/Mixed data with 31 unique values. Sample values: VAT, DETAL. Most frequent: VAT (6783), DETAL (1760), EXP (1417), 0.000000000000000000 (7), 10003451.000000000000000000 (2)",Tax Code,String,Tax code.,tax; code
+HINVN,"Text/Mixed data with 5829 unique values. Sample values: 10000647.000000000000000000, 10005200.000000000000000000, 10003502.000000000000000000, 10000133.000000000000000000, 0.000000000000000000, 10004130.000000000000000000, 10000290.000000000000000000, 10002734.000000000000000000, 10000155.000000000000000000, 10005253.000000000000000000. Most frequent: 0.000000000000000000 (669), PLN (39), 10000092.000000000000000000 (16), 10000420.000000000000000000 (13), 10001647.000000000000000000 (12)",Invoice Number,String,Invoice number associated with the order.,invoice; number; id
+HCURR,"Discrete values (2 unique): EUR, PLN",Currency,String,Currency code.,currency; code; money
+HINUSE,Constant value of '0.0' for all entries,In Use,Flag,In use flag.,in-use; flag
+HSTE,"Discrete values (2 unique): 1.000000000000000000, PL",State,String,State code.,state; code; location
+HCNVFC,"116 unique values. Range: -207.55 to 250328.6. Mean: 89.26, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.99",Conversion Factor,Decimal,Currency conversion factor.,conversion; factor; currency
+HBTOT,"745 unique values. Lots of 0's (91.3%). Range: -40761.36 to 721221.21. Mean: 748.86, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 26.84, 634944.91",Base Total,Decimal,Total amount in base currency.,base; total; amount
+HGCNFC,"108 unique values. Range: 1.0 to 4.177. Mean: 1.43, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.8725, 3.9711, 4.0339",Global Conv Factor,Decimal,Global conversion factor.,global; conversion; factor
+HTOWH,Constant value of '0.0' for all entries,To Warehouse,String,Destination warehouse.,to; warehouse; location
+HVSHP,Constant value of '0.0' for all entries,Via Ship,String,Via shipping instructions.,via; ship; instructions
+HSINS,Constant value of '0.0' for all entries,Special Instructions,String,Special instructions.,special; instructions; notes
+HSRDTE,Constant value of '0.0' for all entries,Scheduled Date,Date,Scheduled date.,scheduled; date
+HSHPR,"21 unique values. Range: 0.0 to 20100610.0. Mean: 16492708.49, Median: 20100430.00. Sample values: 0.0, 0.0, 0.0, 20100419.0, 20100423.0, 20100430.0, 20100518.0, 20100518.0, 20100531.0, 20100610.0",Shipper Date,Date,Shipper date.,shipper; date
+HDTSP,"158 unique values. Range: 0.0 to 20100909.0. Mean: 18640953.45, Median: 20100409.00. Sample values: 20100105.0, 20100108.0, 20100114.0, 20100120.0, 20100129.0, 20100302.0, 20100319.0, 20100330.0, 20100512.0, 20100520.0",Date Shipped,Date,Date the order was shipped.,date; shipped; shipping
+HOWGH,Constant value of '0.0' for all entries,Order Weight,Decimal,Total weight of the order.,order; weight; total
+HOWUM,Empty column,Weight UOM,String,Unit of measure for weight.,weight; uom; unit
+HSRCE,Empty column,Source,String,Source code.,source; code
+HCARR,Empty column,Carrier,String,Carrier code.,carrier; code; shipping
+HROUT,"Discrete values (7 unique): 0.0, 20100413.0, 20100414.0, 20100421.0, 20100427.0, 20100518.0, 20100524.0",Route,String,Route code or date.,route; code; date
+HCNDT,"130 unique values. Lots of 0's (94.5%). Range: 0.0 to 20120924.0. Mean: 1103629.79, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cancel Date,Date,Date the order was cancelled.,cancel; date
+HSTORE,Constant value of '0.0' for all entries,Store,String,Store code.,store; code
+HSAL2,"Discrete values (2 unique): 0.0, 700000.0",Salesperson 2,String,Second salesperson code.,salesperson; code; sales
+HCOM,Empty column,Commission,Decimal,Commission amount.,commission; amount
+HCOM2,Constant value of '0.0' for all entries,Commission 2,Decimal,Second commission amount.,commission; amount
+HOTDS,"Discrete values (17 unique): 0.0, 20100323.0, 20100412.0, 20100414.0, 20100419.0, 20100421.0, 20100426.0, 20100427.0, 20100428.0, 20100429.0, 20100430.0, 20100510.0, 20100514.0, 20100517.0, 20100518.0, 20100528.0, 20100607.0",Order Date,Date,Order date.,order; date
+HRCDT,"126 unique values. Range: 0.0 to 20100610.0. Mean: 20021830.63, Median: 20100409.00. Sample values: 20100111.0, 20100120.0, 20100211.0, 20100218.0, 20100326.0, 20100402.0, 20100518.0, 20100527.0, 20100531.0, 20100607.0",Receipt Date,Date,Receipt date.,receipt; date
+HODBL,"Discrete values (8 unique): -37.43, 0.0, 37.43, 24416.63, 25361.39, 31315.09, 32131.96, 45141.22",Order Balance,Decimal,Balance remaining on the order.,order; balance; amount
+CHTAXA,"Text/Mixed data with 487 unique values. Sample values: 0.000000000000000000. Most frequent: 0.000000000000000000 (9405), SP (33), 1422.960000000000000000 (13), KS (6), 4.840000000000000000 (4)",Tax Amount,Decimal,Tax amount.,tax; amount
+CHREAS,"Discrete values (2 unique): KS, SP",Reason Code,String,Reason code.,reason; code
+CHFENO,Constant value of '0.0' for all entries,FE Number,String,FE number.,fe; number
+CHSAL2,Constant value of '0.0' for all entries,Salesperson 2,String,Second salesperson code (CH).,salesperson; code; sales
+CHCOM,Constant value of '6.0' for all entries,Commission,Decimal,Commission amount (CH).,commission; amount
+CHTERM,"Discrete values (15 unique): 1, 12, 13, 14, 2, 24, 25, 29, 3, 4, 5, 6, 7, 8, CPL",Terms Code,String,Terms code (CH).,terms; code; payment
+CHBANK,"Discrete values (3 unique): 1.000000000000000000, CEU, CPL",Bank Code,String,Bank code.,bank; code
+CHCURT,"109 unique values. Range: 0.0 to 4.177. Mean: 1.43, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0",Currency Rate,Decimal,Currency exchange rate.,currency; rate; exchange
+HBO,"Discrete values (2 unique): 0.0, 4.0",Backorder,Integer,Backorder count (CH).,backorder; count
+HFRES,Constant value of '0.0' for all entries,Freight Res,String,Freight reservation.,freight; reservation
+HUDTE1,Constant value of '0.0' for all entries,User Date 1,Date,User defined date 1.,user; date
+HUDTE2,"Discrete values (7 unique): 0.0, 1991.0, 2826.0, 2906.0, 3451.0, 3649.0, 4105.0",User Date 2,Date,User defined date 2.,user; date
+HCPRFN,"388 unique values. Lots of 0's (95.4%). Range: 0.0 to 110702.0. Mean: 1452.10, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Profile Number,String,Customer profile number.,profile; number; customer
+HCPTP,"23 unique values. Range: -1.0 to 1969.881. Mean: 32.85, Median: 1.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 527.966",Profile Type,String,Customer profile type.,profile; type; customer
+HVOLUM,"4433 unique values. Some 0's (16.0%). Range: -74500.0 to 617400.0. Mean: 329.06, Median: 12.00. Contains decimal values. Sample values: -9.832, 0.0, 0.0, 0.42, 1.106, 3.0, 14.192, 100.011, 250.0, 1208.0",Volume,Decimal,Volume of the order.,volume; amount
+HWEIGT,"6574 unique values. Range: -252631.271 to 1424600.0. Mean: 1604.12, Median: 66.54. Contains decimal values. Sample values: -0.75, 0.0, 0.025, 53.186, 107.289, 109.869, 469.969, 1177.225, 2588.016, 5851.828",Weight,Decimal,Weight of the order.,weight; amount
+HCONSL,Constant value of '0.0' for all entries,Consolidation,String,Consolidation code.,consolidation; code
+HPRCON,"Discrete values (17 unique): -0.055, 0.0, 0.055, 2.0, 18.0, 27.75, 31.166, 32.0, 32.25, 33.0, 33.047, 33.5, 64.166, 65.194, 65.7, 65.777, 100.666",Process Control,String,Process control value.,process; control
+HPALET,"3003 unique values. Some 0's (16.0%). Range: -191.678 to 20100629.0. Mean: 68354.52, Median: 0.43. Contains decimal values. Sample values: 0.0, 0.0, 0.044, 0.234, 0.436, 1.298, 2.222, 3.309, 8.0, 9.364",Pallets,Decimal,Number of pallets.,pallets; count
+CHMNDT,"Text/Mixed data with 206 unique values. 0.1% missing values. Sample values: 20100226.000000000000000000, 0.000000000000000000, 20100525.000000000000000000, 20100224.000000000000000000, 20100524.000000000000000000, 20100322.000000000000000000, 20100108.000000000000000000, 20100428.000000000000000000, 20100514.000000000000000000, 20100611.000000000000000000. Most frequent: 0.000000000000000000 (781), 20100409.000000000000000000 (254), 20100803.000000000000000000 (205), 20100524.000000000000000000 (184), 20100608.000000000000000000 (171)",Monitor Date,Date,Monitor date.,monitor; date
+CHDPFX,"Discrete values (11 unique): 0.000000000000000000, 10.000000000000000000, DA, DB, DF, DK, EP, EX, KE, KS, SP",Doc Prefix,String,Document prefix.,document; prefix
+CHDYR,"Discrete values (4 unique): 0.0, 1.0, 3.0, 10.0",Doc Year,Integer,Document year.,document; year
+CHDTYP,"Discrete values (5 unique): 1.000000000000000000, 2.000000000000000000, 3.000000000000000000, KS, SP",Doc Type,String,Document type.,document; type
+CHPREF,"Text/Mixed data with 25 unique values. Sample values: SP, DF, DB. Most frequent: SP (6534), DF (1565), EX (1267), KS (248), DA (160)",Prefix,String,Prefix code.,prefix; code
+CHVDAT,"126 unique values. Range: 20091219.0 to 20100610.0. Mean: 20100229.38, Median: 20100409.00. Sample values: 20100218.0, 20100223.0, 20100303.0, 20100309.0, 20100326.0, 20100419.0, 20100505.0, 20100506.0, 20100510.0, 20100607.0",Value Date,Date,Value date.,value; date
+CHPRCC,"Discrete values (17 unique): BG, CZ, DE, EE, EL, ES, FI, FR, GB, HU, LT, LV, NL, PL, R0, SE, SK",Country Code,String,Country code (CH).,country; code; location
+CHPRNO,"Text/Mixed data with 46 unique values. 86.6% missing values. Sample values: 128784539, 107724419, 2020274531, 41189698, 2020231939. Most frequent: 128784539 (593), 556035843301 (153), 10945782 (149), 005529542B01 (59), 48593192 (36)",Process Number,String,Process number.,process; number
+HRES1,Empty column,Reserved 1,String,Reserved field 1.,reserved; field
+HRES2,Empty column,Reserved 2,String,Reserved field 2.,reserved; field
+HRES3,"Discrete values (7 unique): 0.0, 100284.0, 100285.0, 100286.0, 100288.0, 100289.0, 100290.0",Reserved 3,String,Reserved field 3.,reserved; field
+HRMA,"290 unique values. Lots of 0's (96.7%). Range: 0.0 to 100362.0. Mean: 2937.02, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",RMA Number,String,Return Merchandise Authorization number.,rma; number; return
+CHMNTR,"Discrete values (2 unique): 30, DDU",Monitor,String,Monitor code.,monitor; code
+CHTRMC,"Discrete values (5 unique): DD1, DDP, DDU, EXW, FCA",Incoterms,String,Incoterms code.,incoterms; shipping; terms
+CHSZNE,Empty column,Zone,String,Zone code.,zone; code; location
+CHDELT,Empty column,Delivery Terms,String,Delivery terms.,delivery; terms
+CHCDES,Empty column,Code Description,String,Code description.,code; description
+CHCODS,Empty column,Codes,String,Codes.,codes

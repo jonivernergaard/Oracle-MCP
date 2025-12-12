@@ -1,0 +1,14 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+ITEMBPCS,N/A,BPCS Item Number,String,"[BPCS Docs]: item from BPCS",item; bpcs; number
+ITEMCUST,N/A,Customer Item Number,String,"[BPCS Docs]: customer item",customer; item; number
+EANITEM,N/A,EAN Item,String,"[BPCS Docs]: EAN for item (carton or single piece)",ean; item; barcode
+EANINNER,N/A,EAN Inner Pack,String,"[BPCS Docs]: EAN for inner pack",ean; inner; pack; barcode
+LANG1,N/A,Description Language 1,String,"[BPCS Docs]: descriptions in five languages",description; language
+LANG2,N/A,Description Language 2,String,"[BPCS Docs]: descriptions in five languages",description; language
+LANG3,N/A,Description Language 3,String,"[BPCS Docs]: descriptions in five languages",description; language
+LANG4,N/A,Description Language 4,String,"[BPCS Docs]: descriptions in five languages",description; language
+LANG5,N/A,Description Language 5,String,"[BPCS Docs]: descriptions in five languages",description; language
+PACKING,N/A,Item Packing,String,"[BPCS Docs]: item packing e.g., 50 x 30",packing; dimensions
+LOGO,N/A,Logo,String,"[BPCS Docs]: optional logo on label",logo; label; image
+DESC1,N/A,Description 1,String,"[BPCS Docs]: description1 30 characters",description; text
+DESC2,N/A,Description 2,String,"[BPCS Docs]: description2 30 characters",description; text

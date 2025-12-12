@@ -1,0 +1,80 @@
+﻿Oracle DB Table,Oracle DB Column,FBDI Column,FBDI Column Name,Tech Comments,Field Description,Mandatory,Data Type,Max Length,Default,Comments,Legacy Table Name,Legacy Column Name,Legacy Field Description,Legacy Data Type,Mapping Logic
+HZ_PARTIES ,PARTY_NAME,C,Supplier Name*,Sample: MBC Corp,Supplier name,Yes,VARCHAR2,360,,(Legal Name) - Required by Business based on Huhtamaki Guidelines,,,,,"
+Field name : Supplier name , need validation by data owners to confirm the legal entity name"
+POZ_SUPPLIERS,SEGMENT1,E,Supplier Number*,Sample : 12345,Supplier number. If you plan to use automatic supplier numbering then no value need be provided here.,No,VARCHAR2,30,,,,,,,"Automatic numbering from Fusion, Legacy system supplier number is mapped to DFF supplier reference at site level"
+HZ_ADDTNL_PARTY_NAMES,VENDOR_NAME_ALT,F,Alternate Name,Sample: MBC Corp,Alternate supplier name,No,VARCHAR2,360,,,,,,,No Alternate name
+POZ_SUPPLIERS,ORGANIZATION_TYPE_LOOKUP_CODE,G,Tax Organization Type*,Sample: Organization,Organization type,Yes,VARCHAR2,30,,,,,,,"Corporation is for all the companies(97% cases)
+Individual for any employees/Individual and also can some percentage of government agencies.
+Need the logic to determine Corporation/Individual/Employee"
+POZ_SUPPLIERS,VENDOR_TYPE_LOOKUP_CODE,H,Supplier Type*,Sample: Contractor,Supplier type,No,VARCHAR2,30,,(Supplier Type) -Required by Business based on Huhtamaki Guidelines,,,,,"Need confirmation from Business to consiber below mapping,
+If the Supplier name contain ""Huhtamaki' than its 'internal' else it will be 'Supplier'"
+,END_DATE_ACTIVE,I,Inactive Date,Sample: 2025/12/21,Date supplier is inactivated.,No,DATE,YYYY/MM/DD,,"(Supplier Status) -Required by Business based on Huhtamaki Guidelines 
+
+If the Inactive Date field is blank or contains a future date, the Status will be set to Active. Otherwise, the Status will be inactive
+",,,,,
+POZ_SUPPLIERS,BUSINESS_RELATIONSHIP,J,Business Relationship*,Sample: SPEND_AUTHORIZED,Business relationship of the enterprise with the supplier. Valid only for CREATE action.,Yes,VARCHAR2,30,,,,,,,"Constant Value ""SPEND_AUTHORIZED"""
+HZ_ADDTNL_PARTY_NAMES,ALIAS,L,Alias,Sample: 12345,Name as captured by the users to internally identify the organization.,No,VARCHAR2,360,,,,,,,Not in use
+POZ_SUPPLIERS,ONE_TIME_FLAG,N,One-time supplier,Sample: N,Indicates whether the supplier is a one time supplier,No,VARCHAR2,1,,"Y, N",,,,,Constant Value 'N'
+ZX_PARTY_TAX_PROFILE,TAX_COUNTRY_CODE,V,Taxpayer Country,Sample: US,Tax country code,No,VARCHAR2,2,,,,,,,"Field name: 'Country' code
+Business team need to ensure the country code is updated for all active suppliers"
+POZ_SUPPLIERS_PII,NUM_1099,W,Taxpayer ID,Sample: 123456,Tax identification number(1099),No,VARCHAR2,30,,(Tax Identification Number / Company identity ID ) - Required by Business based on Huhtamaki Guidelines,,,,,"Local Business Id.
+Field mapped: 'Local TIN'
+Accenture to confirm to remove '-' existing current data. It should have 10 digit number and unique among suppliers"
+ZX_PARTY_TAX_PROFILE,VAT_REGISTRATION_NUM,AG,Tax Registration Number,Sample: 1234567,VAT registration number,No,VARCHAR2,20,,(Tax Identification Number / Company identity ID ) - Required by Business based on Huhtamaki Guidelines,,,,,"VAT Number 
+Format 1: For poland Supplier, 'Local TIN' with 'PL' prefix
+Format 2: For other country supplier mapped to 'Tax Identifier', This need validation and data cleansing
+Note: Tax Registration number of the registration country must be recorded on Header level. If supplier has multiple tax registrations, alternative Tax registration numbers should be recorded on address level.
+"
+IBY_EXT_PARTY_PMT_MTHDS,PAYMENT_METHOD_LOOKUP_CODE,AI,Payment Method,Sample: Electronic,Payment method identifier,No,VARCHAR2,30,,,,,,,"maintained at supplier sites level, Not required at this level"
+HZ_PARTIES,PARTY_NUMBER,ET,Registry ID,Sample: 12345,"An optional Attribute, when provided will be used to check whether a party already exists with this number and the usage will be created based on that.",No,VARCHAR2,30,,,,,,,"To be reviewed specially in IC area
+Customer Registry Id to link Supplier to Customer (Get value from Traget System).
+To link supplier to customer, customer should exists in a system"
+IBY_EXTERNAL_PAYEES_ALL,EXCLUSIVE_PAYMENT_FLAG,EV,Pay Each Document Alone,Sample: Y,Yes or No flag indicating whether documents payable for this payee should be prevented from being grouped with other like documents payable for payment.,No,VARCHAR2,1,,"Y,N",,,,,Leave it blank
+HZ_PARTIES,PARTY_NAME,C,Supplier Name*,Sample: MBC Corp,Supplier Name unique identifier.,Yes,VARCHAR2,360,,(Legal Name) - Required by Business based on Huhtamaki Guidelines,,,,,Legal entity name of the Supplier
+HZ_PARTY_SITES,PARTY_SITE_NAME,D,Address Name *,Sample: Main-Pay,Supplier address unique identifier. The attribute is obtained from TCA (HZ_PARTY_SITES).,Yes,VARCHAR2,240,,,,,,,It will be defined as city name as mentioned in assumption section
+HZ_LOCATIONS,COUNTRY,F,Country,Sample: US,Country to which the address belongs. Provide the country code.,No,VARCHAR2,60,,(Country Code ) - (Legal Address – Street) - Required by Business based on Huhtamaki Guidelines,,,,,Should be mapped to country details available in lagacy as per ISO standards
+HZ_LOCATIONS,ADDRESS1,G,Address Line 1,Sample: 205 Edgewater Drive,First line of supplier address.,No,VARCHAR2,240,,(Legal Address – Street) - Required by Business based on Huhtamaki Guidelines,,,,,Should be mapped to address line 1 from Lagacy.
+HZ_LOCATIONS,ADDR_ELEMENT_ATTRIBUTE2,M,Address Element Attribute 2,Sample: Style1,Additional address element to support flexible address format.,No,VARCHAR2,150,,,,,,,No mapping needed
+HZ_LOCATIONS,CITY,S,City,Sample: Orlando,City of supplier address.,No,VARCHAR2,60,,,,,,,Should be mapped to City field from lagacy
+HZ_LOCATIONS,STATE,T,State,Sample: Florida,State of supplier address.,No,VARCHAR2,60,,,,,,,If we have US based suppliers we need this mapping
+HZ_LOCATIONS,PROVINCE,U,Province,Sample: Florida,Province of supplier address.,No,VARCHAR2,60,,,,,,,
+HZ_LOCATIONS,COUNTY,V,County,Sample: Orange County,County of supplier address.,No,VARCHAR2,60,,,,,,,If we have US based suppliers we need this mapping
+HZ_LOCATIONS,POSTAL_CODE,W,Postal code,Sample: 32801,Postal code of supplier address.,No,VARCHAR2,60,,(ZIP) -Required by Business based on Huhtamaki Guidelines,,,,,Should be mapped from legacy
+HZ_PARTY_SITES,ADDRESSEE,Y,Addressee,"Sample: 205 Edgewater Drive
+Supplier ABC Ltd.
+Address: Plot 5, Industrial Estate, Pune
+Addressee: “Stores Supervisor – Mr. Vinod”",Addressee information.,No,VARCHAR2,360,,,,,,,Enrichment required
+HZ_PARTY_SITES,PARTY_SITE_LANGUAGE,AA,Language,Sample: US,Operating language of the address. Provide language code.,No,VARCHAR2,4,,,,,,,
+HZ_PARTY_SITE_USES,RFQ_OR_BIDDING_PURPOSE_FLAG,AJ,RFQ Or Bidding,Sample: Y,Indicates whether purpose RFQ or Bidding is allowed for this address.,No,VARCHAR2,1,,,,,,,
+HZ_PARTY_SITE_USES,ORDERING_PURPOSE_FLAG,AK,Ordering,Sample: Y,Indicates whether purpose Ordering is allowed for this address.,No,VARCHAR2,1,,,,,,,
+HZ_PARTY_SITE_USES,REMIT_TO_PURPOSE_FLAG,AL,Pay,Sample: Y,Indicates whether purpose Remit To is allowed for this address.,No,VARCHAR2,1,,,,,,,
+IBY_EXTERNAL_PAYEES_ALL,REMIT_ADVICE_DELIVERY_METHOD,DD,Delivery Method,Sample: EMAIL,Remit advice delivery method used by IBY to create payee information.,No,VARCHAR2,30,,"LOV:
+EMAIL
+EMAILPDF
+FAX
+PRINTED",,,,,
+POZ_SUPPLIER_SITES_ALL_M,RFQ_ONLY_SITE_FLAG,I,Sourcing only,Sample: N,Indicates whether or not this site only accepts RFQs,No,VARCHAR2,1,,"Y, N",,,,,
+POZ_SUPPLIER_SITES_ALL_M,PURCHASING_SITE_FLAG,J,Purchasing,Sample: Y,Indicates whether purchasing is allowed from this site,No,VARCHAR2,1,,"Y, N",,,,,
+POZ_SUPPLIER_SITES_ALL_M,PCARD_SITE_FLAG,K,Procurement card,Sample: Y,Indicates whether or not the site allows use of procurement cards,No,VARCHAR2,1,,"Y, N",,,,,
+POZ_SUPPLIER_SITES_ALL_M,PAY_SITE_FLAG,L,Pay,Sample: Y,Indicates whether or not payments are allowed to this site,No,VARCHAR2,1,,"Y, N",,,,,
+POZ_SUPPLIER_SITES_ALL_M,COUNTRY_OF_ORIGIN_CODE,AF,Country of Origin,Sample: US,Code of country of manufacture,No,VARCHAR2,2,,(Default Country of origin) -Required by Business based on Huhtamaki Guidelines,,,,,
+AP_TERMS,NAME,BP,Payment Terms,Sample: 30Days,Payment terms name,No,VARCHAR2,50,,(Default Terms of Payment) -Required by Business based on Huhtamaki Guidelines,,,,,
+IBY_EXT_PARTY_PMT_MTHDS,PAYMENT_METHOD_LOOKUP_CODE,BZ,Payment Method,Sample: Check,Default payment method type,No,VARCHAR2,30,,,,,,,
+POZ_SUPPLIER_SITES_ALL_M,ATTRIBUTE1,CP,ATTRIBUTE1,Sample : 12345,Descriptive Flexfield: segment of the user descriptive flexfield.,No,VARCHAR2,150,,,,,,,
+IBY_EXTERNAL_PAYEES_ALL,EXCLUSIVE_PAYMENT_FLAG,GQ,Pay Each Document Alone,Sample: Y,Yes or No flag indicating whether documents payable for this payee should be prevented from being grouped with other like documents payable for payment.,No,VARCHAR2,1,,"Y, N",,,,,
+HZ_PARTIES,PARTY_NAME,C,Supplier Name*,Sample: MBC Corp,Supplier Name,Yes,VARCHAR2,360,,(Legal Name) - Required by Business based on Huhtamaki Guidelines,,,,,
+POZ_SUPPLIER_SITES_ALL_M,VENDOR_SITE_CODE,D,Supplier Site*,Sample: MBC Corp -Site 1,Supplier site name,Yes,VARCHAR2,15,,,,,,,
+FUN_ALL_BUSINESS_UNITS_V,BU_NAME,E,Procurement BU*,Sample: ABC Business Unit,Business unit identified as the one responsible for procurement services for one or more client business units.,Yes,VARCHAR2,240,,,,,,,
+FUN_ALL_BUSINESS_UNITS_V,BU_NAME,F,Client BU*,Sample: ABC Business Unit,BU that is a client of the Procurement BU and with either requisitioning or an invoicing business functions or both.,Yes,VARCHAR2,240,,,,,,,
+FUN_ALL_BUSINESS_UNITS_V,BU_NAME,G,Bill-to BU,Sample: ABC Business Unit,The Bill-to BU is the business unit that assumes financial liablity for all procurement transactions on behalf of the client business unit. ,No,VARCHAR2,240,,,,,,,
+HZ_PARTIES,PARTY_NAME,C,Supplier Name*,Sample: MBC Corp,Supplier Name unique identifier.,Yes,VARCHAR2,360,,(Legal Name) - Required by Business based on Huhtamaki Guidelines,,,,,
+HZ_PARTIES,SALUTATION,D,Prefix,Sample: Mr.,Contact salutation.,No,VARCHAR2,30,,,,,,,
+HZ_PARTIES,PERSON_FIRST_NAME ,E,First Name,Sample: Marvin,Contact first name.,No,VARCHAR2,150,,,,,,,
+HZ_PARTIES,PERSON_LAST_NAME ,H,Last Name,Sample: Dela Cruz,Contact last name.,No,VARCHAR2,150,,,,,,,
+HZ_CONTACT_POINTS,EMAIL_ADDRESS,L,E-Mail,Sample: marvin@gmail.com,E-mail address for the supplier contact.,No,VARCHAR2,320,,,,,,,
+HZ_CONTACT_POINTS,PHONE_NUMBER,P,Phone,Sample 63-101112,Contact phone number.,No,VARCHAR2,40,,,,,,,
+HZ_PARTIES,PARTY_NAME,C,Supplier Name*,Sample: MBC Corp,Supplier name unique identifier.,Yes,VARCHAR2,360,,(Legal Name) - Required by Business based on Huhtamaki Guidelines,,,,,
+HZ_PARTY_SITES,PARTY_SITE_NAME,D,Address Name *,Sample: Main-Pay,Indicates the supplier address name to which the contact should be associated.,Yes,VARCHAR2,240,,,,,,,
+HZ_PARTIES,PERSON_FIRST_NAME,E,First Name,Sample: Marvin,First name of contact.,No,VARCHAR2,150,,,,,,,
+HZ_PARTIES,PERSON_LAST_NAME,F,Last Name,Sample: Dela Cruz,Last name of contact.,No,VARCHAR2,150,,,,,,,
+HZ_PARTIES,EMAIL_ADDRESS,G,E-Mail,Sample: marvin@gmail.com,E-mail address for contact.,No,VARCHAR2,320,,,,,,,

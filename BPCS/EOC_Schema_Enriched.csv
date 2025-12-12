@@ -1,0 +1,16 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+OCID,Constant value of 'OC' for all entries,Record ID,String,Identifies the record type; always 'OC' for Order Class.,id; record; type; identifier
+OCOCLS,Range from 1 to 394,Order Class,Integer,Order class code.,order; class; code; category
+OCOCDS,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: Rush Order 1                  ",Description,String,Description of the order class.,description; name; text; category
+OCBCLS,"Discrete values: 1, 2, 3, 4, 5, 6, 7, 8, 10",Backorder Class,Integer,Backorder class code.,backorder; class; code; inventory
+OCRESV,"Discrete values: 0, 1",Reserve,Flag,Reserve inventory flag.,reserve; flag; inventory; status
+OCE1RQ,Constant value of '1' for all entries,Event 1 Req,Flag,Event 1 required flag.,event; 1; required; flag
+OCE2RQ,"Discrete values: 0, 2",Event 2 Req,Flag,Event 2 required flag.,event; 2; required; flag
+OCE3RQ,"Discrete values: 0, 3",Event 3 Req,Flag,Event 3 required flag.,event; 3; required; flag
+OCE4RQ,"Discrete values: 0, 4",Event 4 Req,Flag,Event 4 required flag.,event; 4; required; flag
+OCE5RQ,"Discrete values: 0, 5",Event 5 Req,Flag,Event 5 required flag.,event; 5; required; flag
+OCENTM,"Discrete values: 50000, 60400, 83516, 104247, 105322, 105406, 105602, 114916, 131135, 142331, 173256",Entry Time,Time,Time the record was entered.,entry; time; creation; system
+OCENDT,"Discrete values: 19960829, 19970805, 19981230, 19990102, 19990104, 19990208, 20030807, 20050318, 20070820",Entry Date,Date,Date the record was entered.,entry; date; creation; time
+OCENUS,"Discrete values: B610ADM   , BPCSSECOFR, E4US      , INFORM01  , RESERVED  ",Entry User,String,User who entered the record.,entry; user; id; person
+OCMNTM,Constant value of '0' for all entries,Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+OCMNDT,Constant value of '0' for all entries,Maint Date,Date,Date of last maintenance.,maintenance; date; last; update

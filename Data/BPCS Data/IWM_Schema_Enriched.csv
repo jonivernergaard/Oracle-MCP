@@ -1,0 +1,21 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LID,Constant value of 'WM' for all entries,Record ID,String,"Identifies the record type, 'WM' for Warehouse Master.",id; record; type; warehouse; master
+LWHS,"Text/Mixed data with 63 unique values. Sample values: D5, MG, QS, C6, C4, PP, GA, ML, MZ, D6. Most frequent: BR (1), B3 (1), CR (1), D2 (1), KO (1)",Warehouse,String,Warehouse code.,warehouse; code; location
+LDESC,"Text/Mixed data with 63 unique values. Sample values: MAGAZYN GDYNIA NTA            , MAGAZYN BUFOROWY AJK KALISZ   , MAGAZYN MARPAK                , Z[OMOWANIE                    , INV                           , MAGAZYN INTER CERA            , MAGAZYN GLIWICE               , MAGAZYN PROOPTIMUM            , MAGAZYN BUFOROWY ULEX         , MAGAZYN WYRY                  . Most frequent: BÅDZIN ROZNICE                 (1), MAGAZYN BUFOROWY ULEX          (1), CHRZANÃW                       (1), MAGAZYN MARPAK                 (1), Magazyn Konsorcjum             (1)",Description,String,Description of the warehouse.,description; warehouse; location
+LLDTE,Constant value of '20251201.0' for all entries,Last Date,Date,Last activity date.,last; date; activity
+LYSLS,"Discrete values (11 unique): -286092.74, 0.0, 2033.2, 8079.27, 20352.64, 250698.24, 2303249.91, 2578876.74, 2981451.81, 8399461.18, 400677070.7",YTD Sales,Decimal,Year-to-date sales amount.,ytd; sales; amount
+LYCOS,"Discrete values (11 unique): -205302.12, -40526.42, -778.5, 0.0, 182.1, 1859.1, 139702.39, 235651.0, 1812491.06, 6799228.12, 303382619.2",YTD Cost,Decimal,Year-to-date cost amount.,ytd; cost; amount
+LSL01,"Discrete values (8 unique): -3768.46, 0.0, 17591.39, 42978.15, 69175.9, 75713.91, 441026.68, 37995415.94",Sales Per 1,Decimal,Sales amount for period 1.,sales; period; 1
+LSL02,"Discrete values (8 unique): -5915.54, 0.0, 19467.86, 47989.01, 160958.39, 234971.39, 636083.65, 38384963.44",Sales Per 2,Decimal,Sales amount for period 2.,sales; period; 2
+LSL03,"Discrete values (9 unique): -17780.54, 0.0, 986.7, 7795.58, 65242.7, 188008.37, 206169.52, 658550.27, 38038041.89",Sales Per 3,Decimal,Sales amount for period 3.,sales; period; 3
+LSL04,"Discrete values (8 unique): -37918.34, 0.0, 12797.62, 49340.1, 189511.86, 255860.85, 1104214.26, 35678088.65",Sales Per 4,Decimal,Sales amount for period 4.,sales; period; 4
+LSL05,"Discrete values (8 unique): -4188.8, 0.0, 10943.93, 210130.11, 246975.94, 344984.08, 588741.16, 40551279.76",Sales Per 5,Decimal,Sales amount for period 5.,sales; period; 5
+LSL06,"Discrete values (8 unique): -3233.28, 0.0, 17146.77, 57057.0, 241442.43, 321923.65, 737770.64, 36869123.72",Sales Per 6,Decimal,Sales amount for period 6.,sales; period; 6
+LSL07,"Discrete values (9 unique): -44888.34, 0.0, 20352.64, 27372.36, 141609.65, 244865.87, 295363.44, 1211158.96, 34884738.96",Sales Per 7,Decimal,Sales amount for period 7.,sales; period; 7
+LSL08,Constant value of '0.0' for all entries,Sales Per 8,Decimal,Sales amount for period 8.,sales; period; 8
+LSL09,"Discrete values (9 unique): -45734.18, 0.0, 3778.15, 25517.33, 196113.95, 238186.15, 264708.05, 597261.96, 36360634.89",Sales Per 9,Decimal,Sales amount for period 9.,sales; period; 9
+LSL10,"Discrete values (8 unique): -11770.2, 0.0, 37319.08, 185651.39, 219676.8, 501383.16, 899215.84, 37249829.96",Sales Per 10,Decimal,Sales amount for period 10.,sales; period; 10
+LSL11,"Discrete values (9 unique): -19514.0, 0.0, 4301.12, 9952.56, 157876.8, 269068.97, 554885.94, 726621.4, 31189833.38",Sales Per 11,Decimal,Sales amount for period 11.,sales; period; 11
+LSL12,"Discrete values (9 unique): -91381.06, 0.0, 1046.5, 7346.64, 195391.64, 275641.25, 798816.36, 1172169.16, 33475120.12",Sales Per 12,Decimal,Sales amount for period 12.,sales; period; 12
+LLYSL,"Discrete values (13 unique): -567049.25, 0.0, 1315.6, 3083.05, 14046.38, 110957.71, 325868.08, 468322.32, 2777963.66, 3186582.65, 10223020.99, 30494621.13, 453159409.6",Last Year Sales,Decimal,Last year sales amount.,last; year; sales; amount
+LMSLS,Constant value of '0.0' for all entries,Month Sales,Decimal,Month sales amount.,month; sales; amount

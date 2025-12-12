@@ -1,0 +1,31 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+BID,Constant value of 'BM' for all entries,Record ID,String,Identifies the record type; always 'BM' for Bill of Material.,id; record; type; identifier
+BPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: LGRI7006, LGRI7007, SPS4354       ",Parent Product,String,Item Number/Item Name/Parent product identifier.,parent; product; item; id
+BMWHS,Constant value of 'PC' for all entries,Warehouse,String,Warehouse or facility identifier.,warehouse; facility; location; id
+BMBOMM,"Discrete values:   , B1, B2, B3",BOM Mode,String,Bill of Material mode or type.,bom; mode; type; category
+BSEQ,Range from 1 to 18,Sequence,Integer,Sequence number of the component.,sequence; number; order; detail
+BCHLD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: GFTSTRETCH, GBA2000508, GCA09, SPR6995     ",Component,String,Child component identifier.,child; component; item; id
+BQREQ,Range from 6e-06 to 10000.0,Qty Required,Decimal,Quantity of component required.,quantity; required; amount; volume
+BDEFF,Range from 19981003 to 20230403,Effective Date,Date,Date the component becomes effective.,effective; date; start; time
+BDDIS,Constant value of '99999999' for all entries,Discontinue Date,Date,Date the component is discontinued.,discontinue; date; end; time
+BCLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: GR, BA, CA, FC, FO, FT, GF, GR, IN, IO, IP",Parent Class,String,Classification code of the parent item.,parent; class; category; type
+BCLAC,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: FT, BA, CA, FC, FO, FT, GF, GR, IN, IO, IP",Component Class,String,Classification code of the component item.,component; class; category; type
+BMSCP,Range from 1.0 to 6.1627,Scrap Factor,Decimal,Material scrap factor.,scrap; factor; material; waste
+BBUBB,Range from 10 to 150,Bubble Number,Integer,Drawing bubble number or reference.,bubble; number; drawing; reference
+BOPNO,Constant value of '0' for all entries,Operation No,Integer,Operation number where component is used.,operation; number; manufacturing; step
+BDOFF,Constant value of '0' for all entries,Day Offset,Integer,Day offset for requirement.,day; offset; schedule; planning
+BCSTP,Constant value of '0' for all entries,Cost Type,String,Cost type code.,cost; type; financial; category
+BMISS,Constant value of 'N' for all entries,Issue Flag,Flag,Issue from inventory flag.,issue; flag; inventory; status
+BMREOP,Constant value of '0' for all entries,Re-Op,Integer,Re-operation code.,re-op; code; manufacturing; process
+BMBDC,Constant value of '0' for all entries,Backflush,Integer,Backflush code.,backflush; code; inventory; process
+BMLINE,Constant value of '0' for all entries,Line Number,Integer,Line number.,line; number; sequence; detail
+BMRDF,Constant value of '0' for all entries,Ref Desig,Integer,Reference designator.,reference; designator; drawing; id
+BMCFAC,Constant value of '  ' for all entries,Comp Facility,String,Component facility code.,component; facility; location; site
+BMMNDT,Range from 20090522 to 20230403,Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+BMMNTM,Range from 61248 to 235420,Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+BMMNUS,"Discrete values: OGOLNY01  , PDEUSER   , ROZWORTO  ",Maint User,String,User who performed maintenance.,maintenance; user; id; person
+BMENDT,Range from 20060711 to 20230403,Entry Date,Date,Date the record was entered.,entry; date; creation; time
+BMENTM,Range from 61246 to 233035,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+BMENUS,"Discrete values: OGOLNY01  , PDEUSER   , ROZWORTO  , WARDASSY  , ZAMARLNA  ",Entry User,String,User who entered the record.,entry; user; id; person
+BMEFTM,Constant value of '0' for all entries,Eff Time,Time,Effective time.,effective; time; start; system
+BMDDTM,Constant value of '0' for all entries,Disc Time,Time,Discontinue time.,discontinue; time; end; system

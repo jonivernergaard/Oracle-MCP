@@ -1,0 +1,34 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+CRID,Constant value of 'CR' for all entries,Record ID,String,"Identifies the record type, 'CR' for Cross Reference.",id; record; type; cross; reference
+CRCOA,Constant value of 'PPLSM' for all entries,Chart of Accounts,String,Chart of accounts code.,chart; accounts; code
+CRLDGR,"Discrete values (2 unique): BANK, PPLSM",Ledger,String,Ledger code.,ledger; code; finance
+CRCNKY,"Discrete values (2 unique): PPLSM   BANK, PPLSM   PPLSM",Concatenated Key,String,Concatenated key for the record.,key; concatenated; id
+CRIAN,"10000 unique values. Range: 698731.0 to 719188.0. Mean: 707141.15, Median: 706085.50. Sample values: 699375.0, 702507.0, 702719.0, 711832.0, 712541.0, 712994.0, 716635.0, 716859.0, 717533.0, 719073.0",Internal Account No,Integer,Internal account number.,internal; account; number
+CRSTAT,"Discrete values (2 unique): 0.0, 1.0",Status,Integer,Status of the record.,status; record; state
+CRSG01,"Discrete values (2 unique): 1, 11",Segment 1,Integer,Account segment 1.,segment; 1; account
+CRSG02,"Text/Mixed data with 108 unique values. Sample values: 420, 469, 768, 201, 433, 15, 741, 411. Most frequent: 420 (1266), 411 (801), 201 (661), 469 (564), 731 (443)",Segment 2,String,Account segment 2.,segment; 2; account
+CRSG03,"Text/Mixed data with 354 unique values. 0.0% missing values. Sample values: 41102, 42008, 70001, 76808, 76803, 41100, 43101, 70004, 31018. Most frequent: 70001 (1908), 20001 (768), 42005 (512), 1006 (268), 40001 (236)",Segment 3,String,Account segment 3.,segment; 3; account
+CRSG04,"Text/Mixed data with 89 unique values. 5.5% missing values. Sample values: PRPAP2, SALCO, SALCA, PRPLA3, SALTP. Most frequent: SALCA (2620), SALTP (833), SALCO (676), SALQB (589), PRPAP2 (498)",Segment 4,String,Account segment 4.,segment; 4; account
+CRSG05,"Text/Mixed data with 173 unique values. 47.4% missing values. Sample values: PL, MAWI, ANZI, US, 3101. Most frequent: PL (2870), CZ (94), ADPI (76), ALWO (60), PIBO (59)",Segment 5,String,Account segment 5.,segment; 5; account
+CRSG06,"Text/Mixed data with 733 unique values. 58.7% missing values. Sample values: BARNASZLAKU, CARREFOURLUBLIN, PCRUSSIA, HUHTAMAKIFOOD, CARREFOURKONIN, MAKRORZESZÃW, EUROBALCZ, WALKOP, BARGYROS. Most frequent: CARREFOUR (47), MAKROWARSZ (41), REAL (35), PCRUSSIA (34), HUHTAMAKIPOLSKA (31)",Segment 6,String,Account segment 6.,segment; 6; account
+CRSG07,"Text/Mixed data with 72 unique values. 92.3% missing values. Sample values: BIUR11, IT09, BIUR01, BIUR12, BHP10, BIUR08, MEKS12, BIUR04, NARZ13. Most frequent: BIUR08 (56), BHP12 (51), NARZ12 (38), BIUR05 (33), NARZ16 (30)",Segment 7,String,Account segment 7.,segment; 7; account
+CRSG08,Constant value of 'CH' for all entries,Segment 8,String,Account segment 8.,segment; 8; account
+CRSG09,"Discrete values (9 unique): 2007, 2008, 2009, 2010, CH, NKBR, NKUR, ZME, ZWE",Segment 9,String,Account segment 9.,segment; 9; account
+CRSG10,"Text/Mixed data with 26 unique values. 89.4% missing values. Sample values: RSALAR, REZPRE, RECONS, RERKNA, RPROWI, REKOSZ, RERENT. Most frequent: REKOSZ (207), REZPRE (206), RSALAR (123), RETSA (105), RERKNA (79)",Segment 10,String,Account segment 10.,segment; 10; account
+CRSG11,"Discrete values (7 unique): *, AL, CG, CGFS, FS, PAP, PLA",Segment 11,String,Account segment 11.,segment; 11; account
+CRSG12,Constant value of 'FS' for all entries,Segment 12,String,Account segment 12.,segment; 12; account
+CRSG13,Empty column,Segment 13,String,Account segment 13.,segment; 13; account
+CRSG14,Empty column,Segment 14,String,Account segment 14.,segment; 14; account
+CRATYP,"Discrete values (5 unique): 0.0, 1.0, 2.0, 3.0, 4.0",Account Type,Integer,Type of account.,account; type; code
+CREDAT,Constant value of '99991231.0' for all entries,Expiration Date,Date,Expiration date of the record.,expiration; date
+CRUSER,"Text/Mixed data with 22 unique values. Sample values: KAPCIAEL, B610ADM, BIJALDMA, LUPABE, DBAK, ZIMNAAN. Most frequent: KAPCIAEL (3397), BIJALDMA (1853), B610ADM (1207), ZIMNAAN (1109), D2BGDY (572)",User,String,User who created or updated the record.,user; id
+CRDATE,"144 unique values. Range: 20100105.0 to 20100730.0. Mean: 20100337.52, Median: 20100304.00. Sample values: 20100113.0, 20100201.0, 20100217.0, 20100301.0, 20100303.0, 20100317.0, 20100430.0, 20100602.0, 20100608.0, 20100630.0",Date,Date,Date of the record.,date; record
+CRTIME,"5283 unique values. Range: 617.0 to 235618.0. Mean: 128693.09, Median: 131110.50. Sample values: 61956.0, 84642.0, 91216.0, 102625.0, 131044.0, 131150.0, 142937.0, 153106.0, 173330.0, 203051.0",Time,Decimal,Time of the record.,time; record
+CRLOCK,Constant value of '0.0' for all entries,Lock,Integer,Lock status.,lock; status
+CRBDAT,"Discrete values (2 unique): 0.0, 20010101.0",Begin Date,Date,Beginning date.,begin; date
+CRREVL,Constant value of '0.0' for all entries,Revision Level,Integer,Revision level.,revision; level
+CRDESC,"Text/Mixed data with 103 unique values. Sample values: Koszt sprzedazy towarow I/C, Zuzycie materialÂ¾w nieprodukc, Uslugi materialne, Obowiazkowe obciazenie wyniku, Koszt sprzedazy towarow obcych, Naleznosci zagraniczne, Sprzedaz towarow obcych, Amortyzacja, Remonty maszyn. Most frequent: Uslugi materialne (1266), Zuzycie materialÂ¾w nieprodukcy (801), Naleznosci krajowe (660), Uslugi niematerialne (564), Sprzedaz towarow obcych (443)",Description,String,Description of the account.,description; account
+CRUPDT,Constant value of '0.0' for all entries,Update,Integer,Update flag.,update; flag
+CRRULI,Constant value of '0.0' for all entries,Rule I,Integer,Rule I.,rule; i
+CRRULR,Constant value of '0.0' for all entries,Rule R,Integer,Rule R.,rule; r
+CRSOPT,Constant value of '9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999' for all entries,Sort Option,String,Sort option.,sort; option

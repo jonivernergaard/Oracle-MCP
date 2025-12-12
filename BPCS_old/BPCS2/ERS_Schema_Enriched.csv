@@ -1,0 +1,30 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LID,"Discrete values: RS, ZS",Record ID,String,Identifies the record type; RS or ZS.,id; record; type; identifier
+LORD,Range from 100177 to 150557,Order Number,Integer,RMA order number.,order; number; rma; id
+LLINE,"Discrete values: 1, 2, 3, 4, 5, 6",Line Number,Integer,Line number within the order.,line; number; sequence; detail
+LSDES,"Text data. Lengths: min 50, max 50, avg 50.0. Sample: korekta cenowa                                    ",Description,String,Special line description.,description; text; note; detail
+LCHRG,"Some 0's (0.3%), Range from -62000.0 to 23663.0",Charge Amount,Decimal,Charge amount.,charge; amount; financial; value
+LDROP,Constant value of 'Y' for all entries,Drop Ship,Flag,Drop ship indicator.,drop; ship; flag; indicator
+LCOST,"Some 0's (0.3%), Range from -255849.2 to 97713.99",Cost Amount,Decimal,Cost amount.,cost; amount; financial; value
+LRDTE,Range from 20100401 to 20150527,Request Date,Date,Requested date.,request; date; time; planning
+LSDTE,Range from 20100225 to 99999999,Ship Date,Date,Ship date.,ship; date; time; shipping
+LEDTE,"Some 0's (0.8%), Range from 0 to 20150527",Entry Date,Date,Entry date.,entry; date; creation; time
+LGLCD,Range from 1 to 23,GL Code,Integer,General Ledger code.,gl; code; financial; accounting
+LVATCD,"Discrete values: V22  , V23  , V4   , V8   ",VAT Code,String,VAT code.,vat; tax; code; financial
+LBORD,"Some 0's (0.3%), Range from -255849.2 to 97713.99",Base Order Amt,Decimal,Base order amount.,base; order; amount; financial
+LSLOC,"Discrete values: B3, C3, CZ, D1, MD, MH, MZ, P1, PS, S4, SA, ZK",Ship Location,String,Shipping location.,ship; location; code; shipping
+LSAL,Constant value of '0' for all entries,Sales Amount,Decimal,Sales amount.,sales; amount; value; revenue
+CSSAL,Constant value of '0' for all entries,Calc Sales,Decimal,Calculated sales amount.,calculated; sales; amount; value
+LRLINE,Constant value of '0' for all entries,Rel Line,Integer,Release line number.,release; line; number; detail
+CSBOCL,Constant value of '3' for all entries,Backorder Class,String,Backorder classification.,backorder; class; category; inventory
+CSOCLS,Constant value of '3' for all entries,Order Class,String,Order classification.,order; class; category; type
+CSBTYP,Constant value of '1' for all entries,Bill Type,String,Billing type.,bill; type; category; financial
+CSUTYP,Constant value of '1' for all entries,User Type,String,User type.,user; type; category; system
+CSIRES,Constant value of '1' for all entries,Reason Code,String,Reason code.,reason; code; explanation; id
+CSSTS4,Constant value of '0' for all entries,Status 4,String,Status code 4.,status; code; 4; state
+CSSTS5,Constant value of '0' for all entries,Status 5,String,Status code 5.,status; code; 5; state
+CSPRBD,Range from 20100225 to 20150521,Promise Date,Date,Promised date.,promise; date; delivery; time
+CSTAXA,"Lots of 0's (80.7%), Range from -10324.332 to 3409.9208",Tax Amount,Decimal,Tax amount.,tax; amount; financial; value
+CSTODA,Constant value of '0.0' for all entries,Total Day,Decimal,Total per day.,total; day; amount; value
+CSTODO,Constant value of '0.0' for all entries,Total Order,Decimal,Total per order.,total; order; amount; value
+CSTODT,Constant value of '0.0' for all entries,Total Date,Decimal,Total per date.,total; date; amount; value

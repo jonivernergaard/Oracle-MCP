@@ -1,0 +1,36 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LEID,Constant value of 'LE' for all entries,Record ID,String,"Identifies the record type, 'LE' for Location Extension.",id; record; type; location; extension
+LEWHS,Constant value of 'ZS' for all entries,Warehouse,String,Warehouse code.,warehouse; code; location
+LELOC,Constant value of 'ZS    ' for all entries,Location,String,Location code.,location; code
+LELOCT,Constant value of '6' for all entries,Location Type,Integer,Type of location.,location; type; code
+LESTGT,Constant value of '6' for all entries,Storage Type,Integer,Storage type code.,storage; type; code
+LEPICS,Constant value of '0' for all entries,Pick Sequence,Integer,Picking sequence number.,pick; sequence; number
+LECTP1,Constant value of '*' for all entries,Container Type 1,String,Allowed container type 1.,container; type
+LECTP2,Constant value of ' ' for all entries,Container Type 2,String,Allowed container type 2.,container; type
+LECTP3,Constant value of ' ' for all entries,Container Type 3,String,Allowed container type 3.,container; type
+LECTP4,Constant value of ' ' for all entries,Container Type 4,String,Allowed container type 4.,container; type
+LECTP5,Constant value of ' ' for all entries,Container Type 5,String,Allowed container type 5.,container; type
+LECTP6,Constant value of ' ' for all entries,Container Type 6,String,Allowed container type 6.,container; type
+LECTP7,Constant value of ' ' for all entries,Container Type 7,String,Allowed container type 7.,container; type
+LECTP8,Constant value of ' ' for all entries,Container Type 8,String,Allowed container type 8.,container; type
+LECTP9,Constant value of ' ' for all entries,Container Type 9,String,Allowed container type 9.,container; type
+LECTPA,Constant value of ' ' for all entries,Container Type 10,String,Allowed container type 10.,container; type
+LEVOLC,Constant value of '0' for all entries,Volume Capacity,Decimal,Volume capacity of the location.,volume; capacity
+LEWGTC,Constant value of '0' for all entries,Weight Capacity,Decimal,Weight capacity of the location.,weight; capacity
+LELOCC,Constant value of '1' for all entries,Location Capacity,Integer,Location capacity (units).,location; capacity
+LESHGT,Constant value of '0' for all entries,Shelf Height,Decimal,Shelf height.,shelf; height
+LEOSWH,Constant value of '0' for all entries,OSWH,Integer,Unknown field.,unknown
+LELOCN,Constant value of '0' for all entries,Location Number,Integer,Location number.,location; number
+LELCAT,Constant value of ' ' for all entries,Location Category,String,Location category.,location; category
+LELCDE,Constant value of ' ' for all entries,Location Code,String,Location code.,location; code
+LEZONE,Constant value of '   ' for all entries,Zone,String,Zone code.,zone; code; location
+LECNTY,Constant value of '          ' for all entries,Country,String,Country code.,country; code; location
+LEFMFW,Constant value of '  ' for all entries,From Forward,String,From forward location.,from; forward
+LEHGHT,Constant value of '0' for all entries,Height,Decimal,Height of the location.,height; dimension
+LETMFW,Constant value of '  ' for all entries,To Forward,String,To forward location.,to; forward
+LEWDTH,Constant value of '0' for all entries,Width,Decimal,Width of the location.,width; dimension
+LELNTH,Constant value of '0' for all entries,Length,Decimal,Length of the location.,length; dimension
+LEHTUM,Constant value of '  ' for all entries,Height UOM,String,Unit of measure for height.,height; uom; unit
+LEWTUM,Constant value of '  ' for all entries,Weight UOM,String,Unit of measure for weight.,weight; uom; unit
+LEWDUM,Constant value of '  ' for all entries,Width UOM,String,Unit of measure for width.,width; uom; unit
+LELNUM,Constant value of '  ' for all entries,Length UOM,String,Unit of measure for length.,length; uom; unit

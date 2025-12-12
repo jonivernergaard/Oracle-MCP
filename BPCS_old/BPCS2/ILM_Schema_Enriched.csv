@@ -1,0 +1,21 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+WID,"Discrete values: WL, WZ",Record Type,String,"Identifies the type of location record (e.g., WL=Warehouse Location, WZ=Warehouse Zone). Part of the Item Location Master.",record; type; identifier; location; master
+WWHS,"Text/Mixed data. 63 unique values. Samples: P1, P1, CR, P1, P1",Warehouse,String,The warehouse code where this location exists.,warehouse; code; site; facility
+WLOC,"Text/Mixed data. 6929 unique values. Samples: 59, 44, 101201, 102839, 801452",Location,String,"The specific bin, slot, or location identifier within the warehouse.",location; bin; slot; identifier
+WDESC,"Text/Mixed data. 6074 unique values. Samples: TESCO BOCHNIA                 , Billa                         , ROAN SUWA[KI                  , Logisticky a distributni park , Gospodarstwo Szklarniowe Skarb",Location Description,String,"Description of the location, often used for zone names or specific area descriptions.",description; name; text; area; zone
+WCYCI,Constant value of '0' for all entries,Cycle Count Interval,Integer,Cycle count interval or indicator for this location.,cycle; count; interval; frequency; inventory
+LMPRF,"Discrete values:           , -         , P1        ",Location Profile,String,Profile code defining characteristics of the location.,profile; code; characteristics; type
+WLTYP,"Discrete values: N, P",Location Type,String,"Classification of the location (e.g., P=Pick, B=Bulk, N=Normal).",location; type; classification; category
+WALMI,Constant value of ' ' for all entries,Alternate Location,String,Pointer to an alternate location if this one is full or unavailable.,alternate; location; backup; overflow
+WLSTS,Constant value of ' ' for all entries,Location Status,String,"Current status of the location (e.g., Active, Blocked, Hold).",status; state; condition; availability
+WLUMS,Constant value of '    ' for all entries,Location UOM,String,Unit of measure restriction or default for this location.,uom; unit; measure; restriction
+WITEM,Constant value of '               ' for all entries,Dedicated Item,String,The specific Item Number if this location is dedicated to a single item. Blank for general locations.,item; dedicated; fixed; product; assignment
+WPIKS,Constant value of '0' for all entries,Pick Sequence,Integer,Sequence number used to order picking paths through the warehouse.,pick; sequence; path; route; order
+WZONE,"Discrete values:    , 100, 101",Zone,String,The zone within the warehouse that this location belongs to.,zone; area; section; grouping
+WVOLC,Constant value of '0' for all entries,Volume Capacity,Decimal,Maximum volume capacity of the location.,volume; capacity; limit; size; max
+WWGHC,Constant value of '0' for all entries,Weight Capacity,Decimal,Maximum weight capacity of the location.,weight; capacity; limit; load; max
+WCONC,"Discrete values: 0, 1, 10, 1000, 3000",Container Capacity,Integer,Maximum number of containers/pallets this location can hold.,container; capacity; limit; count; pallet
+WUM,Constant value of '  ' for all entries,Dimension UOM,String,Unit of measure used for the capacity dimensions.,uom; dimension; unit; measure
+WALLC,"Discrete values: N, Y",Allow Allocation,Flag,Flag indicating if inventory in this location can be allocated to orders (Y/N).,allocation; allow; flag; status; reservable
+WFLOC,Constant value of '2' for all entries,Forward Location,Integer,Indicator if this is a forward picking location (vs. reserve/bulk).,forward; pick; location; type; indicator
+LMLCCD,Constant value of '0' for all entries,Last Cycle Count Date,Date,The date when this location was last cycle counted.,date; cycle count; last; timestamp; audit

@@ -1,0 +1,12 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+IID,"Discrete values: IC, IZ",Record ID,String,Identifies the record type; IC or IZ.,id; record; type; identifier
+ICLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: SG",Class Code,String,Item classification code.,class; code; category; type
+ICDES,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: POLISTYREN GPPS               ",Description,String,Description of the item class.,description; name; text; class
+ICTAX,"Discrete values:      , V23  ",Tax Code,String,Tax code associated with the class.,tax; code; financial; category
+ICALP1,Constant value of '0.0' for all entries,Alloc Pct 1,Decimal,Allocation percentage 1.,allocation; percentage; 1; ratio
+ICALP2,Constant value of '0.0' for all entries,Alloc Pct 2,Decimal,Allocation percentage 2.,allocation; percentage; 2; ratio
+ICALP3,Constant value of '0.0' for all entries,Alloc Pct 3,Decimal,Allocation percentage 3.,allocation; percentage; 3; ratio
+ICALP4,Constant value of '0.0' for all entries,Alloc Pct 4,Decimal,Allocation percentage 4.,allocation; percentage; 4; ratio
+ICALP5,Constant value of '0.0' for all entries,Alloc Pct 5,Decimal,Allocation percentage 5.,allocation; percentage; 5; ratio
+ICLMPC,Constant value of '0.0' for all entries,Lower Margin,Decimal,Lower margin percentage.,lower; margin; percentage; financial
+ICUMPC,Constant value of '999.99' for all entries,Upper Margin,Decimal,Upper margin percentage.,upper; margin; percentage; financial

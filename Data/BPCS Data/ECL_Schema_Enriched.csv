@@ -1,0 +1,100 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LID,Constant value of 'ZL' for all entries,Record ID,String,Identifies the record type; always 'ZL' for Order Line.,id; record; type; identifier
+LORD,Range from 100002 to 107535,Order Number,Integer,Customer order number.,order; number; sales; id
+LLINE,Range from 1 to 40,Line Number,Integer,Line number within the order.,line; number; sequence; detail
+LPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: CGRVA0365      ",Product Code,String,Product identifier.,product; code; item; id
+LCLAS,"Discrete values: GF, GP, GR, IO, IP, IR, IS, PE, PG, PU, TO, TR, TS",Class,String,Item classification code.,class; code; category; type
+LQORD,"Some 0's (12.7%), Range from -6930.0 to 14000.0",Order Qty,Decimal,Quantity ordered.,order; quantity; amount; volume
+LQALL,Constant value of '0.0' for all entries,Allocated Qty,Decimal,Quantity allocated.,allocated; quantity; inventory; reserved
+LQSHP,"Some 0's (12.7%), Range from -6930.0 to 16108.0",Shipped Qty,Decimal,Quantity shipped.,shipped; quantity; amount; volume
+LUM,"Discrete values: BX, KG, SZ, TH, TN, ZG",UOM,String,Unit of measure.,uom; unit; measure; quantity
+LRDTE,Range from 20090415 to 20101222,Request Date,Date,Requested delivery date.,request; date; delivery; time
+LSDTE,Range from 20090415 to 20101222,Ship Date,Date,Scheduled ship date.,ship; date; schedule; time
+LNET,"Some 0's (24.1%), Range from 0.0 to 70880.0",Net Price,Decimal,Net price per unit.,net; price; unit; value
+LLIST,"Lots of 0's (55.5%), Range from 0.0 to 86362.5",List Price,Decimal,List price per unit.,list; price; unit; value
+LOVRP,"Some 0's (45.3%), Range from 0.0 to 86362.5",Override Price,Decimal,Override price if applicable.,override; price; unit; value
+LSTAT,"Discrete values: 8, E, F, G",Status,String,Line item status.,status; code; state; condition
+LLOC,"Discrete values:       , B3    , LS4   , MZ    , PS    , SA    ",Location,String,Inventory location.,location; code; inventory; place
+LWHS,"Discrete values: B3, MG, ML, MZ, PS, S4, SA",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+LSAL,Constant value of '0' for all entries,Sales Amount,Decimal,Sales amount.,sales; amount; value; revenue
+LDESC,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: KUBEK SP8 NESCAFE KROPELKA H  ",Description,String,Item description.,description; name; text; item
+LCUST,Range from 12 to 800507,Customer Number,Integer,Customer identifier.,customer; number; id; client
+LODTE,Range from 20091219 to 20100505,Order Date,Date,Date the order was placed.,order; date; creation; time
+LDROP,"Discrete values: N, Y",Drop Ship,Flag,Drop ship indicator.,drop; ship; flag; indicator
+LCONT,Constant value of 'V22  ' for all entries,Contract,String,Contract number or code.,contract; number; code; agreement
+LORPR,"Lots of 0's (59.1%), Range from 0.0 to 86362.5",Order Price,Decimal,Price on the order.,order; price; value; financial
+LBNET,"Some 0's (24.1%), Range from 0.0 to 70880.0",Base Net,Decimal,Base net price.,base; net; price; value
+LBLST,"Lots of 0's (55.5%), Range from 0.0 to 86362.5",Base List,Decimal,Base list price.,base; list; price; value
+LRQTY,Constant value of '0.0' for all entries,Release Qty,Decimal,Quantity released.,release; quantity; amount; volume
+LSCDT,Constant value of '0' for all entries,Schedule Date,Date,Schedule date.,schedule; date; time; planning
+LCPNT,Constant value of 'N' for all entries,Component Flag,Flag,Component flag.,component; flag; status; indicator
+LRRSC,Constant value of '0' for all entries,Reason Code,String,Reason code.,reason; code; explanation; id
+LPORD,Constant value of '0' for all entries,Purchase Order,String,Purchase order number.,purchase; order; po; id
+LPLIN,Constant value of '0' for all entries,PO Line,Integer,Purchase order line.,po; line; number; detail
+CLSAL,Constant value of '0' for all entries,Calc Sales,Decimal,Calculated sales amount.,calculated; sales; amount; value
+CLBASI,Constant value of '0.0' for all entries,Calc Basis,Decimal,Calculated basis.,calculated; basis; value; financial
+LBO,"Discrete values: 0, 4",Backorder,String,Backorder status.,backorder; status; code; inventory
+LALOPR,Constant value of '50' for all entries,Alloc Priority,Integer,Allocation priority.,allocation; priority; level; ranking
+LITEM,"Text data. Lengths: min 35, max 35, avg 35.0. Sample: SP12-01232                         ",Item Number,String,Item number.,item; number; id; product
+LIRES,"Discrete values:   , 01",Reason Code 2,String,Secondary reason code.,reason; code; 2; explanation
+LSHIP,"Discrete values: 0, 1",Shipment,Integer,Shipment number.,shipment; number; shipping; id
+LICFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code; location; site
+LQSALL,"Lots of 0's (97.7%), Range from -6930.0 to 6930.0",Qty Sold All,Decimal,Total quantity sold.,quantity; sold; total; amount
+LQPCK,Constant value of '0.0' for all entries,Qty Packed,Decimal,Quantity packed.,quantity; packed; amount; volume
+LQTIN,"Some 0's (12.7%), Range from -6930.0 to 16108.0",Qty Invoiced,Decimal,Quantity invoiced.,quantity; invoiced; amount; volume
+LCONSL,Constant value of '0' for all entries,Consolidated,Flag,Consolidated flag.,consolidated; flag; status; indicator
+LPRCON,Constant value of '0' for all entries,Print Conf,Flag,Print confirmation flag.,print; confirmation; flag; status
+LUDTE1,Constant value of '0' for all entries,Last Update 1,Date,Last update date 1.,last; update; date; 1
+LUDTE2,Constant value of '0' for all entries,Last Update 2,Date,Last update date 2.,last; update; date; 2
+CLMNDT,"Some 0's (2.5%), Range from 0 to 20111229",Maint Date,Date,Maintenance date.,maintenance; date; last; update
+LRLINE,"Discrete values: 0, 1, 2, 3, 4",Rel Line,Integer,Release line number.,release; line; number; detail
+LDSTY,Constant value of '0' for all entries,Dest Type,String,Destination type.,destination; type; code; shipping
+LMNTR,"Discrete values:     , 30  ",Monitor,String,Monitor code.,monitor; code; tracking; system
+LTRMC,"Discrete values:    , DD1, DDU, EXW, FCA",Terms Code,String,Terms of delivery code.,terms; code; delivery; shipping
+CLTRNN,"Discrete values: 0, 10",Trans Number,Integer,Transaction number.,transaction; number; id; reference
+CLRQTM,Constant value of '0' for all entries,Request Time,Time,Request time.,request; time; schedule; planning
+CLSSTM,Constant value of '0' for all entries,Ship Time,Time,Ship time.,ship; time; schedule; shipping
+CLSRTM,Constant value of '0' for all entries,Start Time,Time,Start time.,start; time; schedule; planning
+CLRSTM,Constant value of '0' for all entries,Result Time,Time,Result time.,result; time; schedule; planning
+CLUDT1,Constant value of '0' for all entries,Update Time 1,Time,Update time 1.,update; time; 1; system
+CLUDT2,Constant value of '0' for all entries,Update Time 2,Time,Update time 2.,update; time; 2; system
+CLPBTM,Constant value of '0' for all entries,Publish Time,Time,Publish time.,publish; time; schedule; system
+CLOOTM,Constant value of '0' for all entries,Order Time,Time,Order time.,order; time; creation; system
+CLSORD,Constant value of '0' for all entries,Sub Order,Integer,Sub-order number.,sub; order; number; detail
+CLAFPL,Constant value of '0' for all entries,After Plan,Flag,After plan flag.,after; plan; flag; status
+CLALRQ,"Discrete values: 0, 1",Alloc Req,Flag,Allocation required flag.,allocation; required; flag; status
+CLBALK,Constant value of '0' for all entries,Bulk Alloc,Flag,Bulk allocation flag.,bulk; allocation; flag; status
+CLBOCL,"Discrete values: 4, 7, 8",Backorder Class,String,Backorder classification.,backorder; class; category; inventory
+CLOCLS,"Discrete values: 8, 204, 207, 208",Order Class,String,Order classification.,order; class; category; type
+CLBTYP,"Discrete values: 1, 7",Bill Type,String,Billing type.,bill; type; category; financial
+CLUTYP,"Discrete values: 1, 7",User Type,String,User type.,user; type; category; system
+CLSTS1,Constant value of '0' for all entries,Status 1,String,Status code 1.,status; code; 1; state
+CLSTS2,Constant value of '0' for all entries,Status 2,String,Status code 2.,status; code; 2; state
+CLSTS3,Constant value of '0' for all entries,Status 3,String,Status code 3.,status; code; 3; state
+CLSTS4,Constant value of '0' for all entries,Status 4,String,Status code 4.,status; code; 4; state
+CLSTS5,Constant value of '1' for all entries,Status 5,String,Status code 5.,status; code; 5; state
+CLBRGC,"Discrete values:   , MW",Bridge Code,String,Bridge code.,bridge; code; system; integration
+CLBBTL,"Some 0's (25.0%), Range from 0.0 to 70880.0",Bill Total,Decimal,Billing total.,bill; total; amount; financial
+CLLPSC,"Discrete values: 3, 4, 7, 12",Line Process,String,Line process code.,line; process; code; status
+CLNPSC,"Discrete values: 5, 6, 7",Next Process,String,Next process code.,next; process; code; status
+CLNPBL,"Some 0's (24.1%), Range from 0.0 to 70880.0",Net Payable,Decimal,Net payable amount.,net; payable; amount; financial
+CLNPTL,"Some 0's (24.1%), Range from 0.0 to 70880.0",Net Total,Decimal,Net total amount.,net; total; amount; financial
+CLSPTL,"Lots of 0's (71.4%), Range from 0.0 to 86362.5",Special Total,Decimal,Special total amount.,special; total; amount; financial
+CLPBTS,"Lots of 0's (83.1%), Range from 0.0 to 1181.0",Publish Status,Decimal,Publish status or value.,publish; status; value; system
+CLPRBD,Range from 20090131 to 20101231,Promise Date,Date,Promised delivery date.,promise; date; delivery; time
+CLMRPC,"Lots of 0's (93.3%), Range from -566.0 to 56.31",Margin Pct,Decimal,Margin percentage.,margin; percentage; financial; ratio
+CLMRGH,"Discrete values: 0, 1, 99",Margin Hold,Flag,Margin hold flag.,margin; hold; flag; status
+CLTAXA,"Lots of 0's (83.4%), Range from -38.72 to 7689.0",Tax Amount,Decimal,Tax amount.,tax; amount; financial; value
+CLSHCU,Range from 12 to 800507,Ship Customer,Integer,Ship-to customer ID.,ship; customer; id; shipping
+CLORDT,Range from 20091219 to 20100505,Order Date 2,Date,Secondary order date.,order; date; 2; time
+CLORQT,Range from -6930.0 to 8000.0,Original Qty,Decimal,Original order quantity.,original; quantity; amount; volume
+CLOSQT,"Some 0's (12.7%), Range from -6930.0 to 8000.0",Outstanding Qty,Decimal,Outstanding quantity.,outstanding; quantity; amount; volume
+CLPSQT,Constant value of '0.0' for all entries,Picked Qty,Decimal,Picked quantity.,picked; quantity; amount; volume
+CLSSQT,"Some 0's (12.7%), Range from -6930.0 to 8000.0",Sched Ship Qty,Decimal,Scheduled ship quantity.,scheduled; ship; quantity; amount
+CLSLUM,"Discrete values: BX, KG, SZ, TH, TN, ZG",Sales UOM,String,Sales unit of measure.,sales; uom; unit; measure
+CLISQT,"Some 0's (12.7%), Range from -6930.0 to 8000.0",Issue Qty,Decimal,Issued quantity.,issue; quantity; amount; volume
+CLTODA,"Lots of 0's (50.5%), Range from 0.0 to 61200.0",Total Day,Decimal,Total per day.,total; day; amount; value
+CLTODO,Constant value of '0.0' for all entries,Total Order,Decimal,Total per order.,total; order; amount; value
+CLTODT,Constant value of '0.0' for all entries,Total Date,Decimal,Total per date.,total; date; amount; value
+CLENTM,Range from 64454 to 224836,Entry Time,Time,Time of entry.,entry; time; creation; system
+CLENUS,"Discrete values: BROMANIU  , CGFS      , D2BGDY    , GODULABA  , GRUSZKA   , GRZESZRA  , GUCADA    , KLUZAMA   , LUPABE    , ROZWORTO  , SMIGIEAN  , ZAWALAG   ",Entry User,String,User who entered the order.,entry; user; id; person

@@ -1,0 +1,43 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+HQID,"Discrete values: QT, QZ",Record ID,String,Identifies the record type; QT or QZ.,id; record; type; identifier
+HQVEND,Range from 1 to 7777,Vendor Number,Integer,Vendor identifier.,vendor; number; id; supplier
+HQPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: OTOG18200      ",Product Code,String,Product identifier.,product; code; item; id
+HQEFF,Range from 20091201 to 20120901,Effective Date,Date,Effective date of the quote.,effective; date; start; time
+HQDIS,Range from 20091231 to 20150830,Discontinue Date,Date,Discontinue date of the quote.,discontinue; date; end; time
+HQQR1,"Discrete values: 0.001, 1.0, 4.001, 5.001, 6.001",Qty Break 1,Decimal,Quantity break 1.,quantity; break; 1; pricing
+HQQR2,Constant value of '0.0' for all entries,Qty Break 2,Decimal,Quantity break 2.,quantity; break; 2; pricing
+HQQR3,Constant value of '0.0' for all entries,Qty Break 3,Decimal,Quantity break 3.,quantity; break; 3; pricing
+HQQR4,Constant value of '0.0' for all entries,Qty Break 4,Decimal,Quantity break 4.,quantity; break; 4; pricing
+HQQR5,Constant value of '0.0' for all entries,Qty Break 5,Decimal,Quantity break 5.,quantity; break; 5; pricing
+HQQR6,Constant value of '0.0' for all entries,Qty Break 6,Decimal,Quantity break 6.,quantity; break; 6; pricing
+HQQR7,Constant value of '0.0' for all entries,Qty Break 7,Decimal,Quantity break 7.,quantity; break; 7; pricing
+HQQR8,Constant value of '0.0' for all entries,Qty Break 8,Decimal,Quantity break 8.,quantity; break; 8; pricing
+HQPR1,Range from 0.0745 to 490000.0,Price 1,Decimal,Price for quantity break 1.,price; 1; cost; value
+HQPR2,Constant value of '0.0' for all entries,Price 2,Decimal,Price for quantity break 2.,price; 2; cost; value
+HQPR3,Constant value of '0.0' for all entries,Price 3,Decimal,Price for quantity break 3.,price; 3; cost; value
+HQPR4,Constant value of '0.0' for all entries,Price 4,Decimal,Price for quantity break 4.,price; 4; cost; value
+HQPR5,Constant value of '0.0' for all entries,Price 5,Decimal,Price for quantity break 5.,price; 5; cost; value
+HQPR6,Constant value of '0.0' for all entries,Price 6,Decimal,Price for quantity break 6.,price; 6; cost; value
+HQPR7,Constant value of '0.0' for all entries,Price 7,Decimal,Price for quantity break 7.,price; 7; cost; value
+HQPR8,Constant value of '0.0' for all entries,Price 8,Decimal,Price for quantity break 8.,price; 8; cost; value
+HQQDT,Range from 20091201 to 20150101,Quote Date,Date,Date of the quote.,quote; date; creation; time
+HQCURR,"Discrete values: EUR, PLN",Currency,String,Currency code.,currency; code; money; iso
+HQCOM,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: 48236910       ",Commodity,String,Commodity code.,commodity; code; category; type
+HQQCMT,Constant value of '0.0' for all entries,Comment,Decimal,Comment or note.,comment; note; text; info
+HQPUM,"Discrete values: KG, SZ, TH",Price UOM,String,Price unit of measure.,price; uom; unit; measure
+HQLEAD,Constant value of '0' for all entries,Lead Time,Integer,Lead time in days.,lead; time; days; schedule
+HQCORD,Constant value of '0.0' for all entries,Cust Order,Decimal,Customer order reference.,customer; order; reference; id
+HQCREC,"Discrete values: 0.0, 312.0, 700.0, 968.0, 1550.0, 2400.0, 4032.0, 17200.0, 220400.0",Cum Received,Decimal,Cumulative quantity received.,cumulative; received; quantity; total
+HQCCST,"Lots of 0's (69.3%), Range from 0.0 to 516200.0",Cum Cost,Decimal,Cumulative cost.,cumulative; cost; amount; financial
+HQLODT,Constant value of '0' for all entries,Last Order Date,Date,Date of last order.,last; order; date; time
+HQLRDT,"Lots of 0's (68.7%), Range from 0 to 20180310",Last Rec Date,Date,Date of last receipt.,last; receipt; date; time
+HQTYPE,Constant value of '0' for all entries,Type,Integer,Record type.,type; code; category; classification
+HQEFTM,Constant value of '0' for all entries,Eff Time,Time,Effective time.,effective; time; start; system
+HQDITM,Constant value of '0' for all entries,Disc Time,Time,Discontinue time.,discontinue; time; end; system
+HQQDTM,Constant value of '0' for all entries,Quote Time,Time,Quote time.,quote; time; creation; system
+HQLOTM,Constant value of '0' for all entries,Last Order Time,Time,Time of last order.,last; order; time; system
+HQLRTM,Constant value of '0' for all entries,Last Rec Time,Time,Time of last receipt.,last; receipt; time; system
+QTCDT,Constant value of '0' for all entries,Create Date,Date,Creation date.,create; date; creation; time
+QTCTM,Constant value of '0' for all entries,Create Time,Time,Creation time.,create; time; creation; system
+QTLDT,Constant value of '0' for all entries,Last Date,Date,Last activity date.,last; date; activity; time
+QTLTM,Constant value of '0' for all entries,Last Time,Time,Last activity time.,last; time; activity; system

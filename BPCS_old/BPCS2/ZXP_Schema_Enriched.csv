@@ -1,0 +1,13 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+XPSYS,Constant value of 'AS' for all entries,System,String,System identifier.,system; id; code; platform
+XPRELN,Constant value of '06.01.00' for all entries,Release,String,Release version.,release; version; system; info
+XPPROD,"Text data. Lengths: min 3, max 3, avg 3.0. Sample: ACP",Product,String,Product or module code.,product; module; code; system
+XPABBV,"Text data. Lengths: min 1, max 1, avg 1.0. Sample: A",Abbreviation,String,Product abbreviation.,abbreviation; code; short; name
+XPTEAM,"Discrete values: CEF, MMM, SCM, VND, XPA",Team,String,Team or group code.,team; group; code; organization
+XPDESC,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: Accounts Payable              ",Description,String,Product description.,description; name; text; info
+XPSHIP,"Discrete values: 1, 2, 4",Ship,Integer,Shipping code.,ship; code; shipping; logistics
+XPTYPE,"Discrete values: 1, 2, 3",Type,Integer,Type code.,type; code; category; classification
+XPOINS,"Discrete values: 0, 1, 2",Install,Integer,Installation code.,install; code; system; setup
+XPMENU,"Text data. Lengths: min 6, max 6, avg 6.0. Sample: ACP   ",Menu,String,Menu identifier.,menu; id; system; navigation
+XPSEQ1,Constant value of '0' for all entries,Seq 1,Integer,Sequence number 1.,sequence; 1; order; sort
+XPSEQN,Constant value of '0' for all entries,Seq N,Integer,Sequence number N.,sequence; n; order; sort

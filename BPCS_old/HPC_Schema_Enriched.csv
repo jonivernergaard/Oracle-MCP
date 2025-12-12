@@ -1,0 +1,34 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LHID,Constant value of 'LH' for all entries,Record ID,String,"Identifies the record type, 'LH' for Ledger History.",id; record; type; ledger; history
+LHLDGR,"Discrete values (2 unique): BANK, PPLSM",Ledger,String,Ledger code.,ledger; code; finance
+LHBOOK,"Discrete values (3 unique): EUR, PPLSM, USD",Book,String,Book code.,book; code; finance
+LHYEAR,Constant value of '2025.0' for all entries,Year,Integer,Fiscal year.,year; fiscal
+LHPERD,Constant value of '1.0' for all entries,Period,Integer,Fiscal period.,period; fiscal
+LHJNEN,"Text/Mixed data with 1907 unique values. Sample values: ZF0000290, ZK0000019, SP0000018, SP0000284, ZF0000462, SP0000092, ZK0000001, ZK0000022, ZF0000604, SP0000413. Most frequent: ZK0000004 (256), ZK0000003 (180), ZK0000019 (152), ZK0000007 (152), ZK0000002 (152)",Journal Entry,String,Journal entry number.,journal; entry; number
+LHJNLN,"256 unique values. Range: 1.0 to 256.0. Mean: 16.12, Median: 3.00. Sample values: 1.0, 1.0, 1.0, 2.0, 3.0, 4.0, 4.0, 14.0, 40.0, 113.0",Line Number,Integer,Journal line number.,line; number; journal
+LHIAN,"1125 unique values. Range: 699668.0 to 1062700.0. Mean: 850601.16, Median: 770096.00. Sample values: 713948.0, 713974.0, 716070.0, 716070.0, 718261.0, 982188.0, 1007473.0, 1008488.0, 1062524.0, 1062629.0",Internal Account No,Integer,Internal account number.,internal; account; number
+LHDRAM,"2279 unique values. Lots of 0's (73.6%). Range: -12151174.94 to 12154399.2. Mean: 11676.02, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 598.0, 4532.24, 28323.8, 127898.45",Debit Amount,Decimal,Debit amount in base currency.,debit; amount; base
+LHCRAM,"3201 unique values. Lots of 0's (54.1%). Range: -12153450.34 to 12154399.2. Mean: 11608.72, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 270.0, 284.0, 317.02, 1056.0, 3379.55, 3957.37",Credit Amount,Decimal,Credit amount in base currency.,credit; amount; base
+LHDRAT,"2085 unique values. Lots of 0's (74.6%). Range: -2844243.0 to 4844638.33. Mean: 8325.86, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1462.8, 2047.77",Debit Trans Amt,Decimal,Debit amount in transaction currency.,debit; amount; transaction
+LHCRAT,"2759 unique values. Lots of 0's (55.6%). Range: -2844243.0 to 4844638.33. Mean: 8258.57, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 22.35, 239.68, 3344.39, 3739.2",Credit Trans Amt,Decimal,Credit amount in transaction currency.,credit; amount; transaction
+LHLSTS,Constant value of '3.0' for all entries,Line Status,Integer,Status of the journal line.,line; status
+LHSTAT,Constant value of '0.0' for all entries,Status,Integer,Status of the record.,status; record
+LHLDES,"Text/Mixed data with 209 unique values. 0.0% missing values. Sample values: Przedplata sprzedazy, 250001, 60 DNI / DAYS, W524  56/11/2024 SPEDEX, ZAPLATA FAKTURY POZ. MAGAZYN., 350001. Most frequent: 250001 (2312), Przedplata sprzedazy (1044), 350001 (720), 250009 (707), 21 DNI / DAYS (626)",Line Description,String,Description of the journal line.,line; description; journal
+LHJRF1,"455 unique values. Range: 6.0 to 801819.0. Mean: 85009.45, Median: 100098.00. Sample values: 15.0, 1315.0, 2189.0, 2668.0, 4063.0, 100098.0, 102432.0, 103334.0, 103806.0, 103878.0",Reference 1,String,Journal reference 1.,reference; journal
+LHJRF2,"Text/Mixed data with 398 unique values. 5.0% missing values. Sample values: BPL, CGRVA6133, BEU, OGRA7732, OGRG7587, OTOGSC0103. Most frequent: BPL (4929), BEU (1171), KOM (146), GPEPEPALETAE (137), LISB-HTL90351MC (112)",Reference 2,String,Journal reference 2.,reference; journal
+LHDREF,"Text/Mixed data with 1035 unique values. 1.9% missing values. Sample values: 24/04449, CDOM, BNP2500002, 24/04756, BNP2500010, BNP2500004, 0229/11/24, 24/04466, BNP2500005. Most frequent: CDOM (2419), CEXE (449), BNP2500003 (444), BNP2500007 (220), CICE (218)",Doc Reference,String,Document reference.,document; reference
+LHDDAT,Constant value of '0.0' for all entries,Doc Date,Date,Document date.,document; date
+LHREAS,"Discrete values (13 unique): 22, 23, FZI, FZM, FZU, KS, SP, ZFI, ZFM, ZFU, ZSAD, ZSP, ZWROT",Reason Code,String,Reason code.,reason; code
+LHBKOV,"Discrete values (3 unique): 0.0, 1.0, 2.0",Bank Override,Integer,Bank override code.,bank; override; code
+LHUSER,"Discrete values (16 unique): ANDRZEZU, B2EFAKT, BIJALDMA, CHWASTEL, DOMINEPI, GODULABA, GUCADA, KALUZIJO, KLOBUKKA, KOWALSAN, SAMBORMA, SWOBODMA, SZLAPAAG, TATERAAN, WCISLOJO, ZBRONSAG",User,String,User who created the entry.,user; id
+LHDATE,"Discrete values (8 unique): 20250108.0, 20250109.0, 20250110.0, 20250113.0, 20250114.0, 20250115.0, 20250116.0, 20250117.0",Date,Date,Date of the entry.,date; entry
+LHTIME,"1920 unique values. Range: 61136.0 to 200505.0. Mean: 108008.63, Median: 103210.00. Sample values: 65108.0, 73637.0, 80217.0, 80321.0, 84405.0, 84646.0, 92908.0, 95907.0, 104911.0, 130112.0",Time,Decimal,Time of the entry.,time; entry
+LHLOCK,Constant value of '0.0' for all entries,Lock,Integer,Lock status.,lock; status
+LHSUMF,Constant value of '0.0' for all entries,Summary Flag,Integer,Summary flag.,summary; flag
+LHSLN,Constant value of '0.0' for all entries,Source Line,Integer,Source line number.,source; line
+LHTSN,"586 unique values. Range: 0.0 to 981214.0. Mean: 968569.28, Median: 980409.00. Sample values: 980150.0, 980287.0, 980360.0, 980409.0, 980487.0, 980574.0, 980689.0, 980714.0, 981073.0, 981144.0",Trans Seq No,Integer,Transaction sequence number.,transaction; sequence; number
+LHTRNN,"368 unique values. Range: 0.0 to 367.0. Mean: 54.67, Median: 10.00. Sample values: 1.0, 1.0, 1.0, 2.0, 20.0, 39.0, 61.0, 84.0, 97.0, 337.0",Trans Number,Integer,Transaction number.,transaction; number
+LHDRMR,"Discrete values (18 unique): AMLLAMNT, CP01AR, CP01AS, CP01CA, ILREVRDR, ILREVSDR, RTXTXTCDR, SDPACS01, SDPACS02, SDPACS03, SDPACS04, SDPACS05, SDPACS06, SDPACS07, SDPACS11, SDPACS25, SITOTDR, VP01UNDR",Debit Macro,String,Debit macro code.,debit; macro; code
+LHCRMR,"Discrete values (11 unique): AMLLAMNT, CP01AR, CP01AS, CP01CB, ILREVRCR, ILREVSCR, RTXTXTCCR, SDPACS22, SITOTCR, VP0104, VP01UNCR",Credit Macro,String,Credit macro code.,credit; macro; code
+LHSTMR,Empty column,Statement Macro,String,Statement macro code.,statement; macro; code
+LHJNML,"Discrete values (9 unique): 0.0, 10.0, 20.0, 30.0, 40.0, 50.0, 60.0, 70.0, 80.0",Macro Level,Integer,Journal macro level.,macro; level

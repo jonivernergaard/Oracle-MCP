@@ -1,0 +1,68 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+APHID,Constant value of 'PH' for all entries,Record ID,String,"Identifies the record type, always 'PH' for Payables Header.",id; record; type; header
+APCMPY,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+APVNDR,"702 unique values. Range: 1.0 to 30051.0. Mean: 3319.61, Median: 3134.00. Sample values: 8.0, 85.0, 456.0, 1650.0, 2873.0, 3085.0, 3090.0, 3375.0, 4526.0, 4975.0",Vendor Number,String,Unique identifier for the vendor.,vendor; supplier; id; number
+APINV,"Text/Mixed data with 9562 unique values. Sample values: 57/TH/2010, FT/10/234, 1/K/08/10, 3310202140, F 00187/10, 2010057112, 549578, F491/RP/10, 71511141, 41090238. Most frequent: ZWROT (10), 58/2010 (6), 15/2010 (6), 4/2010 (6), 55/2010 (6)",Invoice Number,String,Vendor's invoice number.,invoice; number; reference; bill
+APHPND,"702 unique values. Range: 1.0 to 30051.0. Mean: 3319.61, Median: 3134.00. Sample values: 456.0, 1371.0, 2259.0, 2259.0, 2812.0, 3020.0, 4404.0, 4725.0, 4770.0, 5786.0",Pay-To Vendor,String,"Vendor number to whom payment is sent (if different).",pay-to; vendor; payment; alternate
+AVNDTY,"Discrete values (3 unique): SDTR, SI/C, SITR",Vendor Type,String,"Classification of the vendor (e.g., Trade, Intercompany).",vendor; type; class; category
+APHBNK,"Discrete values (6 unique): CDM, CEU, CPL, CUS, KAG, KAS",Bank Code,String,Bank code associated with the transaction.,bank; code; financial; institution
+APHCUR,"Discrete values (5 unique): EUR, GBP, NZD, PLN, USD",Currency,String,"Currency code for the transaction (e.g., EUR, USD).",currency; code; money; iso
+APHOLD,Constant value of 'N' for all entries,Hold Status,Flag,"Indicates if the invoice is on hold (N=No).",hold; status; flag; block
+APHHDT,Constant value of '0.0' for all entries,Hold Date,Date,Date the invoice was placed on hold.,hold; date; timestamp
+AINVDT,"339 unique values. Range: 20060510.0 to 20101008.0. Mean: 20099887.31, Median: 20100513.00. Sample values: 20100207.0, 20100212.0, 20100310.0, 20100427.0, 20100428.0, 20100430.0, 20100629.0, 20100712.0, 20100801.0, 20100825.0",Invoice Date,Date,Date of the invoice.,invoice; date; issued; transaction
+ADUEDT,"480 unique values. Range: 20060510.0 to 20260510.0. Mean: 20100789.33, Median: 20100622.00. Sample values: 20100326.0, 20100327.0, 20100330.0, 20100510.0, 20100513.0, 20100519.0, 20100521.0, 20100606.0, 20100716.0, 20100824.0",Due Date,Date,Date the payment is due.,due; date; payment; deadline
+ADISCD,"339 unique values. Range: 20060510.0 to 20101008.0. Mean: 20099887.32, Median: 20100513.00. Sample values: 20100112.0, 20100121.0, 20100129.0, 20100209.0, 20100217.0, 20100218.0, 20100226.0, 20100319.0, 20100809.0, 20100929.0",Discount Date,Date,Date by which payment must be made to receive a discount.,discount; date; terms; early payment
+APCINA,"7730 unique values. Range: -108897.87 to 1372632.98. Mean: 10868.37, Median: 2613.64. Contains decimal values. Sample values: 234.24, 397.72, 496.0, 919.88, 1926.31, 2488.8, 4262.95, 6388.8, 17260.56, 20867.83",Invoice Amount,Decimal,Total amount of the invoice.,invoice; amount; total; value
+APCDAV,Constant value of '0.0' for all entries,Discount Available,Decimal,Amount of discount available.,discount; available; amount
+APCDTK,Constant value of '0.0' for all entries,Discount Taken,Decimal,Amount of discount taken.,discount; taken; amount
+APCAMP,"7730 unique values. Range: -108897.87 to 1372632.98. Mean: 10868.37, Median: 2613.64. Contains decimal values. Sample values: -241.96, 95.39, 256.2, 1572.34, 1683.6, 3749.38, 4188.97, 5508.97, 14239.6, 23734.1",Open Amount,Decimal,Unpaid balance of the invoice.,open; amount; balance; unpaid
+APCOUT,Constant value of '0.0' for all entries,Outstanding Amount,Decimal,Outstanding amount.,outstanding; amount; balance
+APHWRK,Constant value of '0.0' for all entries,Workstation ID,String,Workstation ID where entry was made.,workstation; id; terminal
+APPORD,"1696 unique values. Lots of 0's (69.8%). Range: 0.0 to 102423.0. Mean: 30501.99, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 100111.0, 100219.0, 100435.0, 101097.0, 101731.0",Purchase Order,String,Associated Purchase Order number.,purchase order; po; reference; link
+APTERM,"Discrete values (14 unique): 0.0, 1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 12.0, 13.0, 16.0, 17.0, 20.0",Payment Terms,String,Code representing payment terms.,payment; terms; code; condition
+APGLDT,"167 unique values. Range: 20091231.0 to 20101012.0. Mean: 20099943.65, Median: 20100527.00. Sample values: 20100126.0, 20100226.0, 20100319.0, 20100412.0, 20100413.0, 20100423.0, 20100630.0, 20100713.0, 20100714.0, 20100728.0",GL Date,Date,General Ledger posting date.,gl; date; posting; accounting
+APLIPC,Empty column,Liability Account,String,GL account for liability.,liability; account; gl; finance
+APLWDI,Constant value of '0.0' for all entries,Withholding Tax,Decimal,Withholding tax amount.,tax; withholding; amount
+APSTAT,"Discrete values (3 unique): P, U, V",Status,String,"Invoice status (P=Paid, U=Unpaid, V=Void?).",status; state; condition
+APMOVE,Constant value of 'N' for all entries,Move Flag,Flag,Movement flag.,move; flag
+APBUSY,Constant value of 'N' for all entries,Busy Flag,Flag,Record in use flag.,busy; flag; lock
+APJOB,Empty column,Job Number,String,Job number.,job; number
+APPAYS,"Discrete values (2 unique): N, Y",Payment Status,String,Payment status indicator.,payment; status
+ABCNFC,"156 unique values. Range: 0.0 to 5.0815. Mean: 1.37, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0",Exchange Rate,Decimal,Currency exchange rate.,exchange; rate; currency; conversion
+ABCINA,"7949 unique values. Range: -443671.7 to 3420285.0. Mean: 16088.80, Median: 2868.94. Contains decimal values. Sample values: -33407.93, 268.68, 1094.34, 1464.0, 1942.86, 1952.0, 3318.4, 4030.43, 11023.5, 11809.6",Base Amount,Decimal,Invoice amount in base currency.,base; amount; local; currency
+ABCDAV,Constant value of '0.0' for all entries,Base Discount Avail,Decimal,Discount available in base currency.,base; discount; available
+ABCDTK,Constant value of '0.0' for all entries,Base Discount Taken,Decimal,Discount taken in base currency.,base; discount; taken
+ABCAMP,"7949 unique values. Range: -443671.7 to 3420285.0. Mean: 16088.80, Median: 2868.94. Contains decimal values. Sample values: 122.0, 829.6, 921.34, 1771.12, 2572.74, 2572.74, 4121.89, 7337.86, 49447.94, 56650.85",Base Open Amount,Decimal,Open amount in base currency.,base; open; amount; balance
+ABCOUT,Constant value of '0.0' for all entries,Base Outstanding,Decimal,Outstanding amount in base currency.,base; outstanding
+ABGCNF,"159 unique values. Range: 1.0 to 5.0185. Mean: 1.38, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 3.9582, 4.0125",Group Rate,Decimal,Group exchange rate.,group; rate; exchange
+ABOCNF,"270 unique values. Range: 1.0 to 5.0085. Mean: 1.38, Median: 1.00. Contains decimal values. Sample values: 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0",Orig Rate,Decimal,Original exchange rate.,original; rate
+PHHTRT,"Discrete values (4 unique): 0.0, 3.0, 7.0, 22.0",Tax Rate Code,String,Tax rate code.,tax; rate; code
+PHHTRC,"Discrete values (5 unique): V0, V22, V3, V7, VZW",Tax Reason Code,String,Tax reason code.,tax; reason; code
+PHTXBA,"6440 unique values. Some 0's (14.6%). Range: -8800.0 to 247523.98. Mean: 1896.35, Median: 308.00. Contains decimal values. Sample values: 0.0, 2.62, 54.85, 59.4, 85.93, 149.6, 472.67, 1065.7, 1883.82, 6348.92",Tax Base Amount,Decimal,Amount on which tax is calculated.,tax; base; amount
+PHTAX,"6623 unique values. Some 0's (14.6%). Range: -27773.11 to 752462.7. Mean: 2778.70, Median: 321.75. Contains decimal values. Sample values: -2662.0, 28.54, 74.69, 475.57, 1096.83, 3971.73, 7000.4, 11063.59, 20417.34, 46271.61",Tax Amount,Decimal,Tax amount.,tax; amount; vat
+PHWSID,"Text/Mixed data with 82 unique values. Sample values: QPADEV0024, QPADEV0013, QPADEV0032, WCISLOJO, QPADEV0030, QPADEV0034. Most frequent: WCISLOJO (2595), QPADEV0007 (601), QPADEV000G (597), QPADEV0008 (532), QPADEV0002 (420)",Workstation ID,String,Workstation identifier.,workstation; id
+APIRDT,"279 unique values. Range: 20080528.0 to 20101012.0. Mean: 20099935.72, Median: 20100527.00. Sample values: 20091209.0, 20091222.0, 20091231.0, 20100127.0, 20100423.0, 20100429.0, 20100531.0, 20100713.0, 20100727.0, 20100924.0",Receipt Date,Date,Invoice receipt date.,receipt; date; received
+APIRRF,Empty column,Receipt Ref,String,Receipt reference.,receipt; reference
+APRESN,"Discrete values (9 unique): FZI, FZIU, FZM, FZMU, FZU, FZUU, NKS, SAD, ZWROT",Reason Code,String,Reason code for the transaction.,reason; code
+APVNTX,"Discrete values (2 unique): EXP, VAT",Tax Type,String,Vendor tax type.,tax; type; vendor
+APPAYT,"Discrete values (4 unique): G, K, N, P",Payment Type,String,Payment type code.,payment; type
+APHNEX,"Discrete values (2 unique): 2.0, 3.0",Next Step,String,Next processing step.,next; step; process
+PHFENO,Empty column,FE Number,String,Fiscal entity number?,fe; number
+PHTXDD,Constant value of '0' for all entries,Tax Ded,String,Tax deduction?,tax; deduction
+PHVTSP,Empty column,VAT Split,String,VAT split indicator.,vat; split
+PHDCYR,"Discrete values (2 unique): 9.0, 10.0",Doc Year,Integer,Document year.,document; year
+PHDCPX,"Discrete values (19 unique): II, IK, IU, M2, MA, MI, MK, MS, MZ, NO, SD, T2, TD, TI, TK, TR, UI, UK, US",Doc Prefix,String,Document prefix.,document; prefix
+PHDCSQ,"3605 unique values. Range: 10000000.0 to 90000158.0. Mean: 15360867.41, Median: 10000710.00. Sample values: 10000000.0, 10000013.0, 10000044.0, 10000087.0, 10000128.0, 10000435.0, 10000439.0, 10000602.0, 10001289.0, 10001400.0",Doc Sequence,Integer,Document sequence number.,document; sequence
+PHCHGD,Constant value of '0.0' for all entries,Charge Amount,Decimal,Charge amount.,charge; amount
+PHCCEX,Constant value of '0.0' for all entries,Curr Exch,Decimal,Currency exchange?,currency; exchange
+PHCCAP,Constant value of '0.0' for all entries,Curr Cap,Decimal,Currency cap?,currency; cap
+PHBCEX,Constant value of '0.0' for all entries,Base Exch,Decimal,Base exchange?,base; exchange
+PHBCAP,Constant value of '0.0' for all entries,Base Cap,Decimal,Base cap?,base; cap
+PHCHAP,Constant value of '0.0' for all entries,Chapter?,String,Chapter?,chapter
+PHOINV,Empty column,Orig Invoice,String,Original invoice number.,original; invoice
+PHCNF2,"Discrete values (2 unique): 0.0, 1.0",Conf 2,String,Confirmation 2?,confirmation
+PHGCN2,Constant value of '1.0' for all entries,Group Conf 2,String,Group confirmation 2?,group; confirmation
+PHOCN2,Constant value of '1.0' for all entries,Orig Conf 2,String,Original confirmation 2?,original; confirmation
+PHCMTP,"Discrete values (2 unique): 7.0, 8.0",Commit Type,String,Commitment type.,commit; type
+PHCMTG,"Discrete values (2 unique): 7, 8",Commit Group,String,Commitment group.,commit; group
+PHCMTR,"Discrete values (2 unique): 7, 8",Commit Reason,String,Commitment reason.,commit; reason

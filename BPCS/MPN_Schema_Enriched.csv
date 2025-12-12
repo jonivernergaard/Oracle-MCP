@@ -1,0 +1,23 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+PNID,Constant value of 'PN' for all entries,Record ID,String,Identifies the record type; always 'PN' for Part Notes.,id; record; type; identifier
+PNPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: CISV11123      ",Product Code,String,Product identifier.,product; code; item; id
+PNTYPE,Constant value of 'I' for all entries,Type,String,Note type.,note; type; category; text
+PNOPN,Constant value of '0' for all entries,Operation,Integer,Operation number.,operation; number; manufacturing; step
+PNSEQ,Constant value of '1' for all entries,Sequence,Integer,Sequence number.,sequence; number; order; detail
+PNDES,"Text data. Lengths: min 50, max 50, avg 50.0. Sample: 22                                                ",Description,String,Note text or description.,note; text; description; info
+PNHPO,Constant value of 'N' for all entries,Print PO,Flag,Print on PO flag.,print; po; flag; status
+PNACK,Constant value of 'N' for all entries,Print Ack,Flag,Print on acknowledgement flag.,print; acknowledgement; flag; status
+PNPIC,Constant value of 'N' for all entries,Print Pick,Flag,Print on pick slip flag.,print; pick; flag; status
+PNINV,Constant value of 'N' for all entries,Print Inv,Flag,Print on invoice flag.,print; invoice; flag; status
+PNPRO,Constant value of 'N' for all entries,Print Pro,Flag,Print on proforma flag.,print; proforma; flag; status
+PNPSP,Constant value of 'N' for all entries,Print Pack,Flag,Print on pack slip flag.,print; pack; flag; status
+PNMBM,Constant value of 'N' for all entries,Print BOM,Flag,Print on BOM flag.,print; bom; flag; status
+PNCOM,Constant value of 'N' for all entries,Print Com,Flag,Print on comment flag.,print; comment; flag; status
+PNSOH,Constant value of 'N' for all entries,Print SO Hdr,Flag,Print on SO header flag.,print; so; header; flag
+PNSOC,Constant value of 'N' for all entries,Print SO Cmt,Flag,Print on SO comment flag.,print; so; comment; flag
+PNMNDT,"Some 0's (36.7%), Range from 0 to 20181003",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+PNMNTM,"Some 0's (36.7%), Range from 0 to 223053",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+PNMNUS,"Discrete values:           , GORASWA   , OGOLNY01  , ROZWORTO  ",Maint User,String,User who performed maintenance.,maintenance; user; id; person
+PNENDT,Range from 20030808 to 20161114,Entry Date,Date,Date the record was entered.,entry; date; creation; time
+PNENTM,Range from 80755 to 175748,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+PNENUS,"Discrete values: OGOLNY01  , ROZWORTO  , WARDASSY  ",Entry User,String,User who entered the record.,entry; user; id; person

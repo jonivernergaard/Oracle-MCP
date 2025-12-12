@@ -1,0 +1,16 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+OTID,Constant value of 'OT' for all entries,Record ID,String,Identifies the record type; always 'OT' for Order Type.,id; record; type; identifier
+OTUTYP,"Discrete values: 1, 2, 3, 4, 5, 6, 7, 8, 9",User Type,Integer,User type code.,user; type; code; category
+OTOTDS,"Discrete values: Credit Memo/Debit Memo        , Exchange                      , Regular Order                 , Replacement with Charge       , Replacement, No Charge        , Resupply Order                , Sales History Correction      , Special Service with Charge   , Special Service, no Charge    ",Description,String,Description of the order type.,description; name; text; category
+OTBTYP,"Discrete values: 1, 2, 3, 4, 5, 6, 7, 8, 9",Bill Type,Integer,Billing type code.,bill; type; code; financial
+OTDFOC,"Discrete values: 4, 8, 204",Default Class,Integer,Default order class.,default; class; code; category
+OTAFFI,"Discrete values: 0, 1",Affect Inv,Flag,Affects inventory flag.,affect; inventory; flag; status
+OTAFFS,"Discrete values: 0, 1",Affect Sales,Flag,Affects sales flag.,affect; sales; flag; status
+OTAFFA,"Discrete values: 0, 1",Affect AR,Flag,Affects accounts receivable flag.,affect; ar; flag; financial
+OTRESV,Constant value of '1' for all entries,Reserve,Flag,Reserve inventory flag.,reserve; flag; inventory; status
+OTENDT,Constant value of '19950701' for all entries,Entry Date,Date,Date the record was entered.,entry; date; creation; time
+OTENTM,Constant value of '10101' for all entries,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+OTENUS,Constant value of 'RESERVED  ' for all entries,Entry User,String,User who entered the record.,entry; user; id; person
+OTMNDT,"Discrete values: 19960829, 20010310",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+OTMNTM,"Discrete values: 50000, 151125",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+OTMNUS,"Discrete values: B610ADM   , SSA       ",Maint User,String,User who performed maintenance.,maintenance; user; id; person

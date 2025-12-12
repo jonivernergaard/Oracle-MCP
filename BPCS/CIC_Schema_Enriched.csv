@@ -1,0 +1,64 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+ICID,Constant value of 'IC' for all entries,Record ID,String,Identifies the record type; always 'IC' for Inventory Cost.,id; record; type; identifier
+ICPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: AMESZ6         ",Product Code,String,Product identifier.,product; code; item; id
+ICFAC,"Discrete values:   , PC",Facility,String,Facility code.,facility; code; location; site
+ICLOTS,Range from 0.001 to 24000.0,Lot Size,Decimal,Standard lot size.,lot; size; quantity; standard
+ICIOQ,"Discrete values: 0.0, 1.0, 4.8, 24.0, 24.5, 25.6, 36.0",Order Qty,Decimal,Economic order quantity.,order; quantity; eoq; amount
+ICMIN,"Lots of 0's (51.8%), Range from 0.0 to 90000.0",Min Qty,Decimal,Minimum order quantity.,min; quantity; order; limit
+ICLEAD,"Some 0's (33.2%), Range from 0 to 90",Lead Time,Integer,Lead time in days.,lead; time; days; duration
+ICDLTR,Constant value of '0.0' for all entries,Delivery Time,Decimal,Delivery time rating or value.,delivery; time; rating; value
+ICPCTK,Constant value of '0.0' for all entries,Percentage,Decimal,Percentage value.,percentage; rate; value; ratio
+ICMAXR,Constant value of '0' for all entries,Max Rate,Decimal,Maximum rate.,max; rate; limit; value
+ICMINR,Constant value of '0' for all entries,Min Rate,Decimal,Minimum rate.,min; rate; limit; value
+ICTGQY,"Lots of 0's (93.5%), Range from 0.0 to 1000.0",Target Qty,Decimal,Target inventory quantity.,target; quantity; inventory; goal
+ICARRT,Constant value of '0.0' for all entries,Arrival Time,Decimal,Arrival time.,arrival; time; schedule; duration
+ICMXIN,"Lots of 0's (79.9%), Range from 0.0 to 50000.0",Max Inventory,Decimal,Maximum inventory level.,max; inventory; level; limit
+ICDMTF,Constant value of '0' for all entries,Demand Time Fence,Integer,Demand time fence in days.,demand; time; fence; planning
+ICMBHD,Constant value of '0' for all entries,Master Bill Header,String,Master bill of materials header ID.,master; bill; header; bom
+ICMBDY,Constant value of '0' for all entries,Master Bill Detail,String,Master bill of materials detail ID.,master; bill; detail; bom
+ICORDP,"Discrete values: A, G, I, J",Order Policy,String,Order policy code.,order; policy; code; planning
+ICMRP,"Discrete values: M, N",MRP Controller,String,MRP controller code.,mrp; controller; code; planning
+ICPURC,"Discrete values:  , 0, 1, 2, 3, 4, 5, 6, 7, 8, 9",Purchase Code,String,Purchase code.,purchase; code; procurement; type
+ICCLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: ME",Class,String,Item classification.,class; code; category; type
+ICACT,"Discrete values:  , Y",Active Flag,Flag,Indicates if the item is active.,active; flag; status; indicator
+ICLEVL,Constant value of '0' for all entries,Level,Integer,BOM level.,level; bom; hierarchy; depth
+ICORDC,Constant value of '0.0' for all entries,Order Cost,Decimal,Cost to place an order.,order; cost; financial; value
+ICPODY,"Discrete values: 0, 7",Policy Days,Integer,Policy days.,policy; days; time; duration
+ICSCST,"Lots of 0's (55.4%), Range from 0.0 to 79650.0",Standard Cost,Decimal,Standard cost of the item.,standard; cost; financial; value
+ICACST,"Lots of 0's (73.5%), Range from 0.0 to 17458.8912",Actual Cost,Decimal,Actual cost of the item.,actual; cost; financial; value
+ICFCST,"Lots of 0's (88.8%), Range from 0.0 to 104.18889",Future Cost,Decimal,Future cost of the item.,future; cost; financial; value
+ICORGN,"Text data. Lengths: min 4, max 4, avg 4.0. Sample: PL  ",Origin,String,Country of origin.,origin; country; code; place
+ICPVND,"Lots of 0's (51.2%), Range from 0 to 9999",Primary Vendor,String,Primary vendor number.,primary; vendor; supplier; id
+ICSVND,"Lots of 0's (91.6%), Range from 0 to 7777",Secondary Vendor,String,Secondary vendor number.,secondary; vendor; supplier; id
+ICCOM,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: 48115100       ",Commodity,String,Commodity code.,commodity; code; category; type
+ICFRMC,"Discrete values:    , C  , P  , SOR",Firm Code,String,Firm planned order code.,firm; code; planning; status
+ICBTCH,Constant value of '1.0' for all entries,Batch Flag,Flag,Indicates if batch processing is used.,batch; flag; process; indicator
+ICMBWT,Constant value of '0.0' for all entries,Weight,Decimal,Item weight.,weight; mass; measurement; physical
+ICSTYL,Constant value of '0.0' for all entries,Style,String,Style code.,style; code; design; type
+ICPLN,"Discrete values:   , C4, C5, C6, CZ, S3, S4, S5, SA",Planner,String,Planner code.,planner; code; person; role
+ICSTK,"Discrete values:   , B3, CZ",Stockroom,String,Stockroom or location.,stockroom; location; storage; place
+ICFWA,Constant value of '0' for all entries,Forward Flag,Flag,Forward scheduling flag.,forward; flag; scheduling; indicator
+ICBWIP,Constant value of '0' for all entries,WIP Flag,Flag,Work in progress flag.,wip; flag; status; indicator
+ICRELP,Constant value of '0' for all entries,Release Flag,Flag,Release flag.,release; flag; status; indicator
+ICMNDT,"Some 0's (0.2%), Range from 0 to 20311120",Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+ICMNTM,"Some 0's (0.2%), Range from 0 to 214914",Maint Time,Time,Time of last maintenance.,maintenance; time; last; update
+ICMNUS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: OGOLNY01  ",Maint User,String,User who performed maintenance.,maintenance; user; id; person
+ICENDT,"Some 0's (26.4%), Range from 0 to 20230906",Entry Date,Date,Date of entry.,entry; date; creation; time
+ICENTM,"Some 0's (26.4%), Range from 0 to 213525",Entry Time,Time,Time of entry.,entry; time; creation; time
+ICENUS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: OGOLNY01  ",Entry User,String,User who created the record.,entry; user; id; person
+ICLPGM,"Discrete values: CST100D   , MRP140D2  , MRP602B   , SYS954B   ",Last Program,String,Last program to update the record.,last; program; update; system
+ICGSOR,"Discrete values:  , 0",Source,String,Source code.,source; code; origin; type
+ICMFMD,"Discrete values:   ,  1",Mode,String,Mode code.,mode; code; type; setting
+ICABC,"Discrete values:  , A, B, C",ABC Class,String,ABC classification for inventory.,abc; class; inventory; category
+ICALRQ,"Discrete values: 0, 1",Alloc Req,Flag,Allocation required flag.,allocation; required; flag; status
+ICFREQ,"Discrete values: 0, 4, 6, 12, 26",Frequency,Integer,Frequency value.,frequency; value; rate; cycle
+ICCIOQ,Constant value of '0.0' for all entries,Cost Order Qty,Decimal,Costing order quantity.,cost; order; quantity; financial
+ICCMOQ,Constant value of '0.0' for all entries,Cost Min Qty,Decimal,Costing minimum quantity.,cost; min; quantity; financial
+ICCSOQ,Constant value of '0.0' for all entries,Cost Safety Qty,Decimal,Costing safety stock quantity.,cost; safety; quantity; financial
+ICRDFD,Constant value of '0' for all entries,Defined Flag,Flag,Defined flag.,defined; flag; status; indicator
+ICUMSL,"Discrete values:   , KG, KP, SZ, TH",Sales UOM,String,Sales unit of measure.,sales; uom; unit; measure
+ICEXBS,"Discrete values:  , 1",Expense Flag,Flag,Expense item flag.,expense; flag; financial; status
+ICSLDY,Constant value of '0' for all entries,Shelf Life Days,Integer,Shelf life in days.,shelf; life; days; expiration
+ICRTDY,Constant value of '0' for all entries,Retention Days,Integer,Retention period in days.,retention; days; period; duration
+ICSLHR,Constant value of '0' for all entries,Shelf Life Hours,Integer,Shelf life in hours.,shelf; life; hours; expiration
+ICRTHR,Constant value of '0' for all entries,Retention Hours,Integer,Retention period in hours.,retention; hours; period; duration

@@ -1,0 +1,8 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+CFID,Constant value of 'CF' for all entries,Record ID,String,"Identifies the record type, 'CF' for Cost File.",id; record; type; cost
+CFPROD,"Text/Mixed data with 5814 unique values. Sample values: GBA2000507, RPU23011/1127C, SPS5021, SPS6177, SPS3286, SPS7073, SPS3020, A004, CGRVA5215, SPR7790. Most frequent: CIOBP73851EX (34), CISB81007EX (34), LIOB475851EX (34), CIOBP74851EX (34), LISB48109EX (34)",Item Number,String,Item or product number.,item; product; number; id
+CFFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code; location
+CFCSET,"Discrete values (11 unique): 1.0, 2.0, 4.0, 11.0, 12.0, 13.0, 15.0, 33.0, 43.0, 62.0, 63.0",Cost Set,Integer,Cost set identifier.,cost; set; id
+CFCBKT,"28 unique values. Some 0's (19.8%). Range: 0.0 to 50.0. Mean: 4.52, Median: 2.00. Sample values: 0.0, 0.0, 1.0, 1.0, 1.0, 2.0, 2.0, 2.0, 11.0, 15.0",Cost Bucket,Integer,Cost bucket identifier.,cost; bucket; id
+CFTLVL,"827 unique values. Lots of 0's (51.9%). Range: -5.60718 to 89100.0. Mean: 93.64, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 8.86123, 10.55939, 12.97098, 2239.44",Total Cost,Decimal,Total cost at this level.,cost; total; amount
+CFPLVL,"3357 unique values. Lots of 0's (52.6%). Range: -5.92572 to 506.21752. Mean: 19.18, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.62125, 2.03786, 2.25526, 2.82338, 47.49001, 53.65522",This Level Cost,Decimal,Cost added at this level.,cost; this; level; amount

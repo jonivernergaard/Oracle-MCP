@@ -1,0 +1,21 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+OID,Constant value of 'OR' for all entries,Record ID,String,Identifies the record type; always 'OR' for Order Requirements.,id; record; type; identifier
+OPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: CGRVA7031      ",Product Code,String,Product identifier.,product; code; item; id
+OQTY,Range from 7.2 to 512.0,Quantity,Decimal,Required quantity.,required; quantity; amount; volume
+ODUE,Constant value of '0' for all entries,Due Date,Date,Due date.,due; date; planning; time
+OREL,Range from 20231024 to 20241230,Release Date,Date,Release date.,release; date; planning; time
+OLOC,Constant value of 'CZ' for all entries,Location,String,Location code.,location; code; place; inventory
+OODUE,Range from 20231026 to 20241230,Orig Due Date,Date,Original due date.,original; due; date; planning
+OTYPE,Constant value of 'P' for all entries,Type,String,Order type.,type; code; category; planning
+OSRCE,Constant value of 'F' for all entries,Source,String,Source code.,source; code; origin; system
+OWSID,"Discrete values: I005132C  , I005219B  ",Workstation ID,String,Workstation identifier.,workstation; id; system; device
+ORLOC,Constant value of 'CZ' for all entries,Req Location,String,Required location.,required; location; place; inventory
+OROTYP,Constant value of 'RW' for all entries,Req Order Type,String,Required order type.,required; order; type; planning
+ORDTM,Constant value of '0' for all entries,Req Time,Time,Required time.,required; time; planning; system
+ORRTM,Constant value of '0' for all entries,Release Time,Time,Release time.,release; time; planning; system
+ORODTM,Constant value of '0' for all entries,Orig Due Time,Time,Original due time.,original; due; time; planning
+ORCDT,Constant value of '0' for all entries,Create Date,Date,Creation date.,create; date; creation; time
+ORCTM,Constant value of '0' for all entries,Create Time,Time,Creation time.,create; time; creation; system
+ORLBY,"Discrete values: PRODUK01  , PRODUK03  ",Last By,String,User who last modified the record.,last; by; user; id
+ORLDT,"Discrete values: 20231024, 20241107",Last Date,Date,Last modification date.,last; date; modification; time
+ORLTM,Constant value of '0' for all entries,Last Time,Time,Last modification time.,last; time; modification; system

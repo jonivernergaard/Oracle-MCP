@@ -1,0 +1,6 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LIID,"Discrete values: LI, LZ",Record ID,String,Identifies the record type; LI or LZ.,id; record; type; identifier
+LIPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: RSHIPS         ",Product Code,String,Product identifier.,product; code; item; id
+LILANG,"Discrete values: BKI, BPC, BSF, DOW, DRY, ELF, ENG, ENI",Language,String,Language code.,language; code; localization; text
+LIDSC1,"Text data. Lengths: min 40, max 40, avg 40.0. Sample: EDISTIR 850 EP                          ",Description 1,String,Primary description in the specified language.,description; 1; text; translation
+LIDSC2,"Text data. Lengths: min 40, max 40, avg 40.0. Sample: LUZEM                                   ",Description 2,String,Secondary description in the specified language.,description; 2; text; translation

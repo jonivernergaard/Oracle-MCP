@@ -1,0 +1,100 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+CMID,"Discrete values (2 unique): CM, CZ",Record ID,String,"Identifies the record type, 'CM' for Customer Master.",id; record; type; customer; master
+CCUST,"1801 unique values. Range: 6.0 to 801726.0. Mean: 337701.85, Median: 102476.00. Sample values: 341.0, 101873.0, 102100.0, 102937.0, 800007.0, 800534.0, 800558.0, 800576.0, 800736.0, 800743.0",Customer Number,Integer,Unique identifier for the customer.,customer; number; id
+CNME,"Text/Mixed data with 1659 unique values. Sample values: ENBIO TECHNOLOGY SP. Z O.O., DOM TOWAROWY REAL SKLEP 55, HURTOWNIA WEDKARSKA POL, PIGEON SPORT, FOLRES Sp. z o.o., P.H.U.KAMPOL MARCIN MAKOWSKI, CARREFOUR DEBICA, ARTEM SC,WOJCIECH KILKOWSKI, RAIDO S.C., ZDZISLAW KOSZCZAL. Most frequent: DALLMAYR VENDING&OFFICE SP.ZOO (29), HUHTAMAKI SWEDEN AB (16), HORTEX HOLDING SA (15), FIRMA ASTONSZEKALSKA BARBARA (15), PEPSI-COLA GENERAL BOTTLERS (12)",Customer Name,String,Name of the customer.,customer; name; company
+CAD1,"Text/Mixed data with 1690 unique values. 0.3% missing values. Sample values: UL.SW.DUCHA 8/10, UL.CHEMICZNA 6, UL.BELGRADZKA 76, UL.POWSTANCÃW Â¡LÂ£SKICH 1, UL. SCHUBERTA 102A, SVETSARVAGEN 15, UL.MORSKA 53, UL.WOJSKA POLSKIEGO 18 A, UL.TOWAROWA 3, WOLA RAKOWA ,UL.G[ÃWNA 41/43. Most frequent: SPÃ[KA KOMANDYTOWA (25), SP. Z O.O. (15), AL.GRUNWALDZKA 105 (10), UL. POLUDNIOWA 8 (9), TOMASZ POSIAKOW (9)",Address 1,String,First line of address.,address; line1; location
+CAD2,"Text/Mixed data with 1095 unique values. 0.1% missing values. Sample values: UL.MARYNARKI POLSKIEJ 71, GDYNIA, HEL, RUMIA, KROCZYCE, BYTOM, KOSCIERZYNA, SOPOT, KOSTRZYN WIELKOPOLSKI. Most frequent: GDYNIA (361), GDANSK (269), WARSZAWA (208), SZCZECIN (52), SOPOT (52)",Address 2,String,Second line of address.,address; line2; location
+CAD3,"Text/Mixed data with 525 unique values. 54.3% missing values. Sample values: GDYNIA, 5905784310527, 83-400 KOSCIERZYNA ,KALISKA 50, 5900000900575, GDA]SK, 5900000900421, 5900012299292, 5900000900124, 5905784311333. Most frequent: GDYNIA (237), GDANSK (168), 0 (42), SOPOT (41), WARSZAWA (21)",Address 3,String,Third line of address.,address; line3; location
+CSTE,Empty column,State,String,State or province code.,state; province; location
+CZIP,"Text/Mixed data with 959 unique values. 4.5% missing values. Sample values: 81-575, 81-304, 26-600, 43-300, 82-400, 22-400, 160 00, 81-862, 83-400, 72-100. Most frequent: PL (461), 84-230 (46), 82-300 (36), 43-300 (33), 84-200 (32)",Zip Code,String,Postal or zip code.,zip; code; postal; address
+CAMTD,"49 unique values. Lots of 0's (97.1%). Range: -16930.39 to 3357071.36. Mean: 8329.50, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Amount Due,Decimal,Total amount due from the customer.,amount; due; balance
+CRDOL,"79 unique values. Range: 0.0 to 7000000.0. Mean: 349904.48, Median: 2500.00. Sample values: 1.0, 2500.0, 2500.0, 2500.0, 3000.0, 25000.0, 50000.0, 70000.0, 950000.0, 3500000.0",Credit Limit,Decimal,Credit limit for the customer.,credit; limit; amount
+CCOUN,"Text/Mixed data with 31 unique values. Sample values: PL, AE. Most frequent: PL (4159), CZ (58), DE (45), SK (31), SE (24)",Country,String,Country code.,country; code; location
+CTYPE,"Discrete values (4 unique): CDOM, CEXE, CEXN, CICE",Customer Type,String,Classification of the customer.,customer; type; class
+COPEN,"46 unique values. Lots of 0's (97.6%). Range: -10882.31 to 378769.1. Mean: 1548.35, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Open Balance,Decimal,Open balance amount.,open; balance; amount
+CYSAL,"106 unique values. Lots of 0's (94.2%). Range: 0.0 to 10344262.97. Mean: 20981.29, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",YTD Sales,Decimal,Year-to-date sales amount.,ytd; sales; amount
+CMSAL,"Discrete values (2 unique): 0.0, 4806.0",Month Sales,Decimal,Month-to-date sales amount.,month; sales; amount
+CLYTD,"118 unique values. Lots of 0's (93.8%). Range: 0.0 to 11312966.7. Mean: 23100.12, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2051.54",Last Year Sales,Decimal,Last year sales amount.,last; year; sales; amount
+CSL01,"55 unique values. Lots of 0's (97.1%). Range: 0.0 to 1644757.15. Mean: 2021.49, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 1,Decimal,Sales amount for period 1.,sales; period; 1
+CSL02,"63 unique values. Lots of 0's (96.7%). Range: 0.0 to 1581318.48. Mean: 2326.78, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 2,Decimal,Sales amount for period 2.,sales; period; 2
+CSL03,"69 unique values. Lots of 0's (96.3%). Range: 0.0 to 494492.38. Mean: 1553.42, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 3,Decimal,Sales amount for period 3.,sales; period; 3
+CSL04,"66 unique values. Lots of 0's (96.6%). Range: 0.0 to 622898.41. Mean: 1517.91, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 4,Decimal,Sales amount for period 4.,sales; period; 4
+CSL05,"76 unique values. Lots of 0's (96.0%). Range: 0.0 to 1056925.63. Mean: 1786.74, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5460.44",Sales Per 5,Decimal,Sales amount for period 5.,sales; period; 5
+CSL06,"69 unique values. Lots of 0's (96.3%). Range: 0.0 to 722799.52. Mean: 1888.66, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 2404.66",Sales Per 6,Decimal,Sales amount for period 6.,sales; period; 6
+CSL07,"74 unique values. Lots of 0's (96.0%). Range: 0.0 to 1124813.43. Mean: 2033.99, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 7,Decimal,Sales amount for period 7.,sales; period; 7
+CSL08,"77 unique values. Lots of 0's (96.0%). Range: 0.0 to 1048236.69. Mean: 2285.06, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 803285.73",Sales Per 8,Decimal,Sales amount for period 8.,sales; period; 8
+CSL09,"Discrete values (2 unique): 0.0, 3024.0",Sales Per 9,Decimal,Sales amount for period 9.,sales; period; 9
+CSL10,"82 unique values. Lots of 0's (95.5%). Range: -8840.15 to 737869.37. Mean: 1892.41, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 790.0",Sales Per 10,Decimal,Sales amount for period 10.,sales; period; 10
+CSL11,"73 unique values. Lots of 0's (96.2%). Range: -2026.8 to 1006365.61. Mean: 1908.91, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1645.0",Sales Per 11,Decimal,Sales amount for period 11.,sales; period; 11
+CSL12,"74 unique values. Lots of 0's (96.1%). Range: 0.0 to 595601.75. Mean: 1768.30, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Sales Per 12,Decimal,Sales amount for period 12.,sales; period; 12
+CYCOS,"98 unique values. Lots of 0's (94.6%). Range: 0.0 to 8715938.9. Mean: 13248.41, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",YTD Cost,Decimal,Year-to-date cost amount.,ytd; cost; amount
+CLYCS,"113 unique values. Lots of 0's (94.0%). Range: 0.0 to 10193499.84. Mean: 16649.83, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Last Year Cost,Decimal,Last year cost amount.,last; year; cost; amount
+CMCOS,"Discrete values (11 unique): 0.0, 109.03, 302.65, 455.0, 722.59, 787.23, 1381.98, 4086.98, 8565.92, 21249.68, 24791.3",Month Cost,Decimal,Month-to-date cost amount.,month; cost; amount
+CCS01,"56 unique values. Lots of 0's (97.0%). Range: 0.0 to 1478559.21. Mean: 1535.76, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 7030.41, 1478559.21",Cost Per 1,Decimal,Cost amount for period 1.,cost; period; 1
+CCS02,"62 unique values. Lots of 0's (96.9%). Range: 0.0 to 991834.06. Mean: 1403.00, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 2,Decimal,Cost amount for period 2.,cost; period; 2
+CCS03,"66 unique values. Lots of 0's (96.5%). Range: 0.0 to 432424.07. Mean: 869.87, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 3,Decimal,Cost amount for period 3.,cost; period; 3
+CCS04,"65 unique values. Lots of 0's (96.7%). Range: 0.0 to 509325.83. Mean: 871.16, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 6218.32",Cost Per 4,Decimal,Cost amount for period 4.,cost; period; 4
+CCS05,"74 unique values. Lots of 0's (96.2%). Range: 0.0 to 949251.29. Mean: 1345.24, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 5,Decimal,Cost amount for period 5.,cost; period; 5
+CCS06,"68 unique values. Lots of 0's (96.5%). Range: 0.0 to 653273.27. Mean: 1199.20, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 6,Decimal,Cost amount for period 6.,cost; period; 6
+CCS07,"70 unique values. Lots of 0's (96.4%). Range: 0.0 to 977212.41. Mean: 1287.67, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 7,Decimal,Cost amount for period 7.,cost; period; 7
+CCS08,"75 unique values. Lots of 0's (96.2%). Range: 0.0 to 718888.04. Mean: 1226.23, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 8,Decimal,Cost amount for period 8.,cost; period; 8
+CCS09,"Discrete values (2 unique): 0.0, 1941.25",Cost Per 9,Decimal,Cost amount for period 9.,cost; period; 9
+CCS10,"78 unique values. Lots of 0's (95.8%). Range: 0.0 to 669729.33. Mean: 1255.45, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 10,Decimal,Cost amount for period 10.,cost; period; 10
+CCS11,"71 unique values. Lots of 0's (96.4%). Range: -207.06 to 807287.31. Mean: 1238.13, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Cost Per 11,Decimal,Cost amount for period 11.,cost; period; 11
+CCS12,"75 unique values. Lots of 0's (96.1%). Range: -32070.52 to 528154.08. Mean: 1018.53, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 7834.08",Cost Per 12,Decimal,Cost amount for period 12.,cost; period; 12
+CDLIM,"Discrete values (4 unique): 0.0, 3.0, 15.0, 999.0",Delivery Limit,Integer,Delivery limit days.,delivery; limit; days
+CPHON,"Text/Mixed data with 598 unique values. 60.3% missing values. Sample values: 058/6659292, 022/6157124, 062/604162576, #ERROR!, 033/8547045, 058/6622220, 033/8731599, 022/4218286, 066/5145656, 509851636. Most frequent: #ERROR! (53), 0609422629  KATARZYNA (30), 022/6702026 (11), 032/3161434 (10), (22)517-22-18, 517-24-32 (9)",Phone Number,String,Customer phone number.,phone; number; contact
+CSAL,"25 unique values. Range: 1.0 to 82.0. Mean: 25.10, Median: 21.00. Sample values: 20.0, 21.0, 21.0, 21.0, 21.0, 21.0, 21.0, 23.0, 25.0, 40.0",Salesperson,String,Salesperson code.,salesperson; code; sales
+CTERM,"24 unique values. Range: 0 to 99. Mean: 6.16, Median: 3.00. Sample values: 1, 1, 1, 1, 1, 3, 7, 16, 38, 38",Terms Code,String,Payment terms code.,terms; code; payment
+CAPD,"151 unique values. Lots of 0's (68.4%). Range: -111.0 to 752.0. Mean: 12.65, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 1.0, 8.0, 38.0, 321.0",Avg Pay Days,Integer,Average days to pay.,average; pay; days
+CAIS,"675 unique values. Lots of 0's (64.0%). Range: -4508.5 to 1796022.05. Mean: 4105.58, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 5049.89, 10844.86",Avg Inv Size,Decimal,Average invoice size.,average; invoice; size
+CLAST,"576 unique values. Lots of 0's (63.9%). Range: 0.0 to 20251201.0. Mean: 7283974.84, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20120913.0, 20121107.0, 20180314.0, 20251015.0",Last Sale Date,Date,Date of last sale.,last; sale; date
+CDISC,"Discrete values (2 unique): C1, C2",Discount Code,String,Discount code.,discount; code
+CTAX,"Discrete values (2 unique): EXP, VAT",Tax Code,String,Tax code.,tax; code
+CCOM,Empty column,Commission Code,String,Commission code.,commission; code
+CSHIP,"Discrete values (2 unique): 0.0, 1.0",Ship Code,String,Shipping code.,ship; code
+CCOMP,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+CLOC,Empty column,Location,String,Location code.,location; code
+CCCUS,"1298 unique values. Range: 156.0 to 801726.0. Mean: 362988.24, Median: 102764.50. Sample values: 100756.0, 101291.0, 102085.0, 102524.0, 200001.0, 800458.0, 800612.0, 800645.0, 800821.0, 801052.0",Corp Customer,Integer,Corporate customer number.,corporate; customer; number
+CTAXE,"Discrete values (2 unique): 0, 1",Tax Exempt,Flag,Tax exempt flag.,tax; exempt; flag
+CREG,Empty column,Region,String,Region code.,region; code; location
+CSHV,Constant value of '0.0' for all entries,Ship Via,String,Ship via code.,ship; via; code
+CPCD,"Discrete values (4 unique): G, K, N, P",Payment Code,String,Payment code.,payment; code
+CCON,"Discrete values (11 unique): Aleksander Stamm, CZES[AW KALISZTAN, Carrefour Szczecin, Carrefour Wilenska, D. Rybicka , Z. Olko, HAVI Logistics Kft., Handlowe""Elma -Plast""sp.z o.o., Magda Kyjovska, PRZEDSIÃBIORSTWO ""DANA A., Roberto Finko, Anna Bronisz, TAKOA.Kowacki S.Wolski sp.j",Contact Name,String,Contact person name.,contact; name; person
+COCDG,Empty column,OCDG,String,Unknown field.,unknown
+COID,Constant value of '0.0' for all entries,OID,Integer,Unknown field.,unknown
+CDEA1,"Text/Mixed data with 40 unique values. 0.7% missing values. Sample values: INACTIVE, DEACTIV, INTERCO, GDYNIA. Most frequent: DEACTIV (3374), INACTIVE (390), GDYNIA (128), METRO (85), DALLMAYR (69)",Deact Reason 1,String,Reason for deactivation 1.,deactivation; reason
+CDEA2,Empty column,Deact Reason 2,String,Reason for deactivation 2.,deactivation; reason
+CWHSE,Constant value of 'CZ' for all entries,Warehouse,String,Warehouse code.,warehouse; code; location
+CTXID,Empty column,Tax ID,String,Tax identification number.,tax; id; number
+CLPDT,"567 unique values. Lots of 0's (64.6%). Range: 0.0 to 20251128.0. Mean: 7127161.41, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 20100614.0, 20111006.0, 20250214.0",Last Pay Date,Date,Date of last payment.,last; pay; date
+CLPAM,"573 unique values. Lots of 0's (65.4%). Range: -1844490.68 to 58625.96. Mean: -5050.43, Median: 0.00. Contains decimal values. Sample values: -13630.86, -746.73, -738.0, -127.92, -111.02, 0.0, 0.0, 0.0, 0.0, 0.0",Last Pay Amt,Decimal,Amount of last payment.,last; pay; amount
+CFRDA,"1073 unique values. Range: 19980110.0 to 20220110.0. Mean: 20057763.15, Median: 20061011.00. Sample values: 19990729.0, 20020813.0, 20021028.0, 20060626.0, 20060928.0, 20070828.0, 20080321.0, 20080829.0, 20090407.0, 20100106.0",First Date,Date,First activity date.,first; date; activity
+CCURR,"Discrete values (2 unique): EUR, PLN",Currency,String,Currency code.,currency; code; money
+CMABC,Constant value of 'A' for all entries,ABC Code,String,ABC classification code.,abc; code; classification
+CMSIC,"Discrete values (5 unique): FIN, GER, IC, POL, RUS",SIC Code,String,Standard Industrial Classification code.,sic; code; classification
+CMDUNN,Constant value of '0.0' for all entries,DUNS Number,String,DUNS number.,duns; number
+CMDUNR,Empty column,DUNS Rating,String,DUNS rating.,duns; rating
+CMFTXC,"Text/Mixed data with 1179 unique values. 8.5% missing values. Sample values: 5862041241, 5861544520, 8970027883, 5860161691, 5842323982, 5212935933, 7290009414, 9570950341, 8942851305, 5880000577. Most frequent: 9370008168 (217), 5212935933 (153), 5252219249 (66), 9451000610 (66), 5261037737 (51)",Fiscal Tax Code,String,Fiscal tax code.,fiscal; tax; code
+CMALPH,"Text/Mixed data with 407 unique values. Sample values: GDYNIA, ASTON, BOMAR, REAL, CARREFOUR, TCHIBODE. Most frequent: GDYNIA (2339), CARREFOUR (283), REAL (153), MAKRO (83), ODRAPAK (79)",Alpha Search,String,Alpha search key.,alpha; search; key
+CROUT,Constant value of '5.0' for all entries,Route,String,Route code.,route; code
+CMSTTP,Empty column,Statement Type,String,Statement type.,statement; type
+CMOPEN,Constant value of '0.0' for all entries,Open Orders,Decimal,Open orders amount.,open; orders; amount
+CMDCRT,"1079 unique values. Range: 19981104.0 to 20220110.0. Mean: 20058014.63, Median: 20061022.00. Sample values: 19981105.0, 20020730.0, 20020917.0, 20021030.0, 20030716.0, 20030725.0, 20040624.0, 20040629.0, 20050209.0, 20081202.0",Date Created,Date,Date the record was created.,date; created; record
+CMXNBR,Empty column,Tax Number,String,Tax number.,tax; number
+CMXCRT,Empty column,Tax Cert,String,Tax certificate.,tax; certificate
+CMXDTE,Constant value of '0.0' for all entries,Tax Date,Date,Tax date.,tax; date
+CMXMAX,Constant value of '0.0' for all entries,Tax Max,Decimal,Tax maximum amount.,tax; max; amount
+CBO,"Discrete values (2 unique): 0.0, 1.0",Backorder,Flag,Backorder allowed flag.,backorder; flag
+CALOPR,Constant value of '50.0' for all entries,Allow Partial,String,Allow partial shipment code.,allow; partial; shipment
+CREF01,Constant value of 'PPLSM' for all entries,Reference 1,String,Reference field 1.,reference; field
+CREF02,"Discrete values (4 unique): CDOM, CEXE, CEXN, CICE",Reference 2,String,Reference field 2.,reference; field
+CREF03,"Discrete values (12 unique): SALBE, SALCA, SALCG, SALCO, SALCT, SALEX, SALIC, SALIN, SALQB, SALRM, SALSC, SALVE",Reference 3,String,Reference field 3.,reference; field
+CREF04,"Discrete values (3 unique): A, B, C",Reference 4,String,Reference field 4.,reference; field
+CREF05,"Discrete values (6 unique): 1, 2, 3, 4, 5, DGDYN",Reference 5,String,Reference field 5.,reference; field
+CMSUBS,"Discrete values (2 unique): 0, 1",Subsidiary,Flag,Subsidiary flag.,subsidiary; flag
+CMINVC,"Discrete values (2 unique): 0, 1",Invoice Copies,Integer,Number of invoice copies.,invoice; copies
+CMCDTP,"Discrete values (3 unique): 0, 1, 2",Code Type,Integer,Code type.,code; type
+CMCDST,Empty column,Code Status,String,Code status.,code; status
+CMDLTS,Empty column,Delete Status,String,Delete status.,delete; status
+CMDDAT,Constant value of '0.0' for all entries,Delete Date,Date,Delete date.,delete; date

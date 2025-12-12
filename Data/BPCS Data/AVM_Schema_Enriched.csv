@@ -1,0 +1,91 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+VNSTAT,"Discrete values (2 unique): A, D",Vendor Status,String,"Status of the vendor (A=Active, D=Deleted/Inactive).",vendor; status; state; active
+VMID,"Discrete values (2 unique): VM, VZ",Record ID,String,"Identifies the record type, 'VM' for Vendor Master.",id; record; type; vendor
+VENDOR,"3625 unique values. Range: 1.0 to 99010.0. Mean: 2536.20, Median: 1813.00. Sample values: 137.0, 760.0, 1648.0, 1656.0, 1812.0, 2122.0, 2274.0, 2675.0, 5020.0, 5057.0",Vendor Number,String,Unique identifier for the vendor.,vendor; supplier; id; number
+VNDNAM,"Text/Mixed data with 3566 unique values. Sample values: ARMADA FLEET MANAGEMENT S.A., ARPEX FH, KAJ SPOLKA Z OGRANICZONA, KNOW HUB, SOLAR INKS LTD, SCORPIO SP. Z.O.O., SEDLAK & SEDLAK SP. Z O. O., CENTRO-PAK, CENTRUM EDU.-SZKO.CITY COLLEGE, COOKIE SLODYCZE REKLAMOWE. Most frequent: MEDIA MARKT POLSKA SP. Z O.O. (4), LOGICOR(PRESIDENT POLSKA) (3), ECHO PRZED.PROD.- USLUGOWE (2), MEYER QUICK SERVICE LOGISTICS (2), HUHTAMAKI FOODSERVICE POLAND (2)",Vendor Name,String,Name of the vendor.,vendor; name; supplier; company
+VSTATE,Constant value of 'PL' for all entries,State,String,State or province code.,state; province; location
+VPOST,"Text/Mixed data with 1990 unique values. 3.0% missing values. Sample values: 41-922, 87-800, 42-270, 40-555, 00-867, 61-755, 30-865, 31-581, 39-200, 10-467. Most frequent: 41-200 (53), 41-100 (49), 44-100 (45), 43-100 (39), 41-250 (32)",Postal Code,String,Postal or zip code.,postal; zip; code; address
+VTERMS,"Discrete values (15 unique): 0, 1, 2, 3, 4, 5, 6, 7, 8, 10, 16, 17, 20, 22, 23",Payment Terms,String,Payment terms code.,payment; terms; code
+VTYPE,"Discrete values (3 unique): SDTR, SI/C, SITR",Vendor Type,String,"Classification of the vendor (e.g., Trade, Intercompany).",vendor; type; class; category
+VPAYTO,"3608 unique values. Range: 1.0 to 99001.0. Mean: 2275.00, Median: 1810.00. Sample values: 268.0, 359.0, 577.0, 1373.0, 1489.0, 1498.0, 2095.0, 2395.0, 2408.0, 4599.0",Pay-To Vendor,String,"Vendor number to whom payment is sent (if different).",pay-to; vendor; payment; alternate
+VDTLPD,"1343 unique values. Some 0's (12.7%). Range: 0.0 to 20251128.0. Mean: 17622821.06, Median: 20170901.00. Sample values: 0.0, 0.0, 20110208.0, 20150818.0, 20180109.0, 20190515.0, 20201117.0, 20210804.0, 20240701.0, 20251105.0",Last Paid Date,Date,Date of the last payment to this vendor.,last; paid; date; payment
+VDAYCL,Constant value of '0.0' for all entries,Days to Clear,Integer,Days to clear payment.,days; clear; payment
+VGL,Empty column,GL Account,String,General Ledger account associated with the vendor.,gl; account; finance
+V1099,Constant value of 'N' for all entries,1099 Flag,Flag,1099 reporting flag.,1099; flag; tax
+V1099C,Constant value of 'AL' for all entries,1099 Code,String,1099 code.,1099; code; tax
+VCMPNY,Constant value of '1.0' for all entries,Company Code,String,Company identifier.,company; code; entity
+VCURR,"Discrete values (11 unique): AUD, CHF, CZK, DEM, EUR, FRF, GBP, NZD, PLN, SEK, USD",Currency,String,Default currency for the vendor.,currency; code; money
+VPAYTY,"Discrete values (4 unique): G, K, N, P",Payment Type,String,Default payment type.,payment; type; method
+V1TIME,"Discrete values (2 unique): N, Y",One Time Vendor,Flag,"Flag indicating if this is a one-time vendor (Y=Yes).",one-time; vendor; flag
+VCORPV,Constant value of '0.0' for all entries,Corp Vendor,String,Corporate vendor identifier.,corporate; vendor; parent
+VHOLD,"Discrete values (2 unique): N, Y",Hold Status,Flag,"Indicates if the vendor is on hold (Y=Yes).",hold; status; flag; block
+VHOLDT,"Discrete values (5 unique): 0.0, 20120201.0, 20200121.0, 20200629.0, 20200708.0",Hold Date,Date,Date the vendor was placed on hold.,hold; date; timestamp
+VPYTYR,"2292 unique values. Some 0's (31.3%). Range: 0.0 to 1407649815.47. Mean: 1317643.33, Median: 1600.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 62.5, 2100.0, 3125.43, 7749.0, 817004.86",YTD Payments,Decimal,Year-to-date payments made to the vendor.,ytd; payments; amount; total
+VDSCAV,Constant value of '0.0' for all entries,Discount Available,Decimal,Discount available.,discount; available; amount
+VDSCTK,Constant value of '0.0' for all entries,Discount Taken,Decimal,Discount taken.,discount; taken; amount
+VDPURS,"2288 unique values. Some 0's (31.4%). Range: -5884.8 to 1430009525.31. Mean: 1326616.92, Median: 1530.00. Contains decimal values. Sample values: 0.0, 0.0, 52.4, 2521.5, 15451.6, 20381.15, 37342.8, 73800.0, 156808.01, 255414.0",Purchases YTD,Decimal,Year-to-date purchases from the vendor.,purchases; ytd; amount; total
+VNNEXT,Constant value of '0.0' for all entries,Next Check No,Integer,Next check number.,next; check; number
+VNGEN,Constant value of 'N' for all entries,Generate Check,Flag,Generate check flag.,generate; check; flag
+VNUNAL,"511 unique values. Lots of 0's (85.6%). Range: -21210.19 to 1101669525.33. Mean: 742415.27, Median: 0.00. Contains decimal values. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Unallocated,Decimal,Unallocated amount.,unallocated; amount; balance
+VCOUN,"Text/Mixed data with 68 unique values. 0.7% missing values. Sample values: PL, PUD. Most frequent: PL (3170), DE (71), GB (50), US (30), IT (24)",Country,String,Country code.,country; code; location
+V1099S,"Discrete values (15 unique): 0.0, 100000000.0, 150000000.0, 391800000.0, 393400000.0, 512000000.0, 518000000.0, 521000000.0, 528000000.0, 535000000.0, 544000000.0, 557000000.0, 581000000.0, 607000000.0, 621000000.0",1099 Status,String,1099 status code.,1099; status; tax
+VPSTE,Constant value of 'PL' for all entries,Pay-To State,String,State code for payment address.,pay-to; state; address
+VPPST,"Text/Mixed data with 1953 unique values. 4.7% missing values. Sample values: 44-117, 20-012, 02-180, 31-231, D-94244, 41-250, 80-298, 41-600, 42-600, 43-502. Most frequent: 41-200 (51), 41-100 (49), 44-100 (43), 43-100 (40), 41-250 (33)",Pay-To Postal,String,Postal code for payment address.,pay-to; postal; zip; address
+VPCOU,"Text/Mixed data with 68 unique values. 1.5% missing values. Sample values: PL, GB, SK. Most frequent: PL (3163), DE (64), GB (48), US (29), CZ (24)",Pay-To Country,String,Country code for payment address.,pay-to; country; address
+VMFRM,Constant value of '0.0' for all entries,Form 1099,String,Form 1099 type.,form; 1099; tax
+VMMAT,Constant value of '0.0' for all entries,Match Level,String,Matching level.,match; level
+VTAX,Constant value of 'N' for all entries,Taxable,Flag,"Indicates if the vendor is taxable (N=No).",taxable; flag; tax
+VMFSCD,"Text/Mixed data with 3092 unique values. 11.9% missing values. Sample values: 522-248-26-05, 701-02-71-170, 8442348460, 626-165-64-06, 586-225-35-46, 627-269-54-91, 532-198-64-09, 6562330912, 524-24-35-833, 7918610094. Most frequent: 526-025-04-69 (5), 7282867818 (3), 113-28-66-205 (3), 5470053203 (3), 549-00-22-619 (3)",Fiscal Code,String,Fiscal code or tax ID.,fiscal; code; tax; id
+VMIDNM,"Discrete values (4 unique): 2.0, 7546329.0, 121445903.0, 451088043.0",ID Number,String,Identification number.,id; number
+VTAXCD,"Discrete values (2 unique): EXP, VAT",Tax Code,String,Tax code.,tax; code
+VMXNBR,Constant value of '1.0' for all entries,Tax Number,String,Tax number.,tax; number
+VMXCRT,Empty column,Tax Cert,String,Tax certificate.,tax; certificate
+VMXDTE,Constant value of '0.0' for all entries,Tax Date,Date,Tax date.,tax; date
+VMXMAX,Constant value of '0.0' for all entries,Tax Max,Decimal,Tax maximum amount.,tax; max; amount
+VFOB,Empty column,FOB Code,String,Freight on Board code.,fob; code; shipping
+VMCLAS,Empty column,Vendor Class,String,Vendor classification.,vendor; class; category
+VMRATE,Empty column,Rating,String,Vendor rating.,rating; score
+VMDCPX,"Discrete values (15 unique): II, IK, MA, MI, MK, MS, MZ, NO, SD, TI, TK, TR, UI, UK, US",Doc Prefix,String,Document prefix.,document; prefix
+VMSRCC,"Text/Mixed data with 34 unique values. 86.5% missing values. Sample values: FR, PL, DE, NL, BG, SI. Most frequent: PL (153), DE (75), GB (52), IT (23), CZ (23)",Source Country,String,Source country code.,source; country; origin
+VMSRNO,"Text/Mixed data with 310 unique values. 91.0% missing values. Sample values: 1976700789, 24149497, 202006908, 3355330238, 66804897288, 107724419, A20613253, 4081010169, 811165451, 556436335501. Most frequent: 128784539 (4), 705327064 (2), 513220012 (2), 433270195 (2), 663241939 (2)",Source Number,String,Source number.,source; number
+VMPREQ,"Discrete values (2 unique): 0, 1",Pre-Qual,Flag,Pre-qualification flag.,pre-qual; flag
+VMRELP,Constant value of '0.0' for all entries,Rel Party,String,Related party indicator.,related; party
+VMRELM,"Discrete values (2 unique): 0, 1",Rel Method,String,Relationship method.,relationship; method
+VMPFRQ,Empty column,Pay Freq,String,Payment frequency.,payment; frequency
+VMSHPC,Empty column,Ship Code,String,Shipping code.,shipping; code
+VMTIMP,Empty column,Time Place,String,Time and place.,time; place
+VMPART,Constant value of '0.0' for all entries,Partner,String,Partner identifier.,partner; id
+VMPTYP,Empty column,Partner Type,String,Partner type.,partner; type
+VMTRBR,Constant value of '0.0' for all entries,Trans Branch,String,Transaction branch.,transaction; branch
+VMROUT,Empty column,Route Code,String,Route code.,route; code
+VMSCOM,Empty column,Sales Comm,Decimal,Sales commission.,sales; commission
+VMVCLS,"97 unique values. Range: 1010101.0 to 4010101.0. Mean: 1927991.64, Median: 2040401.00. Sample values: 1020501.0, 1030101.0, 2010201.0, 2010801.0, 2040101.0, 2050202.0, 2050401.0, 2080603.0, 2100201.0, 4010101.0",Vendor Class 2,String,Secondary vendor classification.,vendor; class; category
+VMBANK,"Discrete values (10 unique): BEU, BGB, BPL, BUS, CDM, CEU, CPL, CUS, KAG, KAS",Bank Code,String,Bank code.,bank; code
+VMCARR,Empty column,Carrier,String,Carrier code.,carrier; code; shipping
+VMSOFR,"Discrete values (13 unique): 0.0, 1.0, 50.0, 51.0, 52.0, 53.0, 54.0, 55.0, 56.0, 57.0, 58.0, 59.0, 60.0",Source of Ref,String,Source of reference.,source; reference
+VMDPT1,Empty column,Dept 1,String,Department 1.,department
+VMDPT2,Empty column,Dept 2,String,Department 2.,department
+VMDPT3,Empty column,Dept 3,String,Department 3.,department
+VMCAPN,Empty column,Cap Number,String,Capital number?,capital; number
+VMECSN,Empty column,ECS Number,String,ECS number?,ecs; number
+VMTRMC,"Discrete values (8 unique): CIF, CIP, CPT, DAP, DDP, EXW, FCA, FOB",Incoterms,String,Incoterms code (e.g., FOB, CIF).,incoterms; shipping; terms
+VMLANG,"Discrete values (6 unique): BPC, DOW, DRY, ENG, ENI, POL",Language,String,Language code.,language; code
+VMDUN4,Empty column,DUNS 4,String,DUNS number suffix?,duns; number
+VMUCC,Empty column,UCC Code,String,UCC code.,ucc; code
+VMIAIG,Empty column,IAIG Code,String,IAIG code?,iaig; code
+VMEAN,Empty column,EAN Code,String,EAN barcode.,ean; barcode
+VMSHFM,"Discrete values (2 unique): 0.0, 1.0",Ship From,String,Ship from location.,ship; from; location
+VMMNTR,Constant value of '30.0' for all entries,Monitor,String,Monitor code?,monitor
+VMCCEX,Constant value of '0.0' for all entries,Curr Exch,Decimal,Currency exchange?,currency; exchange
+VMAYTD,Constant value of '0.0' for all entries,Adj YTD,Decimal,Adjustments year-to-date.,adjustments; ytd
+VMBNKC,"Discrete values (18 unique): BEU, BGB, BPL, CEU, CPL, CUS, EUR, IEU, IGB, IPL, IUS, KAG, KAS, MBANK SA, PCL, PLN, POL, USD",Bank Currency,String,Bank currency code.,bank; currency
+VMBRNO,"Discrete values (2 unique): BPH O/KATOWICE, HSBC BANK",Branch Name,String,Bank branch name.,bank; branch; name
+VMBNKA,"Discrete values (3 unique): 124041551111001055480977, 2711401560185430079311001, GB61MIDL40051558389004",Bank Account,String,Bank account number.,bank; account; number
+VMREF1,"Text/Mixed data with 88 unique values. 78.3% missing values. Sample values: SFO, UREK, UHO, UKL, KOMP, USZK, UTK, USAM. Most frequent: UHO (116), USZK (111), UTK (92), UREK (72), UTM (46)",Reference 1,String,Reference field 1.,reference; field
+VMREF2,"Discrete values (4 unique): AL, FS, PAP, PLA",Reference 2,String,Reference field 2.,reference; field
+VMREF3,"Discrete values (2 unique): MU, SU",Reference 3,String,Reference field 3.,reference; field
+VMREF4,Constant value of '5.0' for all entries,Reference 4,String,Reference field 4.,reference; field
+VMREF5,Empty column,Reference 5,String,Reference field 5.,reference; field
+VMCRPF,Empty column,Credit Profile,String,Credit profile.,credit; profile
+VMACPT,Constant value of '0' for all entries,Acceptance,String,Acceptance code.,acceptance
+VMACUR,"Discrete values (2 unique): EUR, PLN",Alt Currency,String,Alternate currency.,alternate; currency

@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+TID,Constant value of 'TH' for all entries,Record ID,String,Identifies the record type; always 'TH' for Transaction History.,id; record; type; identifier
+TPROD,Constant value of 'GPEPEPALETAE   ' for all entries,Product Code,String,Product identifier.,product; code; item; id
+TSEQ,Range from 1 to 1000,Sequence,Integer,Sequence number.,sequence; number; order; detail
+TTYPE,"Discrete values: B , DR, PH, PK, T ",Trans Type,String,Transaction type code.,transaction; type; code; category
+TTDTE,"Discrete values: 20091231, 20100104, 20100105, 20100106, 20100107, 20100108, 20100109, 20100111",Trans Date,Date,Transaction date.,transaction; date; time; history
+TQTY,Range from -0.522 to 28.136,Quantity,Decimal,Transaction quantity.,quantity; amount; volume; history
+TWHS,"Discrete values: B3, D2, MG, ML, MM, MZ, P1, PA, PS, S4, SA, SF, VB, WP",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+TLOCT,"Text data. Lengths: min 6, max 6, avg 6.0. Sample: 843   ",Location,String,Location code.,location; code; place; inventory
+TPRIC,Constant value of '0.0' for all entries,Price,Decimal,Price per unit.,price; unit; cost; value
+TREF,"Some 0's (45.2%), Range from 0 to 291209",Reference,String,Reference number or code.,reference; number; code; id
+TVAL,Constant value of '0.0' for all entries,Value,Decimal,Transaction value.,value; amount; financial; history
+TSDTE,"Lots of 0's (60.2%), Range from 0 to 20101005",Ship Date,Date,Shipment date.,ship; date; shipping; time
+TREFM,"Lots of 0's (62.8%), Range from 0 to 103159",Ref M,Integer,Secondary reference number.,reference; 2; number; id
+TCOM,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: 2009 BO        ",Comment,String,Transaction comment.,comment; note; text; info
+TCLAS,Constant value of 'PE' for all entries,Class,String,Item classification code.,class; code; category; type
+TRES,Constant value of '1' for all entries,Reason,Integer,Reason code.,reason; code; explanation; id
+TVEND,"Discrete values: 0, 1, 4, 8, 593, 1923, 2460, 2723, 2762, 4311, 4578, 5352",Vendor,Integer,Vendor identifier.,vendor; id; supplier; reference
+TSTAT,Constant value of 'Y' for all entries,Status,String,Transaction status.,status; code; state; condition
+TSCST,"Discrete values: 0.0, 22000.0",Std Cost,Decimal,Standard cost.,standard; cost; financial; value
+THWS,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: PHEBA03   ",Workstation,String,Workstation identifier.,workstation; id; system; device
+THUSER,"Discrete values: JCZUDAJ   , LUPABE    , MAGBED01  , MAGGDY01  , MAGSA     , MAGZYR01  , MMSA      , OGOLNY01  ",User,String,User who performed the transaction.,user; id; person; operator
+THTIME,Range from 4840 to 230234,Time,Time,Transaction time.,time; transaction; system; timestamp
+THCURR,"Discrete values: EUR, PLN",Currency,String,Currency code.,currency; code; money; iso
+THTEXR,"Discrete values: 0.0, 1.0, 4.0794, 4.0924, 4.095, 4.1084, 4.1109, 4.139",Trans Exch Rate,Decimal,Transaction exchange rate.,transaction; exchange; rate; financial
+TOQTY,"Lots of 0's (60.2%), Range from -0.001 to 1.0",Orig Qty,Decimal,Original quantity.,original; quantity; amount; volume
+THGLRT,"Discrete values: 1.0, 4.0794, 4.095, 4.1084, 4.1109, 4.139",GL Rate,Decimal,General Ledger exchange rate.,gl; rate; exchange; financial
+THORD,Constant value of '0' for all entries,Order,Integer,Order number.,order; number; reference; id
+THOPNO,Constant value of '0' for all entries,Op No,Integer,Operation number.,operation; number; manufacturing; step
+THWRKC,Constant value of '0' for all entries,Work Center,Integer,Work center identifier.,work; center; manufacturing; location
+THPRSH,Constant value of '0' for all entries,Print Sheet,Integer,Print sheet number.,print; sheet; number; reference
+THLIN,"Lots of 0's (60.2%), Range from 0 to 40",Line,Integer,Line number.,line; number; sequence; detail
+THTUM,"Discrete values:   , TH",Trans UOM,String,Transaction unit of measure.,transaction; uom; unit; measure
+THQUM,"Lots of 0's (60.9%), Range from -0.522 to 28.136",Qty UOM,Decimal,Quantity in UOM.,quantity; uom; amount; volume
+THACST,Constant value of '0.0' for all entries,Act Cost,Decimal,Actual cost.,actual; cost; financial; value
+THRNO,"Lots of 0's (97.5%), Range from 0 to 124",Run No,Integer,Run number.,run; number; manufacturing; batch
+THRSEQ,"Discrete values: 0, 1, 2, 3, 5, 8, 9, 13",Run Seq,Integer,Run sequence.,run; sequence; manufacturing; order
+THNII,Constant value of '0' for all entries,Non-Inv Item,Flag,Non-inventory item flag.,non-inventory; item; flag; status
+THCOM,"Discrete values:                , 44152020       ",Commodity,String,Commodity code.,commodity; code; category; type
+THCMT,"Text data. Lengths: min 30, max 30, avg 30.0. Sample:                         000001",Comment 2,String,Secondary comment.,comment; 2; note; text
+THTOWH,"Discrete values:   , B3, D2, MG, MM, MZ, P1, PA, S4, SA",To Warehouse,String,Destination warehouse.,destination; warehouse; location; transfer
+THFAMT,"Lots of 0's (78.9%), Range from -7590.0 to 7590.0",Foreign Amt,Decimal,Foreign currency amount.,foreign; amount; financial; value
+THRMFL,Constant value of 'G' for all entries,Flag,String,General flag.,flag; status; indicator; code
+THADVN,"Discrete values:                , 100097         , 100105         , PZ3/2010       ",Advice No,String,Advice number.,advice; number; reference; id
+THSTME,Constant value of '0' for all entries,Start Time,Time,Start time.,start; time; system; timestamp
+THCDT,Constant value of '0' for all entries,Create Date,Date,Creation date.,create; date; creation; time
+THCTM,Constant value of '0' for all entries,Create Time,Time,Creation time.,create; time; creation; system
+THLDT,Constant value of '0' for all entries,Last Date,Date,Last modification date.,last; date; modification; time
+THLTM,Constant value of '0' for all entries,Last Time,Time,Last modification time.,last; time; modification; system
+THUPI,Constant value of '0' for all entries,UPI,Integer,UPI code.,upi; code; reference; id

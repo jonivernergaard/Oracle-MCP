@@ -1,0 +1,19 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+LID,"Discrete values for every row entry: LI, LZ",Location Inventory ID,String,"Record identifier for location inventory. 'LI' for Location Inventory, 'LZ' for Location Zero/Special status.",location; inventory; id; record; identifier
+LPROD,"Applicable for every row. 592 unique values. Samples: AELZ37, GBAPPTUL011, GOT1000416, CGRVA115301, GCA08P, CISB81007,  CIRWA1000DF",Product Code,String,Product code or item number stored at this location. 592 unique products tracked.,product; item; code; number; identifier
+LWHS,"Text/Mixed data. 16 unique values. Samples: S5, S5, P1, PS, P1, B3, BR, D2, MG, ML, MM, MW, MZ, P1, PP, PS, S4",Warehouse,String,"Warehouse code where inventory is located. 16 warehouses (S5, P1, PS, B3, BR, D2, MG, ML, MM, MW, MZ, PP, S4).",warehouse; location; site; code; facility
+LLOT,"Constant value of '          ' for all entries, not being used.",Lot Number,String,Lot or batch number for inventory tracking. Currently not in use (blank).,lot; batch; number; tracking; unused
+LLOC,"Mixed data, not applicable to every row entry.. 196 unique values. Samples: Numericals from 140 to 1000: e.g., 250, 272, 394, 415, 541, , then from 10000 e.g., 10054, 10063, Mixed values such as: LS5   , MZ    , PS    , 858, MZ    ",Location Code,String,"Specific location or bin within the warehouse. 196 different locations, mix of numeric (140-10063) and alphanumeric codes.",location; bin; code; spot; storage
+LOPB,"Lots of 0's (94.7%), Range from -0.931 to 0.999, Contains decimal values",Opening Balance,Decimal,Opening inventory balance for the lot/location. Mostly zero with small decimal adjustments.,balance; opening; inventory; quantity; start
+LISSU,Constant value of '0.0' for all entries,Issues Quantity,Decimal,Total quantity issued from this location inventory.,issues; quantity; outbound; issued; usage
+LADJU,"Discrete values: 0.0, 0.001, 0.002, 0.01, 0.014",Adjustments,Decimal,Inventory adjustments made. Small values indicating minor corrections.,adjustment; quantity; correction; change; modification
+LRCT,Constant value of '0.0' for all entries,Receipts Quantity,Decimal,Total quantity received into this location inventory.,receipts; quantity; inbound; received; incoming
+LIALOC,Constant value of '0.0' for all entries,Allocated Quantity,Decimal,Quantity currently allocated or reserved for orders.,allocated; reserved; quantity; committed; orders
+LLCC,Constant value of '20091231.0' for all entries,Last Cycle Count Date,Date,Date of last cycle count. Value 20091231 (December 31 2009).,date; cycle count; last; inventory; check
+LCYCF,"Discrete values: either blank or  Y, this fields seems important.",Cycle Count Flag,Flag,"Indicator if location is subject to cycle counting. Blank or 'Y' (Yes).",flag; cycle count; indicator; status; important
+LTSEQ,Constant value of '0.0' for all entries,Transaction Sequence,Integer,Sequence number for transactions at this location.,sequence; transaction; number; order; tracking
+LICCTM,Constant value of '0.0' for all entries,Cycle Count Time,Time,Time when last cycle count was performed.,time; cycle count; timestamp; inventory; check
+LICDT,Constant value of '0.0' for all entries,Inventory Count Date,Date,Date of last physical inventory count.,date; inventory count; physical; last; check
+LICTM,Constant value of '0.0' for all entries,Inventory Count Time,Time,Time of last physical inventory count.,time; inventory count; physical; timestamp; check
+LILDT,Constant value of '0.0' for all entries,Last Issue Date,Date,Date of the last issue transaction from this location.,date; issue; last; transaction; outbound
+LILTM,Constant value of '0.0' for all entries,Last Issue Time,Time,Time of the last issue transaction from this location.,time; issue; last; transaction; timestamp

@@ -1,0 +1,21 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+WID,Constant value of 'WI' for all entries,Record ID,String,"Identifies the record type, 'WI' for Warehouse Inventory.",id; record; type; warehouse; inventory
+WPROD,"Text/Mixed data with 859 unique values. Sample values: SPR1127        , NIRKE750W-A    , AELGR107       , GPNPNPALETA    , GBAPPCAR214    , CGRBA1257      , LISVF1134B     , OTRAF0876      , RPUA310/665/896, OTRGT1435C     . Most frequent: CGRVA115301     (6), GPNPNPALETA     (5), GPEPEPALETAE    (5), CGRVA115201     (5), GCA082          (4)",Product Number,String,Product or item number.,product; item; number
+WWHS,"Discrete values (15 unique): B3, D2, MG, ML, MM, MZ, P1, PP, PS, S1, S4, S5, SA, SF, WP",Warehouse,String,Warehouse code.,warehouse; code; location
+WADJ,"Discrete values (2 unique): 0.0, 0.083",Adjustments,Decimal,Inventory adjustments.,adjustments; inventory; quantity
+WRCT,Constant value of '0.0' for all entries,Receipts,Decimal,Inventory receipts.,receipts; inventory; quantity
+WISS,Constant value of '0.0' for all entries,Issues,Decimal,Inventory issues.,issues; inventory; quantity
+WOPB,"Discrete values (2 unique): 0.0, 26.441",Opening Balance,Decimal,Opening inventory balance.,opening; balance; inventory
+WOWRK,Constant value of '0.0' for all entries,Work in Process,Decimal,Work in process quantity.,work; process; quantity
+WCUSA,"Discrete values (2 unique): 0.0, 0.002",Current Usage,Decimal,Current usage quantity.,current; usage; quantity
+WSAL,Constant value of '0.0' for all entries,Sales,Decimal,Sales quantity.,sales; quantity
+WSDL,Constant value of '0.0' for all entries,Sales Dollars,Decimal,Sales amount.,sales; amount
+WMTDC,Constant value of '0.0' for all entries,MTD Cost,Decimal,Month-to-date cost.,mtd; cost; amount
+WYTDC,"Discrete values (2 unique): 0.0, 212824.0",YTD Cost,Decimal,Year-to-date cost.,ytd; cost; amount
+WYSDL,"Discrete values (2 unique): 0.0, 209180.7",YTD Sales Dollars,Decimal,Year-to-date sales amount.,ytd; sales; amount
+WYSAL,"Discrete values (2 unique): 0.0, 44.212",YTD Sales Qty,Decimal,Year-to-date sales quantity.,ytd; sales; quantity
+WILOC,Constant value of '      ' for all entries,Inspection Loc,String,Inspection location.,inspection; location
+WMTDP,Constant value of '0.0' for all entries,MTD Production,Decimal,Month-to-date production.,mtd; production; quantity
+WYTDP,Constant value of '0.0' for all entries,YTD Production,Decimal,Year-to-date production.,ytd; production; quantity
+WIFLOC,Constant value of ' ' for all entries,From Location,String,From location.,from; location
+WIQTYM,Constant value of '0.0' for all entries,Quantity Moved,Decimal,Quantity moved.,quantity; moved

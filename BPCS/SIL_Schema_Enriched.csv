@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+ILID,Constant value of 'IL' for all entries,Record ID,String,"Identifies the record type, 'IL' for Invoice Line.",id; record; type; invoice; line
+ILINVN,"335 unique values. Range: 10000000.0 to 16004451.0. Mean: 12673348.49, Median: 10000084.00. Sample values: 10000002.0, 10000028.0, 10000052.0, 10000060.0, 10000074.0, 16004252.0, 16004282.0, 16004336.0, 16004338.0, 16004357.0",Invoice Number,Integer,Unique identifier for the invoice.,invoice; number; id
+ILLINE,"90 unique values. Range: 1.0 to 90.0. Mean: 9.35, Median: 5.00. Sample values: 1.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 5.0, 20.0",Line Number,Integer,Line number within the invoice.,line; number; invoice
+ILPROD,"Text/Mixed data with 836 unique values. Sample values: CIPBA2562, CCCBA2560, TTRLPA015, CGRVA0295, NGFLCRE10, LTFLFL16V, CGRVA0538, GPEPEPALETAE, LTSB-HSL80P. Most frequent: GPEPEPALETAE (418), NGFLCRE10 (95), NGFLC2100 (75), OTSCZ011K100 (63), NGFLCSQ0601 (59)",Product Code,String,Product identifier.,product; code; item
+ILQTY,"496 unique values. Range: -6930.0 to 222660.0. Mean: 118.90, Median: 2.00. Contains decimal values. Sample values: 0.003, 0.2, 0.3, 0.6, 1.6, 6.4, 10.0, 13.44, 20.15, 88.2",Quantity,Decimal,Quantity of the product.,quantity; amount; count
+ILNET,"1092 unique values. Range: -19171.08 to 295229.0. Mean: 1209.55, Median: 84.63. Contains decimal values. Sample values: 0.0, 1.52, 20.75, 21.9, 32.0, 69.0, 79.4182, 80.0, 183.5, 640.463",Net Amount,Decimal,Net amount for the line item.,net; amount; price
+ILWHS,"Discrete values (15 unique): B3, C3, C4, CZ, MC, MG, MH, ML, MS, MZ, P1, PS, S4, SA, ZK",Warehouse,String,Warehouse code.,warehouse; code; location
+ILDATE,"Discrete values (13 unique): 20100104.0, 20100105.0, 20100106.0, 20100107.0, 20100108.0, 20100111.0, 20100112.0, 20100114.0, 20160330.0, 20160331.0, 20160401.0, 20160404.0, 20160405.0",Invoice Date,Date,Date of the invoice.,invoice; date
+ILCCOM,Empty column,Commission 1,Decimal,Commission amount 1.,commission; amount
+ILICOM,Empty column,Commission 2,Decimal,Commission amount 2.,commission; amount
+ILS1CM,Empty column,Sales Comm 1,Decimal,Sales commission 1.,sales; commission; amount
+ILS2CM,Empty column,Sales Comm 2,Decimal,Sales commission 2.,sales; commission; amount
+ILS3CM,Empty column,Sales Comm 3,Decimal,Sales commission 3.,sales; commission; amount
+ILSAL1,"Discrete values (17 unique): 1.0, 20.0, 21.0, 22.0, 23.0, 24.0, 25.0, 26.0, 30.0, 31.0, 32.0, 40.0, 51.0, 52.0, 80.0, 81.0, 700000.0",Salesperson 1,String,Primary salesperson code.,salesperson; code; sales
+ILSAL2,"Discrete values (2 unique): 0.0, 700000.0",Salesperson 2,String,Secondary salesperson code.,salesperson; code; sales
+ILSAL3,Constant value of '0.0' for all entries,Salesperson 3,String,Tertiary salesperson code.,salesperson; code; sales
+ILCOMM,Empty column,Commission,Decimal,Commission amount.,commission; amount
+ILLTYP,"Discrete values (2 unique): R, S",Line Type,String,Type of line item.,line; type; item
+ILIRES,Constant value of '1.0' for all entries,Reserved,String,Reserved field.,reserved
+ILORD,"493 unique values. Range: 100009.0 to 313841.0. Mean: 195214.79, Median: 100539.00. Sample values: 100227.0, 100242.0, 100291.0, 100333.0, 100390.0, 100457.0, 100534.0, 310907.0, 312662.0, 313213.0",Order Number,Integer,Order number associated with the line.,order; number; id
+ILSEQ,"90 unique values. Range: 1.0 to 90.0. Mean: 8.82, Median: 5.00. Sample values: 1.0, 1.0, 1.0, 2.0, 2.0, 3.0, 3.0, 4.0, 29.0, 40.0",Sequence,Integer,Sequence number.,sequence; number
+ILCPO,"Text/Mixed data with 398 unique values. Sample values: 459010, 608500034, REAL 26, 608500022, 700000/10000082, 700000/10000039, 608900269, 700000/16001193, 700000/16001161, 700000/16001170. Most frequent: * (313), MAKRO 20 (133), 3002667204 (118), *** (108), REAL 26 (72)",Customer PO,String,Customer purchase order number.,customer; po; number
+LUDTE1,Constant value of '0.0' for all entries,Date 1,Date,Date field 1.,date
+LUDTE2,Constant value of '0.0' for all entries,Date 2,Date,Date field 2.,date
+ILCART,Empty column,Carton,String,Carton identifier.,carton; id
+ILDOCR,"1069 unique values. Range: 100000.0 to 888925.0. Mean: 536832.68, Median: 887400.50. Sample values: 100118.0, 100121.0, 100124.0, 100139.0, 887750.0, 887766.0, 887792.0, 887803.0, 887807.0, 888794.0",Doc Reference,String,Document reference number.,document; reference; number
+ILCONS,Constant value of '0.0' for all entries,Consignment,Flag,Consignment flag.,consignment; flag
+ILCUSB,"205 unique values. Range: 100002.0 to 801336.0. Mean: 253268.08, Median: 102098.00. Sample values: 100056.0, 100092.0, 100098.0, 100183.0, 100319.0, 101861.0, 103159.0, 103159.0, 800562.0, 800611.0",Bill To Cust,Integer,Bill-to customer number.,bill; to; customer; number
+ILUM,"Discrete values (7 unique): BX, HD, KG, SZ, TH, TN, ZG",UOM,String,Unit of measure.,uom; unit; measure
+ILTR01,"Discrete values (3 unique): V0, V22, V23",Tax Rate 1,String,Tax rate code 1.,tax; rate; code
+ILTR02,Empty column,Tax Rate 2,String,Tax rate code 2.,tax; rate; code
+ILTR03,Empty column,Tax Rate 3,String,Tax rate code 3.,tax; rate; code
+ILTR04,Empty column,Tax Rate 4,String,Tax rate code 4.,tax; rate; code
+ILTR05,Empty column,Tax Rate 5,String,Tax rate code 5.,tax; rate; code
+ILTR06,Empty column,Tax Rate 6,String,Tax rate code 6.,tax; rate; code
+ILTR07,Empty column,Tax Rate 7,String,Tax rate code 7.,tax; rate; code
+ILTR08,Empty column,Tax Rate 8,String,Tax rate code 8.,tax; rate; code
+ILTR09,Empty column,Tax Rate 9,String,Tax rate code 9.,tax; rate; code
+ILTR10,Empty column,Tax Rate 10,String,Tax rate code 10.,tax; rate; code
+ILTA01,"1798 unique values. Some 0's (15.5%). Range: -426.42 to 14010.4787. Mean: 166.05, Median: 30.94. Contains decimal values. Sample values: 0.0, 1.1957, 3.85, 10.01, 15.18, 23.552, 25.185, 28.9396, 36.225, 138.6",Tax Amount 1,Decimal,Tax amount 1.,tax; amount
+ILTA02,Constant value of '0.0' for all entries,Tax Amount 2,Decimal,Tax amount 2.,tax; amount
+ILTA03,Constant value of '0.0' for all entries,Tax Amount 3,Decimal,Tax amount 3.,tax; amount
+ILTA04,Constant value of '0.0' for all entries,Tax Amount 4,Decimal,Tax amount 4.,tax; amount
+ILTA05,Constant value of '0.0' for all entries,Tax Amount 5,Decimal,Tax amount 5.,tax; amount
+ILTA06,Constant value of '0.0' for all entries,Tax Amount 6,Decimal,Tax amount 6.,tax; amount
+ILTA07,Constant value of '0.0' for all entries,Tax Amount 7,Decimal,Tax amount 7.,tax; amount
+ILTA08,Constant value of '0.0' for all entries,Tax Amount 8,Decimal,Tax amount 8.,tax; amount
+ILTA09,Constant value of '0.0' for all entries,Tax Amount 9,Decimal,Tax amount 9.,tax; amount
+ILTA10,Constant value of '0.0' for all entries,Tax Amount 10,Decimal,Tax amount 10.,tax; amount

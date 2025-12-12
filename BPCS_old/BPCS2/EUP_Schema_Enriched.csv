@@ -1,0 +1,26 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+UPID,Constant value of 'UP' for all entries,Record ID,String,Identifies the record type; always 'UP' for User Preferences.,id; record; type; identifier
+UPUSER,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: B610ADM   ",User ID,String,User identifier.,user; id; person; login
+UPMODE,"Discrete values: 0, 1, 2",Mode,Integer,Mode setting.,mode; setting; configuration; type
+UPDSPR,"Discrete values: 0, 1",Display Price,Flag,Display price flag.,display; price; flag; setting
+UPIITM,"Discrete values: 0, 1",Input Item,Flag,Input item flag.,input; item; flag; setting
+UPBPRC,Constant value of '0' for all entries,Base Price,Flag,Base price flag.,base; price; flag; setting
+UPQTYE,Constant value of '0' for all entries,Qty Entry,Flag,Quantity entry flag.,quantity; entry; flag; setting
+UPATPP,Constant value of '0' for all entries,ATP Check,Flag,ATP check flag.,atp; check; flag; setting
+UPATPU,Constant value of '0' for all entries,ATP Update,Flag,ATP update flag.,atp; update; flag; setting
+UPBATP,Constant value of '1' for all entries,Batch ATP,Flag,Batch ATP flag.,batch; atp; flag; setting
+UPPRTP,Constant value of '1' for all entries,Print Price,Flag,Print price flag.,print; price; flag; setting
+UPLVAL,Constant value of '0' for all entries,Line Value,Flag,Line value flag.,line; value; flag; setting
+UPVALP,Constant value of '0' for all entries,Value Price,Flag,Value price flag.,value; price; flag; setting
+UPLCUS,Constant value of '0' for all entries,Lock Customer,Flag,Lock customer flag.,lock; customer; flag; setting
+UPUCUS,Constant value of '999999' for all entries,User Customer,Integer,Default customer for user.,user; customer; default; id
+UPLSAL,Constant value of '0' for all entries,Lock Sales,Flag,Lock sales flag.,lock; sales; flag; setting
+UPUSAL,Constant value of '0' for all entries,User Sales,Integer,Default salesperson for user.,user; sales; default; id
+UPLCPO,Constant value of '*              ' for all entries,Lock PO,String,Lock purchase order flag.,lock; po; flag; setting
+UPSDIR,Constant value of '1' for all entries,Sort Dir,Integer,Sort direction.,sort; direction; setting; order
+UPSORT,"Discrete values: 0, 1, 3, 4, 5",Sort Order,Integer,Sort order.,sort; order; setting; sequence
+UPSEQO,"Discrete values: 0, 1, 2",Seq Order,Integer,Sequence order.,sequence; order; setting; type
+UPENDT,Constant value of '0' for all entries,Entry Date,Date,Date the record was entered.,entry; date; creation; time
+UPENTM,Constant value of '0' for all entries,Entry Time,Time,Time the record was entered.,entry; time; creation; system
+UPMNDT,Constant value of '0' for all entries,Maint Date,Date,Date of last maintenance.,maintenance; date; last; update
+UPMNTM,Constant value of '0' for all entries,Maint Time,Time,Time of last maintenance.,maintenance; time; last; update

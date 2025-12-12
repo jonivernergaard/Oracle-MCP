@@ -1,0 +1,6 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+X1SYS,Constant value of 'AS' for all entries,System,String,System identifier.,system; id; code; platform
+X1RELN,Constant value of '06.01.00' for all entries,Release,String,Release version.,release; version; system; info
+X1PROD,"Discrete values: ACP, ACR, API, ARP, BIL, CDM, CSH, FXA, INV, ORD, PUR, QMS, SYS",Product,String,Product or module code.,product; module; code; system
+X1OBJN,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: *DFT      ",Object Name,String,System object name.,object; name; system; resource
+X1OBJT,"Discrete values: CLE, CLP, CMD, DSP, DTA, LGL, PHY, PNL, PRT, RPG",Object Type,String,System object type.,object; type; system; category

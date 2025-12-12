@@ -1,0 +1,27 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+FID,Constant value of 'FP' for all entries,Record ID,String,Identifies the record type; always 'FP' for Forecast.,id; record; type; identifier
+FPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: AMEU77         ",Product Code,String,Product identifier.,product; code; item; id
+FRDTE,Range from 20151207 to 20260302,Req Date,Date,Required date.,required; date; planning; time
+FTYPE,"Discrete values: F, P",Type,String,Forecast type.,type; code; category; planning
+FQTY,"Some 0's (0.1%), Range from 0.0 to 339586.0",Quantity,Decimal,Forecast quantity.,quantity; amount; volume; planning
+FCLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: ME",Class,String,Item classification code.,class; code; category; type
+FDATE,Range from 20151207 to 20260227,Date,Date,Forecast date.,date; time; planning; schedule
+FRSDT,Range from 20251203 to 99999999,Result Date,Date,Result date.,result; date; planning; time
+FMAS,Constant value of 'Y' for all entries,Master Sched,Flag,Master schedule flag.,master; schedule; flag; planning
+FWHSE,"Discrete values: C4, C5, CZ, S4",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+FPFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code; location; site
+FPPVND,"Some 0's (33.1%), Range from 0 to 10000",Primary Vendor,Integer,Primary vendor identifier.,primary; vendor; id; supplier
+FPSVND,"Lots of 0's (89.0%), Range from 0 to 5493",Secondary Vendor,Integer,Secondary vendor identifier.,secondary; vendor; id; supplier
+FPURC,"Discrete values:  , 1, 2, 3, 4, 5, 6, 7, 9",Purch Code,String,Purchase code.,purchase; code; category; procurement
+FPCOM,"Discrete values:                , 32151900       , 39031900       , 39191019       , 39232990       , 39241000       , 44152020       , 48045990       , 48115100       , 48191000       , 48236990       ",Commodity,String,Commodity code.,commodity; code; category; type
+FPRGEN,Constant value of '0' for all entries,Regen Flag,Flag,Regeneration flag.,regeneration; flag; status; system
+FPRDTM,Constant value of '0' for all entries,Req Time,Time,Required time.,required; time; planning; system
+FPPRTM,Constant value of '0' for all entries,Print Time,Time,Print time.,print; time; status; system
+FPRSTM,Constant value of '0' for all entries,Result Time,Time,Result time.,result; time; planning; system
+FPCBY,"Discrete values: PRODUK01  , PRODUK03  ",Created By,String,User who created the record.,created; by; user; id
+FPCDT,"Discrete values: 20151030, 20220809, 20251203",Create Date,Date,Creation date.,create; date; creation; time
+FPCTM,"Discrete values: 120624, 153704, 153711, 193650",Create Time,Time,Creation time.,create; time; creation; system
+FPLBY,"Discrete values:           , PRODUK03  ",Last By,String,User who last modified the record.,last; by; user; id
+FPLDT,"Discrete values: 0, 20251203",Last Date,Date,Last modification date.,last; date; modification; time
+FPLTM,"Discrete values: 0, 153704",Last Time,Time,Last modification time.,last; time; modification; system
+FPLPGM,"Discrete values: MRP500    , MRP600    ",Last Program,String,Program that last modified the record.,last; program; system; source

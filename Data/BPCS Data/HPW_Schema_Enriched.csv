@@ -1,0 +1,50 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+PWID,Constant value of 'PO' for all entries,Record ID,String,Identifies the record type; always 'PO'.,id; record; type; identifier
+PWWSID,"Text data. Lengths: min 10, max 10, avg 10.0. Sample: QPADEV0015",Workstation ID,String,Workstation identifier.,workstation; id; system; device
+PWORD,Range from 100098 to 181597,PO Number,Integer,Purchase Order number.,po; number; purchase; order
+PWLINE,Range from 1 to 33,Line Number,Integer,Line number within the PO.,line; number; sequence; detail
+PWACTN,"Discrete values:   , 00, 16",Action,String,Action code.,action; code; status; operation
+PWPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: OTSCF0124A     ",Product Code,String,Product identifier.,product; code; item; id
+PWVEND,Range from 1 to 7777,Vendor Number,Integer,Vendor identifier.,vendor; number; id; supplier
+PWQORD,"Some 0's (10.2%), Range from 0.0 to 25000.0",Order Qty,Decimal,Quantity ordered.,order; quantity; amount; volume
+PWDDTE,"Some 0's (4.6%), Range from 0 to 20180606",Due Date,Date,Due date for delivery.,due; date; delivery; time
+PWECST,"Some 0's (28.7%), Range from 0.0 to 559350.0",Ext Cost,Decimal,Extended cost.,extended; cost; financial; value
+PWUM,"Discrete values:   , KG, M , SZ, TH",UOM,String,Unit of measure.,uom; unit; measure; quantity
+PWLTDT,"Lots of 0's (70.3%), Range from 0 to 20170608",Last Trans Date,Date,Date of last transaction.,last; transaction; date; time
+PWPRT,"Discrete values: 0, 1",Print Flag,Flag,Print flag.,print; flag; status; indicator
+PWLDTE,"Lots of 0's (54.2%), Range from 0 to 99999999",Last Date,Date,Last activity date.,last; date; activity; time
+PWSHIP,"Text data. Lengths: min 6, max 6, avg 6.0. Sample: B3    ",Ship To,String,Ship-to location code.,ship; to; location; shipping
+PWPCLS,"Lots of 0's (86.7%), Range from 0 to 301111",Purch Class,Integer,Purchase classification.,purchase; class; category; type
+PWBUYC,"Discrete values:  , 0, 1, 2, 4, 5, 6, 7, 8",Buyer Code,String,Buyer identifier.,buyer; code; employee; purchasing
+PWWHSE,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: B3",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+PWDLVY,"Some 0's (11.0%), Range from 0 to 20180517",Delivery Date,Date,Delivery date.,delivery; date; shipping; time
+PWOUTS,Constant value of 'N' for all entries,Outstanding,Flag,Outstanding flag.,outstanding; flag; status; indicator
+PWSHOP,Constant value of '0' for all entries,Shop,String,Shop identifier.,shop; id; location; manufacturing
+PWOPER,Constant value of '0' for all entries,Operation,Integer,Operation number.,operation; number; manufacturing; step
+PWEXRT,Range from 1.0 to 4.4659,Exch Rate,Decimal,Exchange rate.,exchange; rate; currency; financial
+PWCUST,Constant value of '0' for all entries,Customer,Integer,Customer identifier.,customer; id; client; reference
+PWCORD,Constant value of '0' for all entries,Cust Order,Integer,Customer order number.,customer; order; number; reference
+PWCLIN,Constant value of '0' for all entries,Cust Line,Integer,Customer order line.,customer; line; number; reference
+PWITXC,"Discrete values:      , V22  , V23  ",Item Tax Code,String,Item tax code.,item; tax; code; financial
+PWFAC,"Discrete values:   , PC",Facility,String,Facility code.,facility; code; location; site
+PWSHTY,"Discrete values:  , 3",Ship Type,Integer,Shipment type code.,ship; type; code; shipping
+PWNAME,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: BÊDZIN SEIFERT                ",Name,String,Name associated with the record.,name; text; description; entity
+PWATTN,"Discrete values:                               , MIKLA                         ",Attention,String,Attention name.,attention; name; contact; person
+PWADR1,"Discrete values:                               , ul. Dokerów 7                 , ul. Handlowa 20               , ul. Innowacyjna               , ul. Krakowska 19              , ul. Wiejska 49                , ul.Budowlana 6                , ul.Kontenerowa 69             , ul.Limanowskiego 49A          , ul.Paryska  1                 , ul.Polska 17                  ",Address 1,String,Address line 1.,address; 1; location; contact
+PWADR2,"Discrete values:                               , Bêdzin                        , Chorzów                       , Czeladz                       , Czelad¼                       , Gdynia                        , Siemianowice ¡l.              , Sosnowiec                     , Zyrardów                      ",Address 2,String,Address line 2.,address; 2; location; contact
+PWSTE,"Discrete values:    , PL ",State,String,State or province code.,state; province; location; area
+PWZIP,"Discrete values:          , 41-100   , 41-253   , 41-503   , 42-500   , 81-336   , 81-339   , 96-300   ",Zip Code,String,Postal or zip code.,zip; code; postal; location
+PWCOUN,"Discrete values:     , PL  ",Country,String,Country code.,country; code; location; place
+PWAQDT,Constant value of '0' for all entries,Acquired Date,Date,Date acquired.,acquired; date; time; status
+PWACDT,Constant value of '0' for all entries,Acct Date,Date,Accounting date.,accounting; date; financial; time
+PWPRDT,"Lots of 0's (72.8%), Range from 0 to 20180517",Print Date,Date,Date printed.,print; date; status; time
+PWDESC,"Text data. Lengths: min 30, max 30, avg 30.0. Sample: PALETA DREWNIANA EURO         ",Description,String,Description of the item.,description; name; text; item
+PWNIIT,"Discrete values:  , 0",Non-Inv Item,String,Non-inventory item flag.,non-inventory; item; flag; status
+PWPSRC,"Discrete values:  , 1, 2",Price Source,String,Price source code.,price; source; code; financial
+PWFENO,"Discrete values:   , PR, SA",FE Number,String,FE number or code.,fe; number; code; reference
+PWUMCN,"Discrete values: 0.0, 1.0",UOM Conv,Decimal,UOM conversion factor.,uom; conversion; factor; rate
+PWBPRT,Constant value of '0' for all entries,Batch Print,Flag,Batch print flag.,batch; print; flag; status
+PWEXTC,Constant value of '0' for all entries,Extra Cost,Decimal,Extra cost amount.,extra; cost; amount; financial
+PWQREC,"Lots of 0's (71.3%), Range from 0.0 to 20888.0",Received Qty,Decimal,Quantity received.,received; quantity; amount; volume
+PWSTAT,"Discrete values: 0, 1, 2, 3",Status,Integer,Status code.,status; code; state; condition
+PWCQTY,"Lots of 0's (92.0%), Range from 0.0 to 20888.0",Cancel Qty,Decimal,Quantity cancelled.,cancel; quantity; amount; volume

@@ -1,0 +1,20 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+KID,Constant value of 'RO' for all entries,Record ID,String,Identifies the record type; always 'RO' for Requirements.,id; record; type; identifier
+KPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: CGRBA000015    ",Product Code,String,Product identifier.,product; code; item; id
+KDATE,Range from 20100118 to 20100611,Date,Date,Requirement date.,requirement; date; planning; time
+KTYPE,Constant value of 'P' for all entries,Type,String,Requirement type.,type; code; category; planning
+KSEQ,"Discrete values: 1, 2, 3, 4, 5, 6, 7, 8",Sequence,Integer,Sequence number.,sequence; number; order; detail
+KCHLD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: SPR000015      ",Child Item,String,Child item identifier.,child; item; component; id
+KQREQ,Range from 0.198 to 48000.0,Qty Required,Decimal,Quantity required.,quantity; required; amount; volume
+KRDTE,Range from 20100118 to 20100611,Req Date,Date,Required date.,required; date; planning; time
+KQTY,Range from 6.048 to 3294.0,Quantity,Decimal,Quantity.,quantity; amount; volume; planning
+KQTY2,Range from -48000.0 to -0.198,Quantity 2,Decimal,Secondary quantity.,quantity; 2; amount; volume
+KLEVL,Constant value of '0' for all entries,Level,Integer,BOM level.,level; bom; hierarchy; depth
+KWHS,Constant value of 'PS' for all entries,Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+KFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code; location; site
+RODTTM,Constant value of '0' for all entries,Date Time,Time,Date time.,date; time; system; timestamp
+RORTME,Constant value of '0' for all entries,Req Time,Time,Required time.,required; time; planning; system
+ROCDT,Constant value of '0' for all entries,Create Date,Date,Creation date.,create; date; creation; time
+ROCTM,Constant value of '0' for all entries,Create Time,Time,Creation time.,create; time; creation; system
+ROLDT,Constant value of '0' for all entries,Last Date,Date,Last modification date.,last; date; modification; time
+ROLTM,Constant value of '0' for all entries,Last Time,Time,Last modification time.,last; time; modification; system

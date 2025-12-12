@@ -1,0 +1,94 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+SID,Constant value of 'SZ' for all entries,Record ID,String,"Identifies the record type, 'SZ' for Shop Order.",id; record; type; shop; order
+SORD,"9999 unique values. Range: 100001.0 to 123223.0. Mean: 108940.36, Median: 110911.50. Sample values: 100099.0, 102634.0, 102750.0, 110113.0, 110801.0, 111308.0, 112306.0, 113516.0, 113573.0, 114274.0",Shop Order Number,Integer,Unique identifier for the shop order.,shop; order; number; id
+SPROD,"Text/Mixed data with 1597 unique values. Sample values: A002, SPR1154, SPR1243, SPR1363149-02, CGRVA1215, CGRBA1131, CGRVA0707, CGRBA1522, CGRVA1425, TGFL3S01TT. Most frequent: NGFLC2100 (98), NGFLC3100 (83), CGRVA115301 (71), A002 (62), SPR1153 (56)",Product Number,String,Product or item number being manufactured.,product; item; number
+SRDTE,"620 unique values. Range: 20091222.0 to 20120824.0. Mean: 20107879.24, Median: 20110324.00. Sample values: 20100108.0, 20100813.0, 20100820.0, 20100915.0, 20101013.0, 20110224.0, 20111003.0, 20111021.0, 20111125.0, 20120102.0",Release Date,Date,Date the order was released.,release; date; order
+SDDTE,"618 unique values. Range: 20091222.0 to 20120824.0. Mean: 20107904.23, Median: 20110328.00. Sample values: 20100517.0, 20100819.0, 20110607.0, 20110607.0, 20110608.0, 20111005.0, 20111020.0, 20111107.0, 20120109.0, 20120209.0",Due Date,Date,Date the order is due.,due; date; order
+SQREQ,"2054 unique values. Range: 0.001 to 140000.0. Mean: 2269.82, Median: 495.50. Contains decimal values. Sample values: 90.0, 108.0, 150.0, 180.0, 300.0, 400.0, 444.0, 1012.32, 1250.0, 4600.0",Quantity Required,Decimal,Quantity required to be produced.,quantity; required; amount
+SQFIN,"4802 unique values. Some 0's (12.9%). Range: 0.0 to 140191.0. Mean: 2085.78, Median: 350.00. Contains decimal values. Sample values: 101.25, 105.0, 110.0, 118.8, 250.8, 287.5, 600.0, 854.0, 1089.0, 2100.0",Quantity Finished,Decimal,Quantity finished so far.,quantity; finished; amount
+SSTAT,Constant value of 'X' for all entries,Status,String,Status of the shop order.,status; order; state
+SCORD,"551 unique values. Lots of 0's (93.2%). Range: 0.0 to 165960.0. Mean: 10178.34, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0",Customer Order,Integer,Associated customer order number.,customer; order; number
+SCUST,"76 unique values. Lots of 0's (93.2%). Range: 0.0 to 801003.0. Mean: 3732.75, Median: 0.00. Sample values: 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 1156.0",Customer Number,Integer,Customer number.,customer; number; id
+SCOM,"Discrete values (7 unique): NGFLC2100/01, ROLKI ZE ZMNIEJSZONA WAGA, Released by Forward Scheduling, SELEKCJA, TEST 7301TT, TESTY, Zwoln.przez Planowanie w PrzÃ³d",Comment,String,Comments or notes.,comment; notes; description
+SRSDT,"545 unique values. Some 0's (20.4%). Range: 0.0 to 99999999.0. Mean: 24198076.08, Median: 20101201.00. Sample values: 0.0, 0.0, 0.0, 20100510.0, 20101001.0, 20110408.0, 20110418.0, 20110729.0, 20110901.0, 99999999.0",Reschedule Date,Date,Reschedule date.,reschedule; date
+SPRIO,Constant value of '0.0' for all entries,Priority,Decimal,Priority of the order.,priority; order
+SCRIT,Constant value of '999.99' for all entries,Critical Ratio,Decimal,Critical ratio.,critical; ratio
+SHRSR,Constant value of '0.0' for all entries,Hours Remaining,Decimal,Hours remaining.,hours; remaining
+SHRSS,Constant value of '0.0' for all entries,Setup Hours,Decimal,Setup hours.,setup; hours
+SHRSM,Constant value of '0.0' for all entries,Machine Hours,Decimal,Machine hours.,machine; hours
+SWRKC,"38 unique values. Range: 0.0 to 9999.0. Mean: 3943.19, Median: 4209.00. Sample values: 3101.0, 3205.0, 4204.0, 4211.0, 4212.0, 4213.0, 4302.0, 4302.0, 4302.0, 4302.0",Work Center,Integer,Work center code.,work; center; code
+SOPNO,"Discrete values (2 unique): 0.0, 10.0",Operation Number,Integer,Operation number.,operation; number
+SOVBS,Constant value of '1.0' for all entries,Variable Overhead,Decimal,Variable overhead.,variable; overhead
+SWHS,"Discrete values (5 unique): C3, CZ, PP, PS, SA",Warehouse,String,Warehouse code.,warehouse; code; location
+SLOC,Empty column,Location,String,Location code.,location; code
+SACB,Constant value of '0.0' for all entries,ACB,Decimal,ACB?,acb
+SLAST,Constant value of '0.0' for all entries,Last,Decimal,Last?,last
+SPFCL,Empty column,Parent Facility,String,Parent facility.,parent; facility
+SOLOT,Empty column,Lot Number,String,Lot number.,lot; number
+SOCMPN,Empty column,Component,String,Component.,component
+SOPLOT,Constant value of '0' for all entries,Parent Lot,String,Parent lot number.,parent; lot; number
+SOBOMM,Empty column,BOM,String,Bill of materials.,bom
+SORTEM,Empty column,Route,String,Route.,route
+SOFAC,Constant value of 'PC' for all entries,Facility,String,Facility code.,facility; code
+SOORDT,Constant value of 'SO' for all entries,Order Type,String,Order type.,order; type
+SOSTS,Constant value of 'XX' for all entries,Status Code,String,Status code.,status; code
+SOREVL,Empty column,Revision Level,String,Revision level.,revision; level
+SRTIME,"Discrete values (2 unique): 0.0, 999999.0",Time,Decimal,Time.,time
+SRTMZ,Empty column,Time Zone,String,Time zone.,time; zone
+SUDAT1,Constant value of '0.0' for all entries,User Date 1,Date,User defined date 1.,user; date
+SUTIM1,Constant value of '0.0' for all entries,User Time 1,Decimal,User defined time 1.,user; time
+SUTMZ1,Empty column,User Time Zone 1,String,User defined time zone 1.,user; time; zone
+SUDAT2,Constant value of '0.0' for all entries,User Date 2,Date,User defined date 2.,user; date
+SUTIM2,Constant value of '0.0' for all entries,User Time 2,Decimal,User defined time 2.,user; time
+SUTMZ2,Empty column,User Time Zone 2,String,User defined time zone 2.,user; time; zone
+SQREMM,Constant value of '0.0' for all entries,Qty Remaining,Decimal,Quantity remaining.,quantity; remaining
+SCLIN,Constant value of '0.0' for all entries,Customer Line,Integer,Customer order line number.,customer; line; number
+SOCRDT,Constant value of '0.0' for all entries,Creation Date,Date,Creation date.,creation; date
+SRSTIM,Constant value of '0.0' for all entries,Start Time,Decimal,Start time.,start; time
+SRSTMZ,Empty column,Start Time Zone,String,Start time zone.,start; time; zone
+SOJOBC,Empty column,Job Code,String,Job code.,job; code
+SOPFAC,Empty column,Parent Facility,String,Parent facility.,parent; facility
+SOPORT,Empty column,Parent Order Type,String,Parent order type.,parent; order; type
+SOPORD,Constant value of '0.0' for all entries,Parent Order,Integer,Parent order number.,parent; order; number
+SOPRIO,Empty column,Parent Priority,Decimal,Parent priority.,parent; priority
+SOPNUM,Constant value of '0.0' for all entries,Parent Number,Integer,Parent number.,parent; number
+SOPLIN,Constant value of '0.0' for all entries,Parent Line,Integer,Parent line number.,parent; line; number
+SOFMAC,Empty column,From Machine,String,From machine.,from; machine
+SOFODC,Empty column,From Work Center,String,From work center.,from; work; center
+SOACTF,Empty column,Active Flag,String,Active flag.,active; flag
+SEINUS,Constant value of '0.0' for all entries,In Use,Flag,In use flag.,in-use; flag
+SOOPDT,Constant value of '0.0' for all entries,Operation Date,Date,Operation date.,operation; date
+SOPTIM,Constant value of '0.0' for all entries,Operation Time,Decimal,Operation time.,operation; time
+SOPTMZ,Empty column,Operation Time Zone,String,Operation time zone.,operation; time; zone
+SOPRTC,"Discrete values (2 unique): 0.0, 1.0",Print Count,Integer,Print count.,print; count
+SOPRDA,Empty column,Print Date,Date,Print date.,print; date
+SEEMPL,Empty column,Employee,String,Employee code.,employee; code
+SUEMP1,Empty column,User Employee 1,String,User employee 1.,user; employee
+SUEMP2,Empty column,User Employee 2,String,User employee 2.,user; employee
+SOBUYC,Empty column,Buyer Code,String,Buyer code.,buyer; code
+SOPURC,Empty column,Purchase Code,String,Purchase code.,purchase; code
+SECST1,Constant value of '0.0' for all entries,Cost 1,Decimal,Cost component 1.,cost; component
+SECST2,Constant value of '0.0' for all entries,Cost 2,Decimal,Cost component 2.,cost; component
+SECST3,Constant value of '0.0' for all entries,Cost 3,Decimal,Cost component 3.,cost; component
+SECST4,Constant value of '0.0' for all entries,Cost 4,Decimal,Cost component 4.,cost; component
+SOOUTC,Constant value of '0.0' for all entries,Outside Cost,Decimal,Outside processing cost.,outside; cost
+SEORDT,Empty column,Order Type,String,Order type.,order; type
+SEECN,Empty column,ECN Number,String,Engineering Change Notice number.,ecn; number
+SOELIN,Constant value of '0.0' for all entries,Line Number,Integer,Line number.,line; number
+SOSPLT,Constant value of '0.0' for all entries,Split,Integer,Split number.,split; number
+SPOFAC,Empty column,Parent Facility,String,Parent facility.,parent; facility
+SPOORT,Empty column,Parent Order Type,String,Parent order type.,parent; order; type
+SPOORD,Constant value of '0.0' for all entries,Parent Order,Integer,Parent order number.,parent; order; number
+SODRAW,Empty column,Drawing Number,String,Drawing number.,drawing; number
+SODWGS,Constant value of '0.0' for all entries,Drawings,Integer,Number of drawings.,drawings; count
+SOENUS,"Discrete values (6 unique): B610ADM, INFORM01, OGOLNY01, PRODUK01, PRODUK02, PRODUK03",Entry User,String,User who entered the order.,entry; user
+SOENDT,"529 unique values. Range: 0.0 to 20120806.0. Mean: 20105082.67, Median: 20110228.00. Sample values: 20100125.0, 20100528.0, 20100628.0, 20100630.0, 20101022.0, 20110426.0, 20110728.0, 20110922.0, 20111122.0, 20111227.0",Entry Date,Date,Date the order was entered.,entry; date
+SOENTM,"8131 unique values. Range: 0.0 to 234623.0. Mean: 121704.24, Median: 121622.00. Sample values: 95946.0, 104918.0, 120736.0, 120821.0, 120941.0, 121436.0, 142501.0, 142829.0, 144540.0, 145600.0",Entry Time,Decimal,Time the order was entered.,entry; time
+SOENTZ,Empty column,Entry Time Zone,String,Entry time zone.,entry; time; zone
+SOMNUS,"Discrete values (4 unique): OGOLNY01, PRODUK01, PRODUK02, PRODUK03",Maint User,String,User who last maintained the order.,maintenance; user
+SOMNDT,"602 unique values. Range: 0.0 to 20131016.0. Mean: 20105889.22, Median: 20110328.00. Sample values: 20100825.0, 20110104.0, 20110321.0, 20110331.0, 20110518.0, 20110519.0, 20110802.0, 20110929.0, 20120229.0, 20120307.0",Maint Date,Date,Date the order was last maintained.,maintenance; date
+SOMNTM,"8425 unique values. Range: 0.0 to 235745.0. Mean: 105540.13, Median: 103356.50. Sample values: 73321.0, 80644.0, 81421.0, 84717.0, 101251.0, 102114.0, 103239.0, 122749.0, 131937.0, 135652.0",Maint Time,Decimal,Time the order was last maintained.,maintenance; time
+SOMNTZ,Empty column,Maint Time Zone,String,Maintenance time zone.,maintenance; time; zone
+SOMNPG,"Discrete values (2 unique): MRP644B, SFC500D2",Maint Program,String,Program used for maintenance.,maintenance; program
+SOPRTF,Empty column,Print Flag,String,Print flag.,print; flag
+SOEXDT,Constant value of '0.0' for all entries,Expiration Date,Date,Expiration date.,expiration; date

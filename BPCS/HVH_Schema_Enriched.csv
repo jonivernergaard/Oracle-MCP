@@ -1,0 +1,46 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+HVID,Constant value of 'VH' for all entries,Record ID,String,Identifies the record type; always 'VH' for Vendor History.,id; record; type; identifier
+HVVEND,Range from 1 to 7777,Vendor Number,Integer,Vendor identifier.,vendor; number; id; supplier
+HVPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: LISBRF182      ",Product Code,String,Product identifier.,product; code; item; id
+HVVIT,"Discrete values:                , 21257          , 5515200        , 6603016        , FSL81DE-PB     , FSL98D-PBE     , FSL98DNH-PBE   , RR93420FSE-PB  , RR98545LFSE-PB , RR98610FSE-PB  , TAC026I0193    ",Vendor Item,String,Vendor's item number.,vendor; item; number; reference
+HVERD,"Some 0's (41.3%), Range from 0 to 954",Earliest Rec Date,Integer,Earliest receipt date offset or code.,earliest; receipt; date; time
+HVLTD,"Some 0's (33.6%), Range from 0 to 927",Lead Time Days,Integer,Lead time in days.,lead; time; days; schedule
+HVOND,"Some 0's (41.8%), Range from 0 to 439",On Order,Integer,Quantity on order.,on; order; quantity; inventory
+HVRES,"Discrete values: 0.0, 0.005, 0.045",Reserved,Decimal,Reserved quantity.,reserved; quantity; inventory; status
+HVREC,"Some 0's (17.0%), Range from 0.0 to 10171980.0",Received,Decimal,Received quantity.,received; quantity; inventory; status
+HVLYA,"Lots of 0's (88.6%), Range from -8484.3 to 1817044.68",Last Year Amt,Decimal,Last year's total amount.,last; year; amount; financial
+HVTYA,"Some 0's (37.6%), Range from -11643.55 to 24934734.39",This Year Amt,Decimal,This year's total amount.,this; year; amount; financial
+HVTMA,"Some 0's (25.4%), Range from 0.0 to 29989246.37",Total Month Amt,Decimal,Total monthly amount.,total; month; amount; financial
+HVLYQ,"Lots of 0's (88.6%), Range from -495.0 to 342840.0",Last Year Qty,Decimal,Last year's total quantity.,last; year; quantity; volume
+HVTYQ,"Some 0's (37.6%), Range from -59.4 to 4807650.0",This Year Qty,Decimal,This year's total quantity.,this; year; quantity; volume
+HVTMQ,"Some 0's (25.4%), Range from 0.0 to 5021490.0",Total Month Qty,Decimal,Total monthly quantity.,total; month; quantity; volume
+HVLCS,"Some 0's (23.5%), Range from 0.0 to 490000.0",Last Cost,Decimal,Last cost recorded.,last; cost; amount; financial
+HVLDT,"Some 0's (16.4%), Range from 0 to 20251204",Last Date,Date,Date of last activity.,last; date; activity; time
+HVPUM,"Discrete values: KG, M , SZ, TH",Purch UOM,String,Purchase unit of measure.,purchase; uom; unit; measure
+HVIIT,Constant value of '0' for all entries,Internal Item,Flag,Internal item flag.,internal; item; flag; status
+HVLYNO,Constant value of '0' for all entries,Last Year No,Integer,Last year number.,last; year; number; count
+HVTYNO,Constant value of '0' for all entries,This Year No,Integer,This year number.,this; year; number; count
+HVTMNO,"Some 0's (14.2%), Range from 0 to 5039",Total Month No,Integer,Total month number.,total; month; number; count
+HVLODT,"Some 0's (37.2%), Range from 0 to 20100119",Last Order Date,Date,Date of last order.,last; order; date; time
+HVLORD,"Some 0's (14.2%), Range from 0 to 253750",Last Order No,Integer,Last order number.,last; order; number; id
+HVLAMT,"Some 0's (36.3%), Range from -9008.3 to 265065.5",Last Amount,Decimal,Last transaction amount.,last; amount; financial; value
+HVLQTY,"Some 0's (35.6%), Range from -2033.0 to 70000.0",Last Qty,Decimal,Last transaction quantity.,last; quantity; amount; volume
+HVLYQO,Constant value of '0.0' for all entries,Last Year Qty Ord,Decimal,Last year quantity ordered.,last; year; quantity; ordered
+HVTYQO,Constant value of '0.0' for all entries,This Year Qty Ord,Decimal,This year quantity ordered.,this; year; quantity; ordered
+HVTMQO,"Some 0's (17.3%), Range from -236610.0 to 3236000.0",Total Month Qty Ord,Decimal,Total month quantity ordered.,total; month; quantity; ordered
+HVLYQR,Constant value of '0.0' for all entries,Last Year Qty Rec,Decimal,Last year quantity received.,last; year; quantity; received
+HVTYQR,Constant value of '0.0' for all entries,This Year Qty Rec,Decimal,This year quantity received.,this; year; quantity; received
+HVTMQR,"Some 0's (17.0%), Range from 0.0 to 10171980.0",Total Month Qty Rec,Decimal,Total month quantity received.,total; month; quantity; received
+HVLRDT,"Some 0's (16.4%), Range from 0 to 20251204",Last Rec Date,Date,Date of last receipt.,last; receipt; date; time
+HVLYQJ,Constant value of '0.0' for all entries,Last Year Qty Rej,Decimal,Last year quantity rejected.,last; year; quantity; rejected
+HVTYQJ,Constant value of '0.0' for all entries,This Year Qty Rej,Decimal,This year quantity rejected.,this; year; quantity; rejected
+HVTMQJ,"Discrete values: 0.0, 0.005, 0.045",Total Month Qty Rej,Decimal,Total month quantity rejected.,total; month; quantity; rejected
+HVLJDT,"Discrete values: 0, 20130617, 20131129",Last Rej Date,Date,Date of last rejection.,last; rejection; date; time
+VHLDTM,Constant value of '0' for all entries,Last Date Time,Time,Time of last date.,last; date; time; system
+VHLOTM,Constant value of '0' for all entries,Last Order Time,Time,Time of last order.,last; order; time; system
+VHLRTM,Constant value of '0' for all entries,Last Rec Time,Time,Time of last receipt.,last; receipt; time; system
+VHLJTM,Constant value of '0' for all entries,Last Rej Time,Time,Time of last rejection.,last; rejection; time; system
+VHCDT,Constant value of '0' for all entries,Create Date,Date,Creation date.,create; date; creation; time
+VHCTM,Constant value of '0' for all entries,Create Time,Time,Creation time.,create; time; creation; system
+VHLDT,Constant value of '0' for all entries,Last Date 2,Date,Secondary last date.,last; date; 2; time
+VHLTM,Constant value of '0' for all entries,Last Time 2,Time,Secondary last time.,last; time; 2; system

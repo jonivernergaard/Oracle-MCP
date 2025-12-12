@@ -1,0 +1,30 @@
+﻿FBDI Column,FBDI Column Name,Tech Comments,Field Description,Mandatory,Data Type,Max Length,Default,Comments,Legacy Table Name,Legacy Column Name,Legacy Field Description ,Legacy Data Type, Mapping Logic
+D,Structure Name,Sample: Primary,Unique name given to a specific variation of a Structure type. Valid values can be found in Manage Item Structure Type Details.,Y,Varchar2,80,,,,,,,
+E,Description,,Specific bill of material comment,,Varchar2,240,,,,,,,
+G,Organization Code,Sample: INV_ORG_1,The organization code the Parent Item (Item Name) belongs to.,Y,Varchar2,18,,,,,,,
+I,Item Name,Sample: test_item_01,Item Number of the Parent Item.,Y,Varchar2,820,,,,,,,
+Q,Effectivity Control,Sample: 1,"Effectivity control(Component) of the source item structure.
+Possible Values:
+1 - Date
+2 - Model or Unit
+3 - Serial",,Number,1,"Possible Values:-
+1 - Date
+2 - Model or Unit
+3 - Serial",,,,,,
+D,Structure Name,Sample: Primary,Unique name given to a specific variation of a Structure type. Valid values can be found in Manage Item Structure Type Details.,Y,Varchar2,80,,,,,,,
+E,Organization Code,Sample: INV_ORG_1,The organization code the Structure Item belongs to.,Y,Varchar2,18,,,,,,,
+F,Component Item Name,Sample: test_item_05,Name of Item which is being added as the component. (aka Child Item),Y,Varchar2,820,,,,,,,
+G,Structure Item Name,Sample_test_item_01,Name of Structure's Item under which this component is being added. (aka Parent Item),Y,Varchar2,820,,,,,,,
+I,Item Sequence,Sample: 1,Item sequence within bill of material structure,,Number,,,,,,,,
+J,Quantity,Sample: 12,Quantity of component in bill of material,,Number,,,,,,,,
+K,Yield,Sample: 2,Factor used to multiply component quantity to obtain required component quantity,,Number,,,,,,,,
+L,Comments,,Remarks or comments related to the component,,Varchar2,240,,,,,,,
+O,Effective Date,Sample: 2025/01/01,Date on which engineering change order was implemented,,Date,,,,,,,,
+P,End Date,Sample: 2025/01/01,Date at the end of a date range during which a given record is be available for transacting. Use for date effective entities only.,,Date,,,,,,,,
+CW,Component UOM,,"Unit which is primarily used to measure quantities of the component item.	",,Varchar2,25,,,,,,,
+D,Structure Name,Sample: Primary,Unique name given to a specific variation of a Structure type. Valid values can be found in Manage Item Structure Type Details.,Y,Varchar2,80,,,,,,,
+E,Organization Code,Sample: INV_ORG_1,The organization code the Structure Item belongs to.,Y,Varchar2,18,,,,,,,
+F,Substitute Item Name,Sample: substitute_05,Name of the Substitute for the Component Item.,Y,Varchar2,820,,,,,,,
+G,Component Item Name,Sample_test_item_05,Name of the Component Item.,Y,Varchar2,820,,,,,,,
+H,Structure Item Name,Sample: test_item_01,Name of the Structure Item to which the Component Item belongs.,Y,Varchar2,820,,,,,,,
+I,Substitute Quantity,Sample: 23,Number of substitute components needed to replace the full component quantity.,Y,Number,,,,,,,,

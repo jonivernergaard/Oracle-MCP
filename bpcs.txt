@@ -1,0 +1,95 @@
+Table: B610F/IIM (inv100) - Items
+IID: 'IM' – active item, 'IZ' – inactive
+IPROD: item
+IDESC: item description
+IVULP: quantity per pallet
+IMCQTY: quantity per carton
+IMNNWU: weight
+IREF01-05: five reference fields (second screen inv100)
+IMTCCD: parent for item
+ICLAS: item class – USED FOR ACCOUNTING!!!
+IITYP: item type
+IUMR: unit of measure
+IMABRV: CMS abbreviation – USED FOR ACCOUNTING!!!
+IMCNTT: packing (arrangement) on pallet
+IFII: quantity in bag
+IFCI: number of bags
+
+B610F/ETYK - Label Data (KWHS and then UPDETYK)
+ITEMBPCS: item from BPCS
+ITEMCUST: customer item
+EANITEM: EAN for item (carton or single piece)
+EANINNER: EAN for inner pack
+LANG1-5: descriptions in five languages
+PACKING: item packing e.g., 50 x 30
+LOGO: optional logo on label
+DESC1: description1 30 characters
+DESC2: description2 30 characters
+Relations:
+IIM: ITEMBPCS=IPROD
+
+Table: B610F/RCM (acr100) - Customers
+CMID: active or inactive customer
+CCUST: customer number e.g., 123
+CNME: customer description e.g., "Makro Gdynia store no. 34"
+CTYPE: customer type - USED FOR ACCOUNTING!!!
+CMALPH: abbreviated name – alphanumeric e.g., "MAKRO"
+CCCUS: parent customer number e.g., 100098 which is Makro Warsaw headquarters number
+CDEA1: Key account
+CDEA2: stores information whether customer is PROCESSING
+CREF01-5: five reference fields
+CMFF01-4: accounting fields – USED FOR ACCOUNTING!!!
+CCOUN: country, but IC companies have e.g., PDA (meaning Germany DE)
+CCURR: currency
+CMBANK: bank
+
+AVM (acp100) - Vendors
+VMID: active or inactive vendor
+VENDOR: vendor number
+VNDNAM: vendor name
+VTYPE: vendor type - USED FOR ACCOUNTING!!!
+VNALPH: abbreviated name – alphanumeric
+VCOUN: country
+VMBANK: bank
+VCURR: currency
+VMREF1-5: reference fields, WMREF2 USED FOR ACCOUNTING!!!!
+
+Other Tables
+B610F/SIH SIL – invoices headers and lines
+B610F/ECH ECL – sales orders headers and lines
+B610F/RAR – receivables
+B610F/HPH HPO – purchase orders headers and lines
+B610F/APH APL – purchase invoices headers and lines
+CMF (cst100) - costs
+MBM (bom500) - BOMs
+CDP - departments
+LWK (cap100) - machines
+FRT (sfc100) - routings
+FSO (sfc500) – production orders
+FMA (sfc500 and SHIFT F3) – production order allocations
+GSB – summary account postings
+GLH – detailed posting lines
+GCR – account descriptions
+IIC (inv160) – item classes
+IPP – warehouse pick orders
+IWI – warehouse stock (by warehouse)
+ILI – warehouse stock (by location)
+ITH – warehouse transactions
+RTX – VAT register
+SSM (sal100) - salespeople
+
+BPCSUSRF Tables
+SAL – sales in PLN
+SAB2 – budget PLN
+SAB2CUST – helper table for SAB2, to decode alphanumeric to customer number
+CST – historical costs from set 2 element 0
+CSD – historical costs from set 4 elements from 0 to 20 and 49 and 50
+CSB2 – budget costs
+FOREC – forecast from Lotus Notes
+SALFSO – production budget created once a year
+BUDPROD – production budget (SOP) created monthly
+MAKACT – current markup
+MARHIST – historical markup
+BRANDY – brand grouping from inv100 (IIM.IREF02)
+ITEMKLI (KWHS and updik) - customer-to-item assignment
+B610f/EIX – our item/customer item assignment

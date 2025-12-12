@@ -1,0 +1,15 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+AID,Constant value of 'LA' for all entries,Record ID,String,"Identifies the record type, 'LA' for Lot Allocation.",id; record; type; allocation
+ATYPE,"Discrete values (2 unique): C, S",Allocation Type,String,Type of allocation.,allocation; type; code
+AORD,"167 unique values. Range: 274462 to 423638. Mean: 277784.46, Median: 275820.50. Sample values: 274462, 274788, 275696, 275809, 275824, 275825, 275896, 276159, 355824, 355824",Order Number,Integer,Order number associated with the allocation.,order; number; id
+ALINE,"Discrete values (11 unique): 1, 2, 3, 4, 5, 6, 7, 8, 9, 11, 12",Line Number,Integer,Line number of the order.,line; number; order
+ASEQ,"Discrete values (2 unique): 1, 2",Sequence Number,Integer,Sequence number of the allocation.,sequence; number
+APROD,"Text/Mixed data with 126 unique values. Sample values: SPR6208        , RPU230/985C1   , RPU28024/970C  , SPR7524        , RPU31018/978C  , SPR5980        , SPS7729        , RPU1231015/791C, RPU80/1100SBF  , SPR6207        . Most frequent: RRO18063        (10), RPU25024/875C   (9), RPU31018/978C   (9), RIXL18440       (8), RPU28024/970C   (7)",Product Number,String,Product or item number.,product; item; number
+AWHS,"Discrete values (2 unique): C4, CZ",Warehouse,String,Warehouse code.,warehouse; code; location
+ALOC,"Discrete values (2 unique): C4    , CZ    ",Location,String,Location code.,location; code
+ALOT,Constant value of '          ' for all entries,Lot Number,String,Lot number.,lot; number
+LQALL,"218 unique values. Range: 0.001 to 32160.6. Mean: 3148.94, Median: 766.23. Contains decimal values. Sample values: 0.313, 23.7, 129.0, 167.7, 192.667, 419.25, 511.02, 1370.0, 3652.484, 4900.531",Quantity Allocated,Decimal,Quantity allocated.,quantity; allocated; amount
+LLAST,Constant value of '0' for all entries,Last,Integer,Last indicator.,last
+LACNTR,Constant value of '          ' for all entries,Container,String,Container number.,container; number
+LAUPI,Constant value of '0' for all entries,UPI,Integer,UPI code.,upi; code
+LAQALP,Constant value of '0' for all entries,Qty Alloc Primary,Decimal,Quantity allocated in primary units.,quantity; allocated; primary

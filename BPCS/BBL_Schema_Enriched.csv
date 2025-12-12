@@ -1,0 +1,83 @@
+Column Name,Sample Entry,Label,Type,Description,Keywords
+BLID,"Discrete values: BL, BZ, ZL",Record ID,String,Identifies the record type (e.g. BL for Bill of Lading).,id; record; type; identifier
+BORD,Range from 102402 to 555487,Order Number,Integer,Sales order number.,order; number; sales; id
+BLINE,"Discrete values: 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 14",Line Number,Integer,Line number within the order.,line; number; sequence; detail
+BPROD,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: OTOF3705       ",Product Code,String,Product identifier.,product; code; item; id
+BQTY,"Some 0's (19.0%), Range from -20978.06 to 20360.0",Quantity,Decimal,Quantity of the product.,quantity; amount; count; volume
+BNET,"Some 0's (35.1%), Range from -5848.0 to 55000.0",Net Amount,Decimal,Net monetary amount.,net; amount; value; price
+BLOC,"Discrete values:       , B3    , CZ    , MC    , MD    , MH    , SA    ",Location,String,Inventory location code.,location; code; inventory; place
+BWHS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: GA",Warehouse,String,Warehouse identifier.,warehouse; code; storage; facility
+BDROP,"Discrete values:  , N, Y",Drop Ship Flag,Flag,Indicates if the item is drop shipped.,drop; ship; flag; indicator
+BVATCD,"Discrete values:      , V0   , V22  , V23  , V4   , V7   , V8   ",VAT Code,String,Value Added Tax code.,vat; tax; code; financial
+BLDTE,"Some 0's (0.8%), Range from 0 to 20251205",Date,Date,Transaction or record date.,date; transaction; record; time
+BPORD,"Lots of 0's (56.6%), Range from 0 to 555454",Purchase Order,String,Customer purchase order number.,purchase; order; po; customer
+BPLIN,"Lots of 0's (56.6%), Range from 0 to 18",PO Line,Integer,Purchase order line number.,po; line; number; detail
+BLUM,"Discrete values:   , BX, HD, KG, SZ, TH, TN, ZG",UOM,String,Unit of measure.,uom; unit; measure; quantity
+BLTR01,"Discrete values:      , V0   , V22  , V23  , V8   ",Transaction Code,String,Transaction type or code.,transaction; code; type; id
+BLTA01,"Lots of 0's (73.5%), Range from 0.0 to 12519.36",Tax Amount 1,Decimal,Tax amount field 1.,tax; amount; 1; financial
+BLTA02,Constant value of '0.0' for all entries,Tax Amount 2,Decimal,Tax amount field 2.,tax; amount; 2; financial
+BLTA03,Constant value of '0.0' for all entries,Tax Amount 3,Decimal,Tax amount field 3.,tax; amount; 3; financial
+BLTA04,Constant value of '0.0' for all entries,Tax Amount 4,Decimal,Tax amount field 4.,tax; amount; 4; financial
+BLTA05,Constant value of '0.0' for all entries,Tax Amount 5,Decimal,Tax amount field 5.,tax; amount; 5; financial
+BLTA06,Constant value of '0.0' for all entries,Tax Amount 6,Decimal,Tax amount field 6.,tax; amount; 6; financial
+BLTA07,Constant value of '0.0' for all entries,Tax Amount 7,Decimal,Tax amount field 7.,tax; amount; 7; financial
+BLTA08,Constant value of '0.0' for all entries,Tax Amount 8,Decimal,Tax amount field 8.,tax; amount; 8; financial
+BLTA09,Constant value of '0.0' for all entries,Tax Amount 9,Decimal,Tax amount field 9.,tax; amount; 9; financial
+BLTA10,Constant value of '0.0' for all entries,Tax Amount 10,Decimal,Tax amount field 10.,tax; amount; 10; financial
+BLSAL,Constant value of '0' for all entries,Sales Amount,Decimal,Sales amount.,sales; amount; value; revenue
+BLLTYP,"Discrete values: R, S",Line Type,String,Type of line (e.g. Regular, Special).,line; type; category; code
+BLBASI,Constant value of '0.0' for all entries,Basis Amount,Decimal,Basis amount for calculations.,basis; amount; calculation; value
+BIRES,"Discrete values:   , 01",Reason Code,String,Reason code.,reason; code; explanation; id
+BLCONS,Constant value of '0' for all entries,Consignment Flag,Flag,Indicates if consignment inventory.,consignment; flag; inventory; status
+BLCUST,Range from 6 to 801472,Customer Number,Integer,Customer identifier.,customer; number; id; client
+BLSHIP,"Discrete values: 0, 1",Ship To Number,Integer,Ship-to address identifier.,ship; to; address; id
+BLDOCR,"Text data. Lengths: min 15, max 15, avg 15.0. Sample: 000000000572024",Document Reference,String,Reference document number.,document; reference; number; id
+LUDTE1,Constant value of '0' for all entries,Last Update Date 1,Date,Last update date 1.,last; update; date; 1
+LUDTE2,Constant value of '0' for all entries,Last Update Date 2,Date,Last update date 2.,last; update; date; 2
+BLCUSB,Range from 100015 to 801472,Bill To Customer,Integer,Bill-to customer identifier.,bill; to; customer; id
+BLCOMP,Constant value of '1' for all entries,Company Code,String,Company identifier.,company; code; entity; id
+BLCURR,"Discrete values: EUR, GBP, PLN",Currency,String,Currency code.,currency; code; money; iso
+BLPTYP,"Discrete values: G, K, N, P",Payment Type,String,Payment type code.,payment; type; code; financial
+BLOTYP,"Discrete values: 1, 3, 6, 7",Order Type,String,Order type code.,order; type; code; category
+BLCTAX,"Discrete values:      , DETAL, EXP  , VAT  ",Tax Class,String,Tax classification.,tax; class; category; code
+BLSALP,"Some 0's (1.1%), Range from 0 to 700000",Sales Price,Decimal,Unit sales price.,sales; price; unit; value
+BLINVN,"Lots of 0's (90.6%), Range from 0 to 25000036",Invoice Number,String,Invoice number.,invoice; number; bill; id
+BLINVL,Constant value of '0' for all entries,Invoice Line,Integer,Invoice line number.,invoice; line; number; detail
+BLDPFX,"Discrete values: DF, DK, EP, EX, KE, KS, SK, SP",Doc Prefix,String,Document prefix.,document; prefix; code; id
+BLDOCN,"Discrete values: 0, 16000516, 22001683",Document Number,Integer,Document number.,document; number; id; reference
+BLDYR,"Discrete values: 0, 11, 12, 13, 14, 15, 16, 20, 22, 23, 24, 25",Year,Integer,Year of the transaction.,year; date; time; period
+BLDTYP,"Discrete values: 1, 2, 3",Doc Type,String,Document type code.,document; type; code; category
+BLODPX,"Discrete values:   , EX, SP",Order Prefix,String,Order prefix.,order; prefix; code; id
+BLODYR,"Discrete values: 0, 15, 16, 22",Order Year,Integer,Year of the order.,order; year; date; time
+BLODTP,"Discrete values: 0, 1",Order Type 2,String,Secondary order type.,order; type; 2; code
+BSEQ,Constant value of '1' for all entries,Sequence,Integer,Sequence number.,sequence; number; order; id
+BLITEM,"Text data. Lengths: min 35, max 35, avg 35.0. Sample: 401216                             ",Item Description,String,Description of the item.,item; description; product; text
+BLBOLN,Constant value of '0' for all entries,Bill of Lading,String,Bill of Lading number.,bill; lading; bol; shipping
+BLCNVC,"Lots of 0's (55.5%), Range from 0.0 to 5.3815",Conv Factor,Decimal,Currency conversion factor.,conversion; factor; currency; rate
+BLCURT,"Lots of 0's (55.5%), Range from 0.0 to 5.3815",Currency Rate,Decimal,Currency exchange rate.,currency; rate; exchange; financial
+BLGNVC,"Lots of 0's (55.5%), Range from 0.0 to 5.3815",Gen Conv Factor,Decimal,General conversion factor.,general; conversion; factor; rate
+BLINCU,Range from 100015 to 801472,Invoice Customer,Integer,Customer on the invoice.,invoice; customer; id; client
+BLINNO,"Discrete values: 0, 1",Invoice Number Int,Integer,Internal invoice number.,invoice; number; internal; id
+BLLOAD,"Lots of 0's (56.8%), Range from 0 to 953497",Load Number,Integer,Load number for shipping.,load; number; shipping; id
+BLLPST,"Lots of 0's (79.6%), Range from 0.0 to 10000.0",Line Post Status,Decimal,Line posting status or amount.,line; post; status; amount
+BLMFST,Constant value of '0' for all entries,Manifest,String,Manifest number.,manifest; number; shipping; id
+BLNPSL,"Some 0's (39.4%), Range from 0.0 to 55000.0",Net Sales Price,Decimal,Net sales price.,net; sales; price; value
+BLNXBL,Constant value of '0' for all entries,Next Bill,String,Next bill number.,next; bill; number; id
+BLQTSL,"Some 0's (19.0%), Range from -20978.06 to 468.0",Qty Sold,Decimal,Quantity sold.,quantity; sold; amount; volume
+BLREAS,"Discrete values: 22   , 23   , KS   , SP   ",Reason Code 2,String,Secondary reason code.,reason; code; 2; explanation
+BLSHPN,Constant value of '0' for all entries,Shipment Number,Integer,Shipment number.,shipment; number; shipping; id
+BLSLUM,"Discrete values:   , BX, HD, KG, SZ, TH, TN, ZG",Sales UOM,String,Sales unit of measure.,sales; uom; unit; measure
+BLSPAR,"Some 0's (23.9%), Range from 0 to 801472",Parent ID,Integer,Parent record identifier.,parent; id; record; link
+BLSTS3,Constant value of '0' for all entries,Status 3,String,Status code 3.,status; code; 3; state
+BLSTS4,"Discrete values: 0, 1",Status 4,String,Status code 4.,status; code; 4; state
+BLUTYP,"Discrete values: 1, 3, 6, 7",User Type,String,User type code.,user; type; code; category
+BLCLAS,"Text data. Lengths: min 2, max 2, avg 2.0. Sample: TO",Class,String,Classification code.,class; code; category; type
+BLCTRL,"Discrete values: 0, 1",Control Flag,Flag,Control flag.,control; flag; status; indicator
+BLCWO,"Discrete values:  , 0",Works Order,String,Works order number.,works; order; number; id
+BLACCR,Constant value of '0' for all entries,Accrual,Decimal,Accrual amount.,accrual; amount; financial; value
+BLSDTE,"Some 0's (1.9%), Range from 0 to 20251204",Ship Date,Date,Date of shipment.,ship; date; time; shipping
+BLCSGN,Constant value of '0' for all entries,Consignment,Flag,Consignment indicator.,consignment; flag; status; indicator
+BLPKGG,Constant value of '0' for all entries,Package Group,String,Package group code.,package; group; code; shipping
+BLCNV2,"Discrete values: 0.0, 1.0",Conv Factor 2,Decimal,Secondary conversion factor.,conversion; factor; 2; rate
+BLCNC2,"Discrete values: 0.0, 1.0",Conv Factor 3,Decimal,Tertiary conversion factor.,conversion; factor; 3; rate
+BLCNG2,"Discrete values: 0.0, 1.0",Conv Factor 4,Decimal,Quaternary conversion factor.,conversion; factor; 4; rate
