@@ -101,10 +101,10 @@ class VectorSearchService:
         return struct.pack(f'{len(vector)}f', *vector)
 
 
-    def get_embedding(self, text: str, task_type: str = "SEMANTIC SIMILARITY", RETRIES: int = 5) -> List[List[float]]:
+    def get_embedding(self, text: str, task_type: str = "SEMANTIC SIMILARITY", retries: int = 5) -> List[List[float]]:
         """ Get embedding from Gemini API with retries."""
         base_delay = 1
-        for attempt in range (RETRIES):
+        for attempt in range (retries):
             try:
                 result = self.genai_client.models.embed_content(
                     model = self.embedding_model,
@@ -116,11 +116,152 @@ class VectorSearchService:
             # result embeddings is a list of ContentEmbedding
             except Exception as e:
                 is_rate_limit = "429" in str(e) or "ResourceExhausted" in str(e)
-                if is_rate_limit:
-                    logger.warning()
+                if is_rate_limit or attempt < retries - 1:
+                    delay = (base_delay * (2 ** attempt)) + random.uniform(0, 1)
+                    if is_rate_limit:
+                        logger.warning(f"Rate limit hit. Retrying in {delay:.2f}s...")
+                    else:
+                        logger.warning(f"Embedding error: {e}. Retrying in {delay:.2f}s...")
+                    time.sleep(delay)
+                else:
+                    logger.error(f"Failed to generate embedding after {retries} attempts {e}")
+                    return []
+        return []
+    
+
+    def get_embeddings_batch(self, texts: List[str], task_type: str = "SEMANTIC_SIMILARITY", retries: int = 5) -> List[List[float]]:
+
+        """ Get embeddings from Gemini API for batches"""
+
+        base_delay = 1
+        for attempt in range (retries):
+            try:
+                result = self.genai_client.models.embed_content(
+                    model = self.embedding_model,
+                    content = texts,
+                    config = types.EmbedContentConfig(task_type=task_type)
+                )
+                # result.embeddings is a list of ContentEmbedding
+
+                return [e.values for e in result.embeddings]
+            except Exception as e:
+                is_rate_limit = "429" in str (e) or "ResourceExhausted" in str (e)
+                if is_rate_limit or attempt < retries -1:
+                    delay = (base_delay * (2 ** attempt)) + random.uniform(0, 1)
+                    if is_rate_limit:
+                        logger.warning(f"Rate limit hit. Retrying in {delay:.2f}s...")
+                    else:
+                        logger.warning(f"Embedding error : {e}. Retrying in {delay:.2f}s...")
+                    time.sleep(delay)
+                else:
+                    logger.error(f"Failed to generate embeddings fater {retries} attempts: {e}")
+                    return []
+        return []
+    
+    def upsert_fields(self, fields: List [Dict], batch_size: int = 100, max_workers: int = 15):
+        """ Upsert fields into the SQLite database using parallel processing for embeddings with batching.
+        """
+
+        total_fields = len(fields):
+        logger.info(f"Starting upsert for {total_fields} fields with {max_workers} workers and batch size {batch_size}.")
+        
+        def get_text(field):
+            text = field.get("text", "")
+            if not text:
+                parts = []
+                if "name" in field: parts.append(f"Name: {field['name']}")
+                if "description" in field: parts.append (f"Description: {field['description']}")
+                if "label" in field: parts.append(f"Label: {field['label']}")
+                text = ", ".join(parts)
+            return text
         
 
+        # filter and prepare fields
+
+        valid_fields = []
+        for f in fields:
+            t = get_text(f)
+            if t:
+                f_copy = f.copy()
+                f_copy["_text_for_embedding"] = t
+                valid_fields.append(f_copy)
+
+        # create chunks
+
+        chunks = [valid_fields[i:i + batch_size] for i in range (0, len(valid_fields), batch_size)]
+
+        def process_chunk(chunk):
+            texts = [f["_text_for_embedding"] for f in chunk]
+            vectors = self.get_embeddings_batch(texts, task_type= "SEMANTIC_SIMILARITY")
+
+            if not vectors or len(vectors) != len(chunk):
+                return None
+            
+            results = []
+            for i, field in enumerate(chunk):
+                # prepare payload
+                payload = field.copy()
+                if "_text_for_embedding" in payload:
+                    del payload["_text_for_embedding"]
+
+                if "text" not in payload:
+                    payload["text_content"] = texts[i]
+
+                results.append({
+                    "vector": vectors[i],
+                    "payload": payload,
+                    "file_path": field.get("file_path", "")
+                })
+            return results
         
+        upserted_count = 0
+
+        with ThreadPoolExecutor(max_workers=max_workers) as executor:
+            #submit all tasks
+
+            future_to_chunk = {executor.submit(process_chunk, chunk): chunk for chunk in chunks}
+
+            for future in as_completed(future_to_chunk):
+                try:
+                    result = future.result()
+                    if result:
+                        self._insert_batch(result)
+                        upserted_count += len(result)
+                        logger.info(f"Upserted batch. Total: {upserted_count}/{len(valid_fields)}")
+
+                except Exception as e:
+                    logger.error(f"Error processing chunk: {e}")
+
+        def _insert_batch(self, items: List[Dict]):
+            """Insert a batch of items into SQLite."""
+
+            try:
+                with self.conn:
+                    for item in items:
+                        # insert document
+                        cursor = self.conn.execute(
+                            "INSERT INTO documents (file_path, payload) VALUES (?, ?)",
+                            (item["file_path"], json.dumps(item["payload"]))
+                        )
+                        doc_id = cursor.lastrowid
+
+
+                        # insert vector
+
+                        serialized_vec = self._serialize_f32(item["vector"])
+                        self.conn.execute(
+                            "INSERT INTO vec_items (rowid, embedding) VALUES (?, ?)",
+                            (doc_id, serialized_vec)
+                        )
+
+                        # insert into FTS
+                        text_content = item["payload"].get("text", "")
+
+
+
+                            (item["file_path"], json.dumps(item["payload"]["description"]))
+                        )
+
 
 
     
